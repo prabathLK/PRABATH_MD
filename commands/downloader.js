@@ -69,18 +69,18 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `\nඔබ සෙවූ වචනය ${text}. කරුණාකර 100MB ට අඩු වීඩියෝ පමණක් තෝරා එවන්න\n`
+            teskd = `\n searched for ${text}. Select & Send\n`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp4 ${i.url}`,
-                    description: `Secktor / ${i.timestamp}`
+                    description: `*~ PRABATH-MD-WA-BOT~*👨‍💻 / ${i.timestamp}`
                 })
             }
             const sections = [
 
                 {
-                    title: "සම්පූර්ණ සෙවීම් 🔎 / Total Search 🔎" + search.all.length,
+                    title: "All request★ 🔎 / Total Search 🔎" + search.all.length,
                     rows: listSerch
                 }
 
@@ -89,7 +89,7 @@ cmd({
                 text: teskd,
                 footer: tlang().footer,
                 title: ` *Youtube Search results by  ${tlang().title}.*`,
-                buttonText: "ඔබට අවශ්‍ය වීඩියෝව තෝරා එවන්න",
+                buttonText: "Select Video",
                 mentions: await Void.parseMention(teskd),
                 sections
             }
@@ -115,21 +115,21 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "🎥 වීඩියෝව / Video 📽️",
+                        displayText: "𝗩𝗜𝗗𝗘𝗢",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "🎶 සිංදුව / Audio 🎵",
+                        displayText: "𝗔𝗨𝗗𝗜𝗢",
                     },
                     type: 1,
                 },
                   {
                     buttonId: `${prefix}ytdoc ${anu.url}`,
                     buttonText: {
-                        displayText: "📁 Document 💾",
+                        displayText: "𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧",
                     },
                     type: 1,
                 },
@@ -139,16 +139,16 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────◆
-│⿻ ${tlang().title} 
-│  *Youtube Song & Video Downloader* ✨
-│⿻ *Title:* ${anu.title}
-│⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
-│⿻ *Uploaded:* ${anu.ago}
-│⿻ *Author:* ${anu.author.name}
-╰────────────────◆
-⦿ *Url* : ${anu.url}
+╭───────────────❖
+│☍ ${tlang().title} 
+│  *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 🔎
+│☍ ⦁ ```Title:``` ${anu.title}
+│☍ ⦁ ```Duration:``` ${anu.timestamp}
+│☍ ⦁ ```Viewers:``` ${anu.views}
+│☍ ⦁ ```Uploaded:``` ${anu.ago}
+│☍ ⦁ ```Author:``` ${anu.author.name}
+╰────────────────❖
+⦿ *𝗨𝗥𝗟* : ${anu.url}
 `,
                 footer: tlang().footer,
                 buttons: buttons,
