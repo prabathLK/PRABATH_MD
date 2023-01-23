@@ -115,21 +115,21 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "𝗩𝗜𝗗𝗘𝗢",
+                        displayText: "video",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "𝗔𝗨𝗗𝗜𝗢",
+                        displayText: "audio",
                     },
                     type: 1,
                 },
                   {
                     buttonId: `${prefix}ytdoc ${anu.url}`,
                     buttonText: {
-                        displayText: "𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧",
+                        displayText: "document",
                     },
                     type: 1,
                 },
@@ -142,11 +142,11 @@ cmd({
 ╭───────────────❖
 │☍ ${tlang().title} 
 │  *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 🔎
-│☍ ⦁ ```Title:``` ${anu.title}
-│☍ ⦁ ```Duration:``` ${anu.timestamp}
-│☍ ⦁ ```Viewers:``` ${anu.views}
-│☍ ⦁ ```Uploaded:``` ${anu.ago}
-│☍ ⦁ ```Author:``` ${anu.author.name}
+│☍ ⦁ *Title:* ${anu.title}
+│☍ ⦁ *Duration:* ${anu.timestamp}
+│☍ ⦁ *Viewers:* ${anu.views}
+│☍ ⦁ *Uploaded:* ${anu.ago}
+│☍ ⦁ *Author:* ${anu.author.name}
 ╰────────────────❖
 ⦿ *𝗨𝗥𝗟* : ${anu.url}
 `,
