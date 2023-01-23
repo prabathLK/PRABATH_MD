@@ -88,7 +88,7 @@ cmd({
             const listMessage = {
                 text: teskd,
                 footer: tlang().footer,
-                title: ` *Results By  ${tlang().title}.*`,
+                title: ` *Results* ${tlang().title}.*`,
                 buttonText: "Select Video",
                 mentions: await Void.parseMention(teskd),
                 sections
@@ -139,9 +139,11 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────❖
-│☍ ${tlang().title} 
+
+   ${tlang().title} 
+╭────────────────❖
 │ *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥*🔎
+│
 │☍ ⦁ *Title:* ${anu.title}
 │☍ ⦁ *Duration:* ${anu.timestamp}
 │☍ ⦁ *Viewers:* ${anu.views}
