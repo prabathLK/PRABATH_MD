@@ -101,7 +101,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "play",
+            pattern: "song",
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             filename: __filename,
@@ -115,21 +115,21 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "► Video",
+                        displayText: "𝚅𝙸𝙳𝙴𝙾",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ Audio",
+                        displayText: "𝙰𝚄𝙳𝙸𝙾",
                     },
                     type: 1,
                 },
                   {
                     buttonId: `${prefix}ytdoc ${anu.url}`,
                     buttonText: {
-                        displayText: "♫ Document",
+                        displayText: "𝙳𝙾𝙲𝚄𝙼𝚁𝙽𝚃",
                     },
                     type: 1,
                 },
@@ -139,15 +139,15 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────◆
-│⿻ ${tlang().title} 
-│  *Youtube Player* ✨
-│⿻ *Title:* ${anu.title}
-│⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
-│⿻ *Uploaded:* ${anu.ago}
-│⿻ *Author:* ${anu.author.name}
-╰────────────────◆
+╭───────────────❖
+│☍ ${tlang().title} 
+│  *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 🔎
+│☍. ```Title:```➤ ${anu.title}
+│☍. ```Duration:```➤ ${anu.timestamp}
+│☍. ```Viewers:```➤ ${anu.views}
+│☍. ```Uploaded:```➤ ${anu.ago}
+│☍. ```Author:```➤ ${anu.author.name}
+╰────────────────❖
 ⦿ *Url* : ${anu.url}
 `,
                 footer: tlang().footer,
