@@ -88,7 +88,7 @@ cmd({
             const listMessage = {
                 text: teskd,
                 footer: tlang().footer,
-                title: ` *Results* ${tlang().title}.*`,
+                title: `${tlang().title}.*`,
                 buttonText: "Select Video",
                 mentions: await Void.parseMention(teskd),
                 sections
