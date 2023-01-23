@@ -13,9 +13,9 @@ const { tlang, ringtone, cmd,fetchJson, sleep, botpic, getBuffer, pinterest, pre
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
-const fs = require('fs-extra')
-var videotime = 60000 // 1000 min
-var dlsize = 1000 // 1000mb
+const fs = require('fs')
+var videotime = 6000 // 100 min
+var dlsize = 100 // 100mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
@@ -69,7 +69,7 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `\nResult got from ${text}.\n`
+            teskd = `\nඔබ සෙවූ වචනය ${text}. කරුණාකර 100MB ට අඩු වීඩියෝ පමණක් තෝරා එවන්න\n`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
@@ -80,7 +80,7 @@ cmd({
             const sections = [
 
                 {
-                    title: "Total Search🔍" + search.all.length,
+                    title: "සම්පූර්ණ සෙවීම් 🔎 / Total Search 🔎" + search.all.length,
                     rows: listSerch
                 }
 
@@ -89,7 +89,7 @@ cmd({
                 text: teskd,
                 footer: tlang().footer,
                 title: ` *Youtube Search results by  ${tlang().title}.*`,
-                buttonText: "Videos",
+                buttonText: "ඔබට අවශ්‍ය වීඩියෝව තෝරා එවන්න",
                 mentions: await Void.parseMention(teskd),
                 sections
             }
@@ -115,21 +115,21 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "𝚅𝙸𝙳𝙴𝙾",
+                        displayText: "🎥 වීඩියෝව / Video 📽️",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "𝙰𝚄𝙳𝙸𝙾",
+                        displayText: "🎶 සිංදුව / Audio 🎵",
                     },
                     type: 1,
                 },
                   {
                     buttonId: `${prefix}ytdoc ${anu.url}`,
                     buttonText: {
-                        displayText: "𝙳𝙾𝙲𝚄𝙼𝚁𝙽𝚃",
+                        displayText: "📁 Document 💾",
                     },
                     type: 1,
                 },
@@ -139,15 +139,15 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────❖
-│☍ ${tlang().title} 
-│  *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 🔎
-│☍. ```Title:```➤ ${anu.title}
-│☍. ```Duration:```➤ ${anu.timestamp}
-│☍. ```Viewers:```➤ ${anu.views}
-│☍. ```Uploaded:```➤ ${anu.ago}
-│☍. ```Author:```➤ ${anu.author.name}
-╰────────────────❖
+╭───────────────◆
+│⿻ ${tlang().title} 
+│  *Youtube Song & Video Downloader* ✨
+│⿻ *Title:* ${anu.title}
+│⿻ *Duration:* ${anu.timestamp}
+│⿻ *Viewers:* ${anu.views}
+│⿻ *Uploaded:* ${anu.ago}
+│⿻ *Author:* ${anu.author.name}
+╰────────────────◆
 ⦿ *Url* : ${anu.url}
 `,
                 footer: tlang().footer,
@@ -273,7 +273,7 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `Result From ${text}.\n_+ ${search.all.length} more results._`
+            teskd = `ඔබ සෙවූ වචනය ${text}.\n_සම්පූර්ණ සෙවීම් + ${search.all.length}._`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
@@ -284,7 +284,7 @@ cmd({
             const sections = [
 
                 {
-                    title: "Total Search🔍" + search.all.length,
+                    title: "සම්පූර්ණ සෙවීම් 🔎 / Total Search 🔎" + search.all.length,
                     rows: listSerch
                 }
 
@@ -312,7 +312,7 @@ cmd({
         },
         async(Void, citel, text) => {
             let yts = require("secktor-pack");
-            if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
+            if (!text) return citel.reply(`Example : ${prefix}yts `);
             let search = await yts(text);
             let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
             let no = 1;
@@ -393,12 +393,12 @@ cmd({
                             }
                         }
                     }
-                 Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
-                 return fs.unlinkSync(`./${randomName}`);
+                    return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
-                    citel.reply(`❌ File size bigger than 100mb.`);
+                    citel.reply(`❌ File size bigger than 40mb.`);
                 }
-                return fs.unlinkSync(`./${randomName}`);      
+
+                fs.unlinkSync(`./${randomName}`);
             } catch (e) {
                 console.log(e)
             }
@@ -467,10 +467,9 @@ cmd({
                         },
                     },
                 }
-                await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
-                return fs.unlinkSync(`./${randomName}`);
+                return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
             } else {
-                citel.reply(`❌ File size bigger than 100mb.`);
+                citel.reply(`❌ File size bigger than 40mb.`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
@@ -482,7 +481,7 @@ cmd({
 
   //---------------------------------------------------------------------------
 cmd({
-        pattern: "ytdoc",
+        pattern: "ytd",
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
@@ -543,10 +542,9 @@ cmd({
                         },
                     },
                 }
-                await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
-                return fs.unlinkSync(`./${randomName}`);
+                return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
             } else {
-                citel.reply(`❌ File size bigger than 100mb.`);
+                citel.reply(`❌ File size bigger than 40mb.`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
