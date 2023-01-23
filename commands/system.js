@@ -259,7 +259,7 @@ cmd({
             let alivemessage = Config.ALIVE_MESSAGE || `*I Am Alive Now👨‍💻.*`
             const alivtxt = `
 *HEY, ${citel.pushName},*
-```This is  ${tlang().title}.```
+_This is  ${tlang().title}.
 ${alivemessage}
 
 *Version:-* _0.0.6_
