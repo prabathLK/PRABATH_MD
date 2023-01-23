@@ -69,7 +69,7 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `\n searched for ${text}. Select & Send\n`
+            teskd = `\n *Searched For* ${text}. *Select & Send*\n`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
@@ -88,7 +88,7 @@ cmd({
             const listMessage = {
                 text: teskd,
                 footer: tlang().footer,
-                title: ` *Youtube Search results by  ${tlang().title}.*`,
+                title: ` *Results By  ${tlang().title}.*`,
                 buttonText: "Select Video",
                 mentions: await Void.parseMention(teskd),
                 sections
@@ -115,21 +115,21 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "video",
+                        displayText: "VIDEO",
                     },
                     type: 1,
                 },
                 {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
-                        displayText: "audio",
+                        displayText: "AUDIO",
                     },
                     type: 1,
                 },
                   {
                     buttonId: `${prefix}ytdoc ${anu.url}`,
                     buttonText: {
-                        displayText: "document",
+                        displayText: "DOCUMENT",
                     },
                     type: 1,
                 },
@@ -141,7 +141,7 @@ cmd({
                 caption: `
 ╭───────────────❖
 │☍ ${tlang().title} 
-│  *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 🔎
+│ *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗢𝗡𝗚 & 𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥*🔎
 │☍ ⦁ *Title:* ${anu.title}
 │☍ ⦁ *Duration:* ${anu.timestamp}
 │☍ ⦁ *Viewers:* ${anu.views}
