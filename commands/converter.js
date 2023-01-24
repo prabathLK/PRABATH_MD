@@ -19,6 +19,7 @@ cmd({
             pattern: "photo",
             desc: "Makes photo of replied sticker.",
             category: "converter",
+            react: "📷",
             use: '<reply to any gif>',
             filename: __filename
         },
@@ -142,6 +143,7 @@ cmd({
         pattern: "toaudio",
         desc: "changes type to audio.",
         category: "converter",
+        react: "🎵",
         use: '<reply to any audio>',
         filename: __filename
     },
