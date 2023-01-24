@@ -455,6 +455,7 @@ cmd({
   pattern: "bot",
   desc: "activates and deactivates bot.\nuse buttons to toggle.",
   category: "misc",
+  react: "🙋‍♂️",
   filename: __filename,
 },
 async(Void, citel, text,{isCreator}) => {
