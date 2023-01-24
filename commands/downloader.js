@@ -122,7 +122,7 @@ cmd({
                     type: 1,
                 },
                 {
-                    buttonId: `${prefix}ytmp3 ${anu.url}`,
+                    buttonId: `${prefix}ytmp3 ${anu.text}`,
                     buttonText: {
                         displayText: "AUDIO",
                     },
