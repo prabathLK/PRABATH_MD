@@ -49,7 +49,7 @@ cmd({
             author = Config.author
             if (citel.quoted) {
                 let media = await citel.quoted.download();
-                citel.reply("*Processing Your request*");
+                citel.reply("*Your Sticker Is Being Created.*");
                 let sticker = new Sticker(media, {
                     pack: pack, // The pack name
                     author: author, // The author name
