@@ -131,7 +131,7 @@ Secktor.cmd({
             }
             str += `┃ ● ╰─────────────⦁\n`
             str += `╰━━━━━━━━━━━───❖\n`
-            return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
+            return Void.sendMessage(citel.chat, { image: { url: 'https://i.imgur.com/XjNoQ6n.jpeg' }, caption: str })
         }
     )
    //---------------------------------------------------------------------------
