@@ -79,6 +79,7 @@ cmd({
 cmd({
             pattern: "unban",
             category: "misc",
+            react: "✅",
             filename: __filename,
             desc: "Unbans banned user (from using bot)."
         },
@@ -110,6 +111,7 @@ cmd({
 cmd({
             pattern: "url",
             category: "misc",
+            react: "🌍",
             filename: __filename,
             desc: "image to url."
         },
@@ -221,6 +223,7 @@ cmd({
 cmd({
             pattern: "ban",
             category: "owner",
+            react: "🚫",
             filename: __filename,
             desc: "Bans user from using bot."
         },
@@ -252,6 +255,7 @@ cmd({
 cmd({
             pattern: "alive",
             category: "general",
+            react: "👋",
             filename: __filename,
             desc: "is bot alive??"
         },
