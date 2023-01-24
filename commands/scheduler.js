@@ -14,6 +14,7 @@
      pattern: "amute",
      desc: "sets auto mute time in group.",
      category: "moderation",
+     react: "🕑",
  },
  async(Void, citel, text,{ isCreator }) => {
      if (!isCreator) return citel.reply(tlang().owner)
@@ -37,6 +38,7 @@
     pattern: "aunmute",
     desc: "sets unmute time in group.",
     category: "moderation",
+    react: "🕑",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
@@ -60,6 +62,7 @@ async(Void, citel, text,{ isCreator }) => {
     pattern: "dunmute",
     desc: "Delete unmute from group.",
     category: "moderation",
+    react: "🚦",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
@@ -79,6 +82,7 @@ async(Void, citel, text,{ isCreator }) => {
     pattern: "dmute",
     desc: "Delete mute from group.",
     category: "moderation",
+    react: "🚦",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
