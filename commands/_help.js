@@ -54,14 +54,13 @@ Secktor.cmd({
                 let total = await sck1.countDocuments()
                 let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
                 str +=
-                    '```' + `│ ╭───────✧❁✧───────«
-
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰───────✧❁✧───────»
-╰───────────────⊷\n
+                    '```' + `│ ╭───────✧❖✧───────«
+▍ │ Uptime:- ${runtime(process.uptime())}
+▍ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+▍ │ Time:- ${time}
+▍ │ Date:- ${date}
+▍ ╰───────✧❁✧───────»
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬⊷\n
 ` + '```'
                 str += `╭───『 ` + fancytext('Commands', 57) + `』──◆`
                 for (const category in cmds) {
