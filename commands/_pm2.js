@@ -15,6 +15,7 @@ cmd({
         pattern: "restart",
         desc: "To restart bot",
         category: "tools",
+        react: "🔄",
         filename: __filename
     },
     async(Void, citel,text,{ isCreator }) => {
