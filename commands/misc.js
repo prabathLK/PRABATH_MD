@@ -19,6 +19,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
     pattern: "setwelcome",
     desc: "sets welcome message in specific group.",
     category: "misc",
+    react: "✅",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
@@ -38,6 +39,7 @@ cmd({
     pattern: "setgoodbye",
     desc: "sets goodbye message in specific group.",
     category: "misc",
+    react: "✅",
 },
 async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
@@ -56,6 +58,7 @@ async(Void, citel, text,{ isCreator }) => {
              pattern: "attp",
              desc: "Makes glowing sticker of text.",
              category: "sticker",
+             react: "🌈",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -151,6 +154,7 @@ async(Void, citel, text,{ isCreator }) => {
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
              category: "misc",
+             react: "🆙",
              filename: __filename,
          },
          async(Void, citel, text) => {
@@ -327,6 +331,7 @@ async(Void, citel, text,{ isCreator }) => {
              pattern: "emix",
              desc: "Mixes two emojies.",
              category: "misc",
+             react: "Ⓜ️",
              use: '<query>',
              filename: __filename,
          },
@@ -511,6 +516,7 @@ let buttons = [{
              pattern: "antilink",
              desc: "activates and deactivates antilink.\nuse buttons to toggle.",
              category: "group",
+             react: "⛔",
              filename: __filename,
          },
          async(Void, citel, text) => {
