@@ -279,18 +279,18 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `ඔබ සෙවූ වචනය ${text}.\n_සම්පූර්ණ සෙවීම් + ${search.all.length}._`
+            teskd = `Searched for ${text}.\n_All Request 🔎 + ${search.all.length}._`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp3 ${i.url}`,
-                    description: `Secktor / ${i.timestamp}`
+                    description: `*~ PRABATH-MD-WA-BOT~*👨‍💻 / ${i.timestamp}`
                 })
             }
             const sections = [
 
                 {
-                    title: "සම්පූර්ණ සෙවීම් 🔎 / Total Search 🔎" + search.all.length,
+                    title: "All Request ✅ / Total Search 🔎" + search.all.length,
                     rows: listSerch
                 }
 
@@ -387,7 +387,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️p File Size : ${fileSizeInMegabytes} MB`,
+                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️ *File Size* : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
