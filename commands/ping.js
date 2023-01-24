@@ -22,7 +22,7 @@ Secktor.cmd({
         var inital = new Date().getTime();
         await citel.reply('*TESTING PING* 📍');
         var final = new Date().getTime();
-        react: "📍",
         return await citel.reply('*Pong*\n *' + (final - inital) + ' ms* ');
+        react: "🏷️",
     }
 );
