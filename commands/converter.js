@@ -94,11 +94,11 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "fancy",
+            pattern: "text",
             desc: "Makes stylish/fancy given text",
             category: "converter",
             use: '56 Secktor',
-            react: "✅",
+            react: "🏷️",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -119,11 +119,11 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tiny",
+            pattern: "slink",
             desc: "Makes url tiny.",
             category: "converter",
             use: '<url>',
-            react: "✅",
+            react: "🍂",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -131,7 +131,7 @@ cmd({
             try {
                 link = text.split(" ")[0];
                 anu = await axios.get(`https://tinyurl.com/api-create.php?url=${link}`);
-                citel.reply(`*🛡️Your Shortened URL*\n\n${anu.data}`);
+                citel.reply(`*📁Your Shortened URL*\n\n${anu.data}`);
             } catch (e) {
                 console.log(e);
             }
