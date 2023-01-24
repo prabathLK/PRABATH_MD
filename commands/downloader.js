@@ -387,7 +387,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️ *File Size* : ${fileSizeInMegabytes} MB`,
+                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️p File Size : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -471,16 +471,14 @@ cmd({
                             thumbnailUrl: search.all[0].thumbnail,
                             mediaUrl: text,
                             mediaType: 1,
-                            thumbnail: await Void.sendMessage(citel.chat, 
-    { audio: fs.readFileSync(`./${randomName}`)}, mimetype: 'audio/mp4' }
-),
+                            thumbnail: await getBuffer(search.all[0].thumbnail),
                             sourceUrl: text,
                         },
                     },
                 }
                 return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
             } else {
-                citel.reply(`❌ File size bigger than 40mb.`);
+                citel.reply(`⛔ File size bigger than 40mb.`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
