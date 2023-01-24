@@ -58,10 +58,10 @@ cmd({
         let cap = `Hey ${citel.pushName}\n
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* secktorbot.tech/repo
-*Group:* secktorbot.tech/support
+*🍁 Repo:* bot.tech/repo
+*Group:* bot.tech/support
 *Deploy Your Own:*-
- SecktorBot.tech/youtube`
+ Bot.tech/youtube`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -86,10 +86,11 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "status",
+        pattern: "system",
         alias: ["about"],
         desc: "To check bot status",
         category: "general",
+        react: "📟",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -113,7 +114,7 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-🔰 *${tlang().title}* 🔰
+ 👨‍💻*${tlang().title}* 
 *🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
