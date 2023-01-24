@@ -79,19 +79,19 @@ Secktor.cmd({
                 let generatebutton = [{
                     buttonId: `${prefix}owner`,
                     buttonText: {
-                        displayText: 'Owner'
+                        displayText: 'OWNER'
                     },
                     type: 1
                 },{
                     buttonId: `${prefix}ping`,
                     buttonText: {
-                        displayText: 'SPEED'
+                        displayText: 'TEST PING'
                     },
                     type: 1
                 }, {
                     buttonId: `${prefix}list`,
                     buttonText: {
-                        displayText: 'List Menu'
+                        displayText: 'LIST MENU'
                     },
                     type: 1
                 }]
@@ -118,19 +118,19 @@ Secktor.cmd({
             let str = `
 📜 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 📜`
             str += '```' + `
-┃ ⛥╭──────────────      
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
-┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())} 
-┃ ⛥╰───────────
-╰━━━━━━━━━━━──⊷\n` + '```'
-            str += `╭━━━━━━━━━━━────⊷\n`
-            str += `┃ ⛥ ╭─────────────\n`
+╭──────────────☍      
+│ Uptime: ${runtime(process.uptime())}
+│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())} 
+╰──────────────☍
+📜❖━━━━━━━━━━━❖📜\n` + '```'
+            str += `╭━━━━━━━━━━━────❖\n`
+            str += `┃ ● ╭─────────────⦁\n`
             for (let i = 0; i < commands.length; i++) {
              if(commands[i].pattern==undefined) continue
                 str += `┃ ⛥ │ ➛ ${i+1}. ` + commands[i].pattern + '\n'
             }
-            str += `┃ ⛥ ╰─────────────\n`
-            str += `╰━━━━━━━━━━━───⊷\n`
+            str += `┃ ● ╰─────────────⦁\n`
+            str += `╰━━━━━━━━━━━───❖\n`
             return Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
         }
     )
@@ -139,7 +139,7 @@ Secktor.cmd({
         pattern: "owner",
         desc: "To check ping",
         category: "general",
-        react: "💜",
+        react: "👨‍💻",
         filename: __filename
     },
     async(Void, citel) => {
