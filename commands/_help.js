@@ -52,15 +52,15 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = 
+                let str = `╭────🔖 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 🔖\n`
                 str +=
-                    '```' + ` ╭───────✧👨‍💻✧───────❖
+                    '```' + `│ ╭───────✧👨‍💻✧───────❖
  │ Uptime:- ${runtime(process.uptime())}
  │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
  │ Time:- ${time}
  │ Date:- ${date}
  ╰───────✧👨‍💻✧───────❖
-  ❖───────────────❖\n
+    ❖───────────────❖\n
 ` + '```'
                 str += `╭───『 ` + fancytext('Commands', 57) + `』──◆`
                 for (const category in cmds) {
