@@ -140,9 +140,9 @@ cmd({
                 },
                 caption: `
 
-      👨‍💻  ${tlang().title} 
+      POWED BY ●  ${tlang().title} 
 ╭────────────────❖
-│ ℹ️ *INFORMATION*
+│ ℹ️ *INFORMATION* ⬇️
 │
 │☍ ⦁ *Title:* ${anu.title}
 │☍ ⦁ *Duration:* ${anu.timestamp}
@@ -198,7 +198,7 @@ cmd({
                 let buttons = [{
                         buttonId: `${prefix}pint ${text}`,
                         buttonText: {
-                            displayText: 'Next Image🎀'
+                            displayText: 'Next Image ➡️'
                         },
                         type: 1
                     }
