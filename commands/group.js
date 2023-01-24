@@ -19,6 +19,7 @@ cmd({
             pattern: "join",
             desc: "joins group by link",
             category: "owner",
+            react: "📎",
             use: '<group link.>',
         },
         async(Void, citel, text,{ isCreator }) => {
@@ -120,6 +121,7 @@ cmd({
             pattern: "unblock",
             desc: "Unblocked to the quoted user.",
             category: "owner",
+            react: "✅",
             filename: __filename,
 
         },
