@@ -142,7 +142,7 @@ cmd({
                 },
                 caption: `
 
-      POWED BY ●  ${tlang().title} 
+        ${tlang().title} 
 ╭────────────────❖
 │ ℹ️ *INFORMATION* ⬇️
 │
