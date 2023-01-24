@@ -39,10 +39,11 @@ cmd({
             alias: ["s"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
+            react: "🔁",
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
+            if (!citel.quoted) return citel.reply(`*Mention any Image or video.*`);
             let mime = citel.quoted.mtype
             pack = Config.packname
             author = Config.author
@@ -557,6 +558,7 @@ cmd({
             pattern: "promote",
             desc: "Provides admin role to replied/quoted user",
             category: "group",
+            react: "👑",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -584,6 +586,7 @@ cmd({
             pattern: "kick",
             desc: "Kicks replied/quoted user from group.",
             category: "group",
+            react: "⛔",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -630,6 +633,7 @@ cmd({
             pattern: "group",
             desc: "mute and unmute group.",
             category: "group",
+            react: "📢",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -653,14 +657,14 @@ cmd({
                 let buttons = [{
                         buttonId: `${prefix}group open`,
                         buttonText: {
-                            displayText: "📍Unmute",
+                            displayText: "UNMUTE 🔊",
                         },
                         type: 1,
                     },
                     {
                         buttonId: `${prefix}group close`,
                         buttonText: {
-                            displayText: "📍Mute",
+                            displayText: "MUTE 🔇",
                         },
                         type: 1,
                     },
@@ -706,6 +710,7 @@ cmd({
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
+            react: "🤫",
             filename: __filename,
             use: '<text>',
         },
@@ -783,6 +788,7 @@ cmd({
         pattern: "demote",
         desc: "Demotes replied/quoted user from group",
         category: "group",
+        react: "🚫",
         filename: __filename,
         use: '<quote|reply|number>',
     },
@@ -812,6 +818,7 @@ cmd({
             alias: ["delete"],
             desc: "Deletes message of any user",
             category: "group",
+            react: "⛔",
             filename: __filename,
             use: '<quote/reply message.>',
         },
@@ -877,6 +884,7 @@ cmd({
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
+            react: "🚫",
             filename: __filename,
             use: '<quote/reply user.>',
         },
