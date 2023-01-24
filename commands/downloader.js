@@ -138,7 +138,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: anu.url,
+                    url: anu.thumbnail,
                 },
                 caption: `
 
