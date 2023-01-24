@@ -23,6 +23,5 @@ Secktor.cmd({
         await citel.reply('*TESTING PING* 📍');
         var final = new Date().getTime();
         return await citel.reply('*Pong*\n *' + (final - inital) + ' ms* ');
-        react: "🏷️",
     }
 );
