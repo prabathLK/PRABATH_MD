@@ -59,6 +59,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "video",
+            alias: ["වීඩියෝ"],
             desc: "Downloads video from yt.",
             category: "downloader",
             react: "📽️",
@@ -103,6 +104,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "song",
+            alias: ["ගීතය"],
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             react: "🎵",
@@ -311,6 +313,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "yts",
+            alias: ["සොයන්න"],
             desc: "Gives descriptive info of query from youtube..",
             category: "downloader",
             react: "🔎",
