@@ -1,7 +1,7 @@
 {
   "name": "Secktor-Md",
   "description": "A Whatsapp md bot built in NodeJs to make experience better",
-  "logo": "",
+  "logo": "https://i.imgur.com/H062oEI.jpeg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "SecktorBot", "Secktor","SecktorMD","theme bot","multi device"],
   "success_url": "/",
   "stack": "container",
