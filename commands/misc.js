@@ -17,6 +17,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
   //---------------------------------------------------------------------------
  cmd({
     pattern: "setwelcome",
+    alias: ["සෙට් වෙල්කම්"],
     desc: "sets welcome message in specific group.",
     category: "misc",
     react: "✅",
@@ -264,7 +265,7 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "mp4fromurl",
+             pattern: "mp4down",
              desc: "download mp4 from url.",
              category: "misc",
              use: '<url>',
@@ -329,6 +330,7 @@ async(Void, citel, text,{ isCreator }) => {
      //---------------------------------------------------------------------------
  cmd({
              pattern: "emix",
+             alias: ["මික්ස්"],
              desc: "Mixes two emojies.",
              category: "misc",
              react: "Ⓜ️",
@@ -515,6 +517,7 @@ let buttons = [{
      //---------------------------------------------------------------------------
  cmd({
              pattern: "antilink",
+             alias: ["කික් ලින්ක්"],
              desc: "activates and deactivates antilink.\nuse buttons to toggle.",
              category: "group",
              react: "⛔",
@@ -531,14 +534,14 @@ let buttons = [{
              let buttons = [{
                      buttonId: `${prefix}act antilink`,
                      buttonText: {
-                         displayText: "Turn On",
+                         displayText: "ON ✅",
                      },
                      type: 1,
                  },
                  {
                      buttonId: `${prefix}deact antilink`,
                      buttonText: {
-                         displayText: "Turn Off",
+                         displayText: "OFF ⛔",
                      },
                      type: 1,
                  },
