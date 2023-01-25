@@ -183,7 +183,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "pint",
+            pattern: "img",
             desc: "Downloads image from pinterest.",
             category: "downloader",
             filename: __filename,
@@ -218,7 +218,7 @@ cmd({
                     headerType: 4,
                     contextInfo: {
                         externalAdReply: {
-                            title: `Here it is✨`,
+                            title: `👨‍💻`,
                             body: `${Config.ownername}`,
                             thumbnail: log0,
                             mediaType: 2,
@@ -329,7 +329,7 @@ cmd({
             for (let i of search.all) {
                 textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
           i.type
-        }\n🙈Views : ${i.views}\n⌛Duration : ${
+        }\n👁️‍🗨️Views : ${i.views}\n⌛Duration : ${
           i.timestamp
         }\n🌟Upload At : ${i.ago}\n👑Author : ${i.author.name}\n🎵Url : ${
           i.url
