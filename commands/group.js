@@ -17,6 +17,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
 //---------------------------------------------------------------------------
 cmd({
             pattern: "join",
+            alias: ["ජොයින්"],
             desc: "joins group by link",
             category: "owner",
             react: "📎",
@@ -37,7 +38,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "sticker",
-            alias: ["s"],
+            alias: ["ස්ටිකර්"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
             react: "🔁",
@@ -119,6 +120,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "unblock",
+            alias: ["අන්බ්ලොක්"],
             desc: "Unblocked to the quoted user.",
             category: "owner",
             react: "✅",
@@ -158,8 +160,10 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "tagall",
+        alias: ["ටැග්"],
         desc: "Tags every person of group.",
         category: "group",
+        react: "📎",
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
@@ -224,9 +228,10 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "retrive",
+            pattern: "vv",
             desc: "Copies and Forwords viewonce message.",
             category: "group",
+            react: "🤫",
             filename: __filename,
             use: '<reply to a viewonce message.>',
         },
@@ -586,6 +591,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "kick",
+            alias: ["කික්"],
             desc: "Kicks replied/quoted user from group.",
             category: "group",
             react: "⛔",
@@ -633,6 +639,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "group",
+            alias: ["ගෘප්"],
             desc: "mute and unmute group.",
             category: "group",
             react: "📢",
@@ -677,9 +684,11 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "grouppic",
+            pattern: "gpp",
+            alias: ["ගෘප් පොටෝ"],
             desc: "Sets a profile pic in Group..",
             category: "group",
+            react: "🖼️",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -709,7 +718,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "hidetag",
-            alias: ["htag"],
+            alias: ["හයිඩ් ටැග්"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
             react: "🤫",
@@ -788,6 +797,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "demote",
+        alias: ["dmt"],
         desc: "Demotes replied/quoted user from group",
         category: "group",
         react: "🚫",
@@ -817,7 +827,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
             pattern: "del",
-            alias: ["delete"],
+            alias: [","],
             desc: "Deletes message of any user",
             category: "group",
             react: "⛔",
@@ -883,6 +893,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "block",
+            alias: ["බ්ලොක්"],
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
