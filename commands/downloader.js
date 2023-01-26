@@ -127,7 +127,6 @@ cmd({
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
                         displayText: "AUDIO",
-        citel.reply("*Your Sticker Is Being Created.*"),
                     },
                     type: 1,
                 },
