@@ -477,6 +477,7 @@ cmd({
   //---------------------------------------------------------------------------
 cmd({
         pattern: "ytdoc",
+        react: "📁"'
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
@@ -520,7 +521,7 @@ cmd({
                 let yts = require("secktor-pack");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
-    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
+    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel})
             } else {
                 citel.reply(`❌ File size bigger than 40mb.`);
             }
