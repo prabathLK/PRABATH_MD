@@ -67,7 +67,7 @@ cmd({
             use: '<faded-Alan Walker>',
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply(`Example : ${prefix}audio Back in black`)
+            if (!text) return citel.reply(`*Example :* ${prefix} ලෙලෙනා`)
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
@@ -360,14 +360,14 @@ cmd({
                 return `${Math.floor(Math.random() * 10000)}${ext}`;
             };
             if (!text) {
-                citel.reply(`❌Please provide me a url`);
+                citel.reply(`*Please Give Me a Url*❗`);
                 return;
             }
             try {
                 let urlYt = text;
-                if (!urlYt.startsWith("http")) return citel.reply(`❌ Give youtube link!`);
+                if (!urlYt.startsWith("http")) return citel.reply(`*Give Youtube Link*❗`);
                 let infoYt = await ytdl.getInfo(urlYt);
-                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
+                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Video Upload Fail* ⛔ , *Large Video*❗`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
 
@@ -406,7 +406,7 @@ cmd({
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
-                    citel.reply(`❌ File size bigger than 40mb.`);
+                    citel.reply(`*File size bigger than 40mb*⛔.`);
                 }
 
                 fs.unlinkSync(`./${randomName}`);
@@ -435,13 +435,13 @@ cmd({
         try {
             let urlYt = text;
             if (!urlYt.startsWith("http")) {
-                citel.reply(`❌ Give youtube link!`);
+                citel.reply(`*Give Youtube Link!*❗`);
                 return;
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
             if (infoYt.videoDetails.lengthSeconds >= videotime) {
-                reply(`❌ I can't download that long video!`);
+                reply(`*I can't download that long video!*❗`);
                 return;
             }
             let titleYt = infoYt.videoDetails.title;
@@ -464,7 +464,7 @@ cmd({
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
-                citel.reply(`⛔ File size bigger than 40mb.`);
+                citel.reply(`⛔ *File size bigger than 40mb*.`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
@@ -476,7 +476,7 @@ cmd({
 
   //---------------------------------------------------------------------------
 cmd({
-        pattern: "ytd",
+        pattern: "ytdoc",
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
