@@ -162,6 +162,7 @@ cmd({
             };
             return Void.sendMessage(citel.chat, buttonMessage, {
                 quoted: citel,
+            citel.reply("*Your Video Downloading.*");
             });
 
         }
