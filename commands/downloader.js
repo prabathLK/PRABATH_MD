@@ -127,6 +127,7 @@ cmd({
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
                         displayText: "AUDIO",
+        citel.reply("*Your Sticker Is Being Created.*"),
                     },
                     type: 1,
                 },
@@ -162,7 +163,6 @@ cmd({
             };
             return Void.sendMessage(citel.chat, buttonMessage, {
                 quoted: citel,
-            citel.reply("*Your Video Downloading.*");
             });
 
         }
