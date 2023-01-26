@@ -521,7 +521,7 @@ cmd({
                 let yts = require("secktor-pack");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
-    { document: fs.readFileSync(`./${randomName}`), mimetype: 'document/mp4' },{quoted: citel})
+    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,fileName: `${titleYt}.mp3`})
             } else {
                 citel.reply(`❌ File size bigger than 40mb.`);
             }
