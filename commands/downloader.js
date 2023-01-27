@@ -463,10 +463,11 @@ cmd({
             citel.reply("*Downloading Your Song ⬇️.*");
             const reactionMessage = {
     react: {
-        text: "⬇️", // use an empty string to remove the reaction
-        key: message.key
-    }
-}
+        text: "⬇️",
+        key: message.key,
+
+           });
+
             citel.reply("*Uploading Your Song ⬆️.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
