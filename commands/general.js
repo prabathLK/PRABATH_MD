@@ -47,8 +47,8 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "jafwjwh",
-        alias: ["hakqgwjw", "hwkwg", "gwkagaj"],
+        pattern: "repoo",
+        alias: ["dsa", "githubbb", "srl"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -117,9 +117,8 @@ cmd({
  👨‍💻*${tlang().title}* 
 ⏱️ *Bot running time:* ${runtime(process.uptime())}
 📟 *Memory:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-👤 *Owner:*  ${Config.ownername}
-*Powered by ${tlang().title}*
-`;
+👤 *Owner:*  ${Config.ownername}`;
+
         let buttonMessaged = {
             image: {
                 url: await botpic(),
