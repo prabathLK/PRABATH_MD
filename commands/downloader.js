@@ -69,7 +69,7 @@ cmd({
         async(Void, citel, text) => {
             if (!text) return citel.reply(`*Example :* ${prefix} ලෙලෙනා`)
             let yts = require("secktor-pack")
-            citel.reply("*Seaching Videos. 🔎 *");
+            citel.reply("*Seaching Videos.* 🔎 ");
             let search = await yts(text)
             listSerch = []
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
