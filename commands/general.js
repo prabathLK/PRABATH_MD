@@ -95,17 +95,17 @@ cmd({
     },
     async(Void, citel) => {
         const dbut = [{
-                buttonId: `${prefix}system`,
+                buttonId: `${prefix}help`,
                 buttonText: {
-                    displayText: "SYSTEM",
+                    displayText: "MENU",
                 },
                 type: 1,
             },
 
             {
-                buttonId: `${prefix}owner`,
+                buttonId: `${prefix}rank`,
                 buttonText: {
-                    displayText: "OWNER",
+                    displayText: "RANK",
                 },
                 type: 1,
             },
