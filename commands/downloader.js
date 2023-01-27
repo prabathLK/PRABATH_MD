@@ -527,7 +527,7 @@ cmd({
             citel.reply("*📁 Downloading Your Document Please Wait 🔁.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
-    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel `${titleYt}.mp3`})
+    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel: `${titleYt}.mp3`})
             } else {
                 citel.reply(`❌ File size bigger than 40mb.`);
             }
