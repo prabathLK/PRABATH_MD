@@ -465,9 +465,7 @@ cmd({
     react: {
         text: "⬇️",
         key: message.key,
-
-           });
-
+                })
             citel.reply("*Uploading Your Song ⬆️.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
