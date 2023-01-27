@@ -47,8 +47,8 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "norepo",
-        alias: ["fdt", "fg", "sriof"],
+        pattern: "repoy",
+        alias: ["gjit", "sggc", "scripht"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -94,9 +94,9 @@ cmd({
     },
     async(Void, citel) => {
         const dbut = [{
-                buttonId: `${prefix}help`,
+                buttonId: `${prefix}system`,
                 buttonText: {
-                    displayText: "Menu",
+                    displayText: "SYSTRM",
                 },
                 type: 1,
             },
@@ -113,10 +113,13 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-🙋‍♂️ *${tlang().title}* 
-⏱️ *Bot running time:* ${runtime(process.uptime())}
-📟 *Memory:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-👤 *Owner:*  ${Config.ownername}
+ *${tlang().title}* 
+🌍 *Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+📎 *Speed:* ${latensie.toFixed(4)} ms
+⏱️ *Uptime:* ${runtime(process.uptime())}
+🖥️ *Memory:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+📟 *Version:* 1.0.0
+🙋‍♂️ *Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
         let buttonMessaged = {
