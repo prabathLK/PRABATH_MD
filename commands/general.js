@@ -47,8 +47,8 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "repoo",
-        alias: ["dsa", "githubbb", "srl"],
+        pattern: "norepo",
+        alias: ["fdt", "fg", "sriof"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -58,10 +58,10 @@ cmd({
         let cap = `Hey ${citel.pushName}\n
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* bot.tech/repo
-*Group:* bot.tech/support
+*🍁 Repo:* secktorbot.tech/repo
+*Group:* secktorbot.tech/support
 *Deploy Your Own:*-
- Bot.tech/youtube`
+ SecktorBot.tech/youtube`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -90,7 +90,6 @@ cmd({
         alias: ["සිස්ටම්"],
         desc: "To check bot status",
         category: "general",
-        react: "📟",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -114,11 +113,12 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
- 👨‍💻*${tlang().title}* 
+🙋‍♂️ *${tlang().title}* 
 ⏱️ *Bot running time:* ${runtime(process.uptime())}
 📟 *Memory:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-👤 *Owner:*  ${Config.ownername}`;
-
+👤 *Owner:*  ${Config.ownername}
+*Powered by ${tlang().title}*
+`;
         let buttonMessaged = {
             image: {
                 url: await botpic(),
