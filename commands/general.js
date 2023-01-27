@@ -97,7 +97,7 @@ cmd({
         const dbut = [{
                 buttonId: `${prefix}help`,
                 buttonText: {
-                    displayText: "MENU",
+                    displayText: "Menu",
                 },
                 type: 1,
             },
@@ -105,7 +105,7 @@ cmd({
             {
                 buttonId: `${prefix}rank`,
                 buttonText: {
-                    displayText: "RANK",
+                    displayText: "Rank",
                 },
                 type: 1,
             },
