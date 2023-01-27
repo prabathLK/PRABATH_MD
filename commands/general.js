@@ -47,8 +47,8 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "repo",
-        alias: ["git", "sc", "script"],
+        pattern: "jafwjwh",
+        alias: ["hakqgwjw", "hwkwg", "gwkagaj"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -87,7 +87,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
         pattern: "system",
-        alias: ["about"],
+        alias: ["සිස්ටම්"],
         desc: "To check bot status",
         category: "general",
         react: "📟",
@@ -97,7 +97,7 @@ cmd({
         const dbut = [{
                 buttonId: `${prefix}help`,
                 buttonText: {
-                    displayText: "Menu",
+                    displayText: "MENU",
                 },
                 type: 1,
             },
@@ -105,7 +105,7 @@ cmd({
             {
                 buttonId: `${prefix}rank`,
                 buttonText: {
-                    displayText: "Rank",
+                    displayText: "RANK",
                 },
                 type: 1,
             },
@@ -115,10 +115,7 @@ cmd({
         latensie = speed() - timestampe;
         let ter = `
  👨‍💻*${tlang().title}* 
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
-*⚡Speed:* ${latensie.toFixed(4)} ms
-*🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 1.0.0
+*⏱️ Bot running time:* ${runtime(process.uptime())}
 *👤Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
