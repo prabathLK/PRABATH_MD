@@ -95,9 +95,9 @@ cmd({
     },
     async(Void, citel) => {
         const dbut = [{
-                buttonId: `${prefix}system`,
+                buttonId: `${prefix}help`,
                 buttonText: {
-                    displayText: "SYSTRM",
+                    displayText: "Menu",
                 },
                 type: 1,
             },
