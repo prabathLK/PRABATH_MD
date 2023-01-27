@@ -95,17 +95,17 @@ cmd({
     },
     async(Void, citel) => {
         const dbut = [{
-                buttonId: `${prefix}help`,
+                buttonId: `${prefix}system`,
                 buttonText: {
-                    displayText: "MENU",
+                    displayText: "SYSTEM",
                 },
                 type: 1,
             },
 
             {
-                buttonId: `${prefix}rank`,
+                buttonId: `${prefix}owner`,
                 buttonText: {
-                    displayText: "RANK",
+                    displayText: "OWNER",
                 },
                 type: 1,
             },
@@ -115,8 +115,9 @@ cmd({
         latensie = speed() - timestampe;
         let ter = `
  👨‍💻*${tlang().title}* 
-*⏱️ Bot running time:* ${runtime(process.uptime())}
-*👤Owner:*  ${Config.ownername}
+⏱️ *Bot running time:* ${runtime(process.uptime())}
+📟 *Memory:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+👤 *Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
         let buttonMessaged = {
