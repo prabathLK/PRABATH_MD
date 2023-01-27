@@ -460,7 +460,8 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply("*Downloading Your Song.*");
+            citel.reply("*Downloading Your Song ⬇️.*");
+            citel.reply("*Uploading Your Song ⬆️.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
