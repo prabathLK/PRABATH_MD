@@ -90,6 +90,7 @@ cmd({
         alias: ["සිස්ටම්"],
         desc: "To check bot status",
         category: "general",
+        react: "📟",
         filename: __filename,
     },
     async(Void, citel) => {
