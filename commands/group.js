@@ -17,7 +17,6 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
 //---------------------------------------------------------------------------
 cmd({
             pattern: "join",
-            alias: ["ජොයින්"],
             desc: "joins group by link",
             category: "owner",
             react: "📎",
@@ -30,8 +29,8 @@ cmd({
                 citel.reply("Link Invalid, Please Send a valid whatsapp Group Link!");
             let result = text.split(" ")[0].split("https://chat.whatsapp.com/")[1];
             await Void.groupAcceptInvite(result)
-                .then((res) => citel.reply("🟩Joined Group"))
-                .catch((err) => citel.reply("Error in Joining Group"));
+                .then((res) => citel.reply("✅ Joined Group"))
+                .catch((err) => citel.reply("Error in Joining Group❗"));
 
         }
     )
@@ -41,11 +40,11 @@ cmd({
             alias: ["ස්ටිකර්"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
-            react: "🔁",
+            react: "🔄",
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply(`*Mention any Image or video.*`);
+            if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
             let mime = citel.quoted.mtype
             pack = Config.packname
             author = Config.author
@@ -92,10 +91,10 @@ cmd({
         filename: __filename,
     },
     async(Void, citel, text) => {
-        citel.reply(`*Check your Pm ${tlang().greet}*`);
+        citel.reply(`*Check your Inbox* ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: Main Whatsapp Bot Group*\n*Group Link:* https://chat.whatsapp.com/EGGqct6UAD66iE4K9ywaLY`,
+            caption: `*Group Name: main bot group*\n*Group Link:* https://chat.whatsapp.com/EGGqct6UAD66iE4K9ywaLY`,
         });
 
     }
@@ -121,7 +120,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "unblock",
-            alias: ["අන්බ්ලොක්"],
+            alias: ["අන්බ්ලොක්","අන්ලොක්"],
             desc: "Unblocked to the quoted user.",
             category: "owner",
             react: "✅",
@@ -164,7 +163,7 @@ cmd({
         alias: ["ටැග්"],
         desc: "Tags every person of group.",
         category: "group",
-        react: "📎",
+         react: "🔖",
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
@@ -229,10 +228,9 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "vv",
+            pattern: "retrive",
             desc: "Copies and Forwords viewonce message.",
             category: "group",
-            react: "🤫",
             filename: __filename,
             use: '<reply to a viewonce message.>',
         },
@@ -296,8 +294,10 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "profile",
+            alias: ["ප්‍රොෆයිල්","dp"],
             desc: "Shows profile of user.",
             category: "group",
+            react: "ℹ️",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -566,21 +566,24 @@ cmd({
             pattern: "promote",
             desc: "Provides admin role to replied/quoted user",
             category: "group",
-            react: "👑",
             filename: __filename,
             use: '<quote|reply|number>',
         },
-        async (message, match) => {
-    const user = message.mention[0] || message.reply_message.jid
-    if (!user) return await message.sendReply(Lang.NEED_USER)
-    if (!message.isGroup) return await message.sendReply(Lang.GROUP_COMMAND)
-    var admin = await isAdmin(message);
-    if (!admin) return await message.sendReply(Lang.NOT_ADMIN)
-    await message.client.sendMessage(message.jid, {
-        text: mentionjid(user) + Lang.PROMOTED,
-        mentions: [user]
-    })
-    await message.client.groupParticipantsUpdate(message.jid, [user], "promote")
+        async(Void, citel, text) => {
+            if (!citel.isGroup) return citel.reply(tlang().group);
+            const groupAdmins = await getAdmin(Void, citel)
+            const botNumber = await Void.decodeJid(Void.user.id)
+            const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
+            const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
+
+            if (!isAdmins) return citel.reply(tlang().admin);
+            if (!isBotAdmins) return citel.reply(tlang().botAdmin);
+            try {
+                let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
+                if (!users) return;
+                await Void.groupParticipantsUpdate(citel.chat, [users], "promote");
+            } catch {
+                //		citel.reply(tlang().botAdmin);
 
             }
         }
@@ -588,10 +591,10 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "kick",
-            alias: ["කික්"],
+            alias: ["කික්","රිමෝව්"],
             desc: "Kicks replied/quoted user from group.",
             category: "group",
-            react: "⛔",
+            react: "🚫",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -663,14 +666,14 @@ cmd({
                 let buttons = [{
                         buttonId: `${prefix}group open`,
                         buttonText: {
-                            displayText: "UNMUTE 🔊",
+                            displayText: "🔊 UNMUTE",
                         },
                         type: 1,
                     },
                     {
                         buttonId: `${prefix}group close`,
                         buttonText: {
-                            displayText: "MUTE 🔇",
+                            displayText: "🔇 MUTE",
                         },
                         type: 1,
                     },
@@ -681,7 +684,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "gpp",
+            pattern: "gdp",
             alias: ["ගෘප් පොටෝ"],
             desc: "Sets a profile pic in Group..",
             category: "group",
@@ -794,10 +797,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "demote",
-        alias: ["dmt"],
         desc: "Demotes replied/quoted user from group",
         category: "group",
-        react: "🚫",
         filename: __filename,
         use: '<quote|reply|number>',
     },
@@ -824,7 +825,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
             pattern: "del",
-            alias: [","],
+            alias: [",","ඩිලිට්"],
             desc: "Deletes message of any user",
             category: "group",
             react: "⛔",
@@ -890,7 +891,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "block",
-            alias: ["බ්ලොක්"],
+            alias: ["බ්ලොක්","ලොක්"],
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
