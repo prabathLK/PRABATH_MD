@@ -15,7 +15,7 @@ const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
 var videotime = 6000 // 100 min
-var dlsize = 65 // 65mb
+var dlsize = 55 // 55mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
@@ -500,7 +500,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`**Unable to download this document file.* ⛔\n*The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this document file.* ⛔\n   *The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
@@ -522,7 +522,7 @@ cmd({
             await Void.sendMessage(citel.chat, 
     { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,fileName: `${titleYt}.mp3`})
             } else {
-                citel.reply(`*Unable to download this document file.* ⛔\n*The limit has been exceeded.*❗`);
+                citel.reply(`*Unable to download this document file.* ⛔\n*   The limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
