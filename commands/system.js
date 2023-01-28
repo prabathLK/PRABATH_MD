@@ -98,7 +98,7 @@ cmd({
                         console.log(usr.ban)
                         if (usr.ban !== "true") return citel.reply(`${usr.name} is already unbanned.`)
                         await sck1.updateOne({ id: users }, { ban: "false" })
-                        return citel.reply(`${usr.name} is free as a bird now`)
+                        return citel.reply(`${usr.name} Successful Unbanned ✅`)
                     }
                 })
             } catch {
@@ -257,7 +257,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
-            alias: ["බෝට්"],
+            alias: ["බෝට්","බොට්"],
             category: "general",
             react: "👋",
             filename: __filename,
