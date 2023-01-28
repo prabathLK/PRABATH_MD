@@ -219,8 +219,8 @@ cmd({
                     contextInfo: {
                         externalAdReply: {
                             title: `👨‍💻`,
-                            body: `${Config.ownername}`,
-                            thumbnail: logo01,
+                            body: `${.ownername}`,
+                            thumbnail: log0,
                             mediaType: 2,
                             mediaUrl: ``,
                             sourceUrl: ``
