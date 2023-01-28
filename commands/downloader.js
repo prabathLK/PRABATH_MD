@@ -443,8 +443,6 @@ cmd({
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Audio Upload Fail* ⛔ , *Large Audio*❗`);
-                return;
-            }
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
