@@ -69,7 +69,6 @@ cmd({
         async(Void, citel, text) => {
             if (!text) return citel.reply(`*Example :* ${prefix} ලෙලෙනා`)
             let yts = require("secktor-pack")
-            citel.reply("*Seaching Videos.* 🔎 ");
             let search = await yts(text)
             listSerch = []
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
@@ -105,7 +104,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "song",
-            alias: ["ගීතය"],
+            alias: ["ගීතය","සෝන්ග්"],
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             react: "🎵",
@@ -115,7 +114,6 @@ cmd({
         async(Void, citel, text) => {
             if (!text) return citel.reply(`Use ${command} Back in Black`);
             let yts = require("secktor-pack");
-            citel.reply("*Searching Songs. 🔎*");
             let search = await yts(text);
             let anu = search.videos[0];
             let buttons = [{
@@ -148,7 +146,7 @@ cmd({
 
         ${tlang().title} 
 ╭────────────────❖
-│ ℹ️ *INFORMATION* ⬇️
+│ ℹ️ *INFORMATION* 
 │
 │☍ ⦁ *Title:* ${anu.title}
 │☍ ⦁ *Duration:* ${anu.timestamp}
@@ -185,7 +183,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "img",
+            pattern: "pint",
             desc: "Downloads image from pinterest.",
             category: "downloader",
             filename: __filename,
