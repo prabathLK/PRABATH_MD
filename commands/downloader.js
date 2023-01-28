@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
-const { tlang, ringtone, cmd,fetchJson, sleep, botpic, getBuffer, pinterest, prefix, } = require('../lib')
+const { tlang, ringtone, cmd,fetchJson, sleep, botpic, getBuffer, pinterest, prefix, Config } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
@@ -219,7 +219,7 @@ cmd({
                     contextInfo: {
                         externalAdReply: {
                             title: `👨‍💻`,
-                            body: `${.ownername}`,
+                            body: `${Config.ownername}`,
                             thumbnail: log0,
                             mediaType: 2,
                             mediaUrl: ``,
