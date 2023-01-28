@@ -15,7 +15,7 @@ const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
 var videotime = 6000 // 100 min
-var dlsize = 50 // 50mb
+var dlsize = 65 // 65mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
@@ -59,7 +59,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "video",
-            alias: ["වීඩියෝ"],
+            alias: ["වීඩියෝ","වීඩියො","විඩියො","විඩියෝ"],
             desc: "Downloads video from yt.",
             category: "downloader",
             react: "📽️",
@@ -104,7 +104,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "song",
-            alias: ["ගීතය","සෝන්ග්"],
+            alias: ["ගීතය","සෝන්ග්","සින්දුව","සිංදුව"],
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             react: "🎵",
@@ -237,6 +237,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "mediafire",
+            alias: ["mf","මීඩියාෆයර්"],
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             react: "⬇️",
@@ -368,7 +369,7 @@ cmd({
                 let urlYt = text;
                 if (!urlYt.startsWith("http")) return citel.reply(`*Give Youtube Link*❗`);
                 let infoYt = await ytdl.getInfo(urlYt);
-                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Video Upload Fail* ⛔ , *Large Video*❗`);
+                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this video ⛔\nThe limit has been exceeded.❗`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
 
