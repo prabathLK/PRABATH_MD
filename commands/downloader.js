@@ -220,7 +220,7 @@ cmd({
                         externalAdReply: {
                             title: `👨‍💻`,
                             body: `${Config.ownername}`,
-                            thumbnail: log0,
+                            thumbnail: no,
                             mediaType: 2,
                             mediaUrl: ``,
                             sourceUrl: ``
