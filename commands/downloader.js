@@ -369,7 +369,7 @@ cmd({
                 let urlYt = text;
                 if (!urlYt.startsWith("http")) return citel.reply(`*Give Youtube Link*❗`);
                 let infoYt = await ytdl.getInfo(urlYt);
-                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this video ⛔\nThe limit has been exceeded.❗`);
+                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this video* ⛔\n*The limit has been exceeded.*❗`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
 
@@ -386,7 +386,7 @@ cmd({
                 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
                 if (fileSizeInMegabytes <= dlsize) {
                     let yts = require("secktor-pack");
-                citel.reply("*📽️ Downloading Your Video Please Wait 🔁.*");
+                citel.reply("*📽️ Downloading Your Video Please Wait.*");
                     let search = await yts(text);
                     let buttonMessage = {
                         video: fs.readFileSync(`./${randomName}`),
@@ -409,7 +409,7 @@ cmd({
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
-                    citel.reply(`*File size bigger than 40mb*⛔.`);
+                    citel.reply(`*Unable to download this video* ⛔\n*The limit has been exceeded.*❗`);
                 }
 
                 fs.unlinkSync(`./${randomName}`);
@@ -443,7 +443,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Audio Upload Fail* ⛔ , *Large Audio*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this song.* ⛔\n*The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
@@ -460,12 +460,12 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply("*🎵 Downloading Your Song Please Wait 🔁.*");
+            citel.reply("*🎵 Downloading Your Song Please Wait.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
-                citel.reply(`⛔ *File size bigger than 40mb*.`);
+                citel.reply(`*Unable to download this song.* ⛔\n*The limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
@@ -500,7 +500,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Document Upload Fail* ⛔ , *Large Document*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`**Unable to download this document file.* ⛔\n*The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
@@ -517,12 +517,12 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply("*📁 Downloading Your Document Please Wait 🔁.*");
+            citel.reply("*📁 Downloading Your Document Please Wait.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
     { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,fileName: `${titleYt}.mp3`})
             } else {
-                citel.reply(`❌ File size bigger than 40mb.`);
+                citel.reply(`*Unable to download this document file.* ⛔\n*The limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
