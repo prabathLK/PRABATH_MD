@@ -15,7 +15,7 @@ const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
 var videotime = 6000 // 100 min
-var dlsize = 100 // 100mb
+var dlsize = 50 // 50mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
@@ -499,10 +499,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) {
-                reply(`❌ I can't download that long video!`);
-                return;
-            }
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Document Upload Fail* ⛔ , *Large Document*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
