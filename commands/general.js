@@ -63,7 +63,7 @@ cmd({
 *Deploy Your Own:*-
  SecktorBot.tech/youtube`
         let buttonMessaged = {
-            image: { url: await () },
+            image: { url: await botpic() },
             caption: cap,
             footer: tlang().footer,
             headerType: 4,
@@ -122,7 +122,25 @@ cmd({
 🙋‍♂️ *Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
-         
+        let buttonMessaged = {
+            image: {
+                url: await botpic(),
+            },
+            caption: ter,
+            footer: tlang().footer,
+            buttons: dbut,
+            headerType: 4,
+            contextInfo: {
+                externalAdReply: {
+                    title: tlang().title,
+                    body: `Bot-Status`,
+                    thumbnail: log0,
+                    mediaType: 2,
+                    mediaUrl: ``,
+                    sourceUrl: ``,
+                },
+            },
+        };
         return await Void.sendMessage(citel.chat, buttonMessaged, {
             quoted: citel,
         });
