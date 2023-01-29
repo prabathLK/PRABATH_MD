@@ -63,7 +63,7 @@ cmd({
 *Deploy Your Own:*-
  SecktorBot.tech/youtube`
         let buttonMessaged = {
-            image: { url: await botpic() },
+            image: { url: await () },
             caption: cap,
             footer: tlang().footer,
             headerType: 4,
