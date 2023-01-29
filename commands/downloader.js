@@ -216,7 +216,7 @@ cmd({
                     footer: tlang().footer,
                     buttons: buttons,
                     headerType: 4,                    
-                },
+                }
                 return Void.sendMessage(citel.chat, buttonMessage, {
                     quoted: citel
                 })
