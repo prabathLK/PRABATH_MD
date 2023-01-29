@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
-const { tlang, cmd, prefix, runtime,Config } = require('../lib')
+const { tlang, botpic,cmd, prefix, runtime,Config } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
 //---------------------------------------------------------------------------
@@ -63,7 +63,7 @@ cmd({
 *Deploy Your Own:*-
  SecktorBot.tech/youtube`
         let buttonMessaged = {
-            image: { url: https://i.imgur.com/sKppwmF.jpeg},
+            image: { url: await botpic() },
             caption: cap,
             footer: tlang().footer,
             headerType: 4,
@@ -122,25 +122,7 @@ cmd({
 🙋‍♂️ *Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
-        let buttonMessaged = {
-            image: {
-                url: https://i.imgur.com/sKppwmF.jpeg,
-            },
-            caption: ter,
-            footer: tlang().footer,
-            buttons: dbut,
-            headerType: 4,
-            contextInfo: {
-                externalAdReply: {
-                    title: tlang().title,
-                    body: `Bot-Status`,
-                    thumbnail: log0,
-                    mediaType: 2,
-                    mediaUrl: ``,
-                    sourceUrl: ``,
-                },
-            },
-        };
+         
         return await Void.sendMessage(citel.chat, buttonMessaged, {
             quoted: citel,
         });
