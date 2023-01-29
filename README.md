@@ -1,5 +1,5 @@
   <p align="center">  
-  <a href="https://i.imgur.com/H062oEI.jpeg/">
+  <a href="https://i.imgur.com/LyHic3i.gif/">
     <img alt="secktor docs" height="300" src="https://i.imgur.com/H062oEI.jpeg">
     <h1 align="center"> PRABATH-MD-WA-BOT👨‍💻</h1>
   </a>
@@ -21,7 +21,7 @@
 
 <p align="center"><img src="https://profile-counter.glitch.me/{SamPandey001}/count.svg" alt="SamPandey001 :: Visitor's Count" /></p>
 
-  <p align="center"> 📎 This is a whatsapp bot created based on Secktor MD Whatsapp bot which is a foreign whatsapp user bot.  Some of the commands here have been rearranged and replaced to suit Sri Lanka.  </p
+  <p align="center"> 📎 This is a whatsapp bot created based on Secktor MD Whatsapp bot which is a foreign whatsapp user bot.  Some of the commands here have been rearranged and replaced to suit Sri Lanka.🇱🇰  </p
  
 - Install [External Plugins](https://github.com/prabathLK/PRABATH-MD-Plugins)
 ## Deployment Methods
