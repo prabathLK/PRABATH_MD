@@ -216,15 +216,6 @@ cmd({
                     footer: tlang().footer,
                     buttons: buttons,
                     headerType: 4,
-                    contextInfo: {
-                        externalAdReply: {
-                            title: `👨‍💻`,
-                            body: `${Config.ownername}`,
-                            thumbnail: log0,
-                            mediaType: 2,
-                            mediaUrl: ``,
-                            sourceUrl: ``
-                        }
                     }
                 }
                 return Void.sendMessage(citel.chat, buttonMessage, {
