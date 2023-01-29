@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
-const { tlang, botpic,cmd, prefix, runtime,Config } = require('../lib')
+const { tlang, cmd, prefix, runtime,Config } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
 //---------------------------------------------------------------------------
@@ -63,7 +63,7 @@ cmd({
 *Deploy Your Own:*-
  SecktorBot.tech/youtube`
         let buttonMessaged = {
-            image: { url: await botpic() },
+            image: { url: https://i.imgur.com/sKppwmF.jpeg},
             caption: cap,
             footer: tlang().footer,
             headerType: 4,
@@ -124,7 +124,7 @@ cmd({
 `;
         let buttonMessaged = {
             image: {
-                url: await botpic(),
+                url: https://i.imgur.com/sKppwmF.jpeg,
             },
             caption: ter,
             footer: tlang().footer,
