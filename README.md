@@ -1,6 +1,6 @@
   <p align="center">  
   <a href="https://i.imgur.com/LyHic3i.gif/">
-    <img alt="secktor docs" height="300" src="https://i.imgur.com/H062oEI.jpeg">
+    <img alt="secktor docs" height="300" src="https://i.imgur.com/LyHic3i.gif/">
     <h1 align="center"> PRABATH-MD-WA-BOT👨‍💻</h1>
   </a>
 </p>
