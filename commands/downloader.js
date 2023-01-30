@@ -455,6 +455,7 @@ cmd({
                 let search = await yts(text);
             citel.react("⬆️");
             citel.reply("*I Am Uploading Your Song.*");
+            citel.react("✅");
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
