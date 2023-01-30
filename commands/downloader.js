@@ -413,7 +413,7 @@ cmd({
         pattern: "ytmp3",
         desc: "Downloads audio by yt link.",
         category: "downloader",
-        react: "🎵",
+        react: "⬇️",
         use: '<yt video url>',
     },
     async(Void, citel, text) => {
@@ -450,6 +450,7 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
+            citel.react("⬆️");
             citel.reply("*I Am Downloading Your Song.*, `{citel.react("⬆️")}`");
                 let search = await yts(text);
             citel.reply("*I Am Uploading Your Song.*");
