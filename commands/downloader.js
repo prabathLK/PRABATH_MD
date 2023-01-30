@@ -383,7 +383,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️ *File Size* : ${fileSizeInMegabytes} MB`,
+                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️ *File Size* : ${fileSizeInMegabytes} MB\n *REQUEST BY:* ${citel.pushName}`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -399,7 +399,7 @@ cmd({
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
-                    citel.reply(`*Unable to download this video* ⛔\n*The limit has been exceeded.*❗`);
+                    citel.reply(`*The limit has been exceeded.*❗`);
                 }
 
                 fs.unlinkSync(`./${randomName}`);
@@ -455,7 +455,7 @@ cmd({
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
-                citel.reply(`*Unable to download this song.* ⛔\n*The limit has been exceeded.*❗`);
+                citel.reply(`*The limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
@@ -512,7 +512,7 @@ cmd({
             await Void.sendMessage(citel.chat, 
     { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,fileName: `${titleYt}.mp3`})
             } else {
-                citel.reply(`*Unable to download this document file.* ⛔\n*   The limit has been exceeded.*❗`);
+                citel.reply(`*The limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
