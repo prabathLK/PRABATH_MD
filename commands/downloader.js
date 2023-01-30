@@ -1,4 +1,4 @@
-/**
+╫/**
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
@@ -453,8 +453,8 @@ cmd({
             citel.reply("*I Am Downloading Your Song.*");
                 let search = await yts(text);
             citel.reply("*I Am Uploading Your Song.*");
-            citel.react("✅");
             await Void.sendMessage(citel.chat, 
+            citel.react("✅");
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
                 citel.reply(`*The limit has been exceeded.*❗`);
