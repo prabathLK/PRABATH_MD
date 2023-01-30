@@ -510,7 +510,7 @@ cmd({
             citel.reply("*📁 Downloading Your Document Please Wait.*");
                 let search = await yts(text);
             await Void.sendMessage(citel.chat, 
-    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,fileName: `${titleYt}.mp3`})
+    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,FileName: `${titleYt}.mp3`})
             } else {
                 citel.reply(`*The limit has been exceeded.*❗`);
             }
