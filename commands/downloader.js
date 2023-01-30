@@ -359,7 +359,7 @@ cmd({
                 let urlYt = text;
                 if (!urlYt.startsWith("http")) return citel.reply(`*Give Youtube Link*❗`);
                 let infoYt = await ytdl.getInfo(urlYt);
-                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this video* ⛔\n*The limit has been exceeded.*❗`);
+                if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
 
@@ -433,7 +433,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this song.* ⛔\n*The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
@@ -490,7 +490,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*Unable to download this document file.* ⛔\n   *The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
