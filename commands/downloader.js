@@ -112,7 +112,7 @@ cmd({
             use: '<faded-Alan walker.>',
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply(`Use ${command} Back in Black`);
+            if (!text) return citel.reply(`*Please Give Me A Youtube Link*❗ ${prefix} `)
             let yts = require("secktor-pack");
             let search = await yts(text);
             let anu = search.videos[0];
