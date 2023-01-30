@@ -13,7 +13,7 @@ const os = require('os')
 const moment = require("moment-timezone")
 const fs = require("fs")
 const Config = require('../config')
-let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
+let { fancytext, tlang, typewriter, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
 const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
@@ -66,7 +66,7 @@ Secktor.cmd({
                 for (const category in cmds) {
                     str += `
 ┃  ╭──────────────❖
-┃  │  ${tiny(category)} 
+┃  │  ${typewriter(category)} 
 ┃  ╰┬─────────────❖
 ┃  ┌┤\n`
                     for (const plugins of cmds[category]) {
