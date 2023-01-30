@@ -343,7 +343,7 @@ cmd({
             pattern: "ytmp4",
             desc: "Downloads video from youtube.",
             category: "downloader",
-            react: "📽️",
+            react: "⬇️",
             filename: __filename,
             use: '<yt video url>',
         },
@@ -376,8 +376,9 @@ cmd({
                 let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
                 if (fileSizeInMegabytes <= dlsize) {
                     let yts = require("secktor-pack");
-                citel.reply("*📽️ Downloading Your Video Please Wait.*");
+                citel.react("⬆️");
                     let search = await yts(text);
+                citel.react("✅");
                     let buttonMessage = {
                         video: fs.readFileSync(`./${randomName}`),
                         jpegThumbnail: log0,
@@ -414,7 +415,6 @@ cmd({
         desc: "Downloads audio by yt link.",
         category: "downloader",
         react: "⬇️",
-        react: "✅",
         use: '<yt video url>',
     },
     async(Void, citel, text) => {
@@ -451,9 +451,9 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply("*I Am Downloading Your Song.*");
+            citel.react("⬆️");
                 let search = await yts(text);
-            citel.reply("*I Am Uploading Your Song.*");
+            citel.react("✅");
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
@@ -470,7 +470,7 @@ cmd({
   //---------------------------------------------------------------------------
 cmd({
         pattern: "ytdoc",
-        react: "📁",
+        react: "⬇️",
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
         use: '<ytdoc video url>',
@@ -509,8 +509,9 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply("*📁 Downloading Your Document Please Wait.*");
+            citel.react("⬆️");
                 let search = await yts(text);
+            citel.react("✅");
             await Void.sendMessage(citel.chat, 
     { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,FileName: `${titleYt}.mp3`})
             } else {
