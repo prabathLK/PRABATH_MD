@@ -451,7 +451,7 @@ cmd({
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
             citel.react("⬆️");
-            citel.reply("*I Am Downloading Your Song.*, `{citel.react("⬆️")}`");
+            citel.reply("*I Am Downloading Your Song.*");
                 let search = await yts(text);
             citel.reply("*I Am Uploading Your Song.*");
             await Void.sendMessage(citel.chat, 
