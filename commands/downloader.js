@@ -492,10 +492,7 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) {
-                reply(`❌ I can't download that long video!`);
-                return;
-            }
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
@@ -512,29 +509,20 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
+                citel.react("⬆️");
                 let search = await yts(text);
+                citel.react("✅");
                 let buttonMessage = {
                     document: fs.readFileSync(`./${randomName}`),
                     mimetype: 'audio/mpeg',
                     fileName: titleYt + ".mp3",
                     headerType: 4,
-                    contextInfo: {
-                        externalAdReply: {
-                            title: titleYt,
-                            body: citel.pushName,
-                            renderLargerThumbnail: true,
-                            thumbnailUrl: search.all[0].thumbnail,
-                            mediaUrl: text,
-                            mediaType: 1,
-                            thumbnail: await getBuffer(search.all[0].thumbnail),
-                            sourceUrl: text,
-                        },
-                    },
-                }
+                    }
+                    }
                 await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 return fs.unlinkSync(`./${randomName}`);
             } else {
-                citel.reply(`❌ File size bigger than 100mb.`);
+                citel.reply(`*The limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
