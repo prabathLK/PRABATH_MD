@@ -383,7 +383,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️ *File Size* : ${fileSizeInMegabytes} MB`/n *REQUEST BY:* ${citel.pushName},
+                        caption: ` ℹ️ *Title* : ${titleYt}\n ⬇️ *File Size* : ${fileSizeInMegabytes} MB`/n *REQUEST BY:* ${citel.pushName}`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
