@@ -513,7 +513,7 @@ cmd({
                 let search = await yts(text);
             citel.react("✅");
             await Void.sendMessage(citel.chat, 
-    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,filename: `${titleYt}.mp3}`)
+    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel,fileName: `${titleYt}.mp3}`)
             } else {
                 citel.reply(`*The limit has been exceeded.*❗`);
             }
