@@ -470,9 +470,9 @@ cmd({
   //---------------------------------------------------------------------------
 cmd({
         pattern: "ytdoc",
-        react: "⬇️",
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
+        react: "⬇️",
         use: '<ytdoc video url>',
     },
     async(Void, citel, text) => {
@@ -492,7 +492,10 @@ cmd({
             }
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) {
+                reply(`❌ I can't download that long video!`);
+                return;
+            }
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(urlYt, {
@@ -509,13 +512,29 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.react("⬆️");
                 let search = await yts(text);
-            citel.react("✅");
-            await Void.sendMessage(citel.chat, 
-    { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{ quoted: citel, fileName: ${titleYT}.mp3}`)
+                let buttonMessage = {
+                    document: fs.readFileSync(`./${randomName}`),
+                    mimetype: 'audio/mpeg',
+                    fileName: titleYt + ".mp3",
+                    headerType: 4,
+                    contextInfo: {
+                        externalAdReply: {
+                            title: titleYt,
+                            body: citel.pushName,
+                            renderLargerThumbnail: true,
+                            thumbnailUrl: search.all[0].thumbnail,
+                            mediaUrl: text,
+                            mediaType: 1,
+                            thumbnail: await getBuffer(search.all[0].thumbnail),
+                            sourceUrl: text,
+                        },
+                    },
+                }
+                await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
+                return fs.unlinkSync(`./${randomName}`);
             } else {
-                citel.reply(`*The limit has been exceeded.*❗`);
+                citel.reply(`❌ File size bigger than 100mb.`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
