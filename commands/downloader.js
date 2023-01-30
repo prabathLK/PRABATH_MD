@@ -450,14 +450,16 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
+            citel.react("⬇️");
             citel.reply("*I Am Downloading Your Song.*");
                 let search = await yts(text);
             citel.reply("*I Am Uploading Your Song.*");
+            citel.react("⬆️");
+            citel.react("✅");
             await Void.sendMessage(citel.chat, 
     { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
             } else {
                 citel.reply(`*The limit has been exceeded.*❗`);
-                citel.react("❗");
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
