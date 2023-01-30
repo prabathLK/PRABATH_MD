@@ -154,8 +154,7 @@ cmd({
 │☍ ⦁ *Uploaded:* ${anu.ago}
 │☍ ⦁ *Author:* ${anu.author.name}
 ╰────────────────❖
-⦿ *𝗨𝗥𝗟* : ${anu.url}
- *REQUEST BY:* ${citel.pushName}
+⦿ *REQUEST BY:* ${citel.pushName}
 `,
                 footer: tlang().footer,
                 buttons: buttons,
