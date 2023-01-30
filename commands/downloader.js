@@ -67,7 +67,7 @@ cmd({
             use: '<faded-Alan Walker>',
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply(`*Example :* ${prefix} ලෙලෙනා`)
+            if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
@@ -112,7 +112,7 @@ cmd({
             use: '<faded-Alan walker.>',
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply(`*Please Give Me A Song Name *❗ `)
+            if (!text) return citel.reply(`*Please Give Me A Song Name*❗ `)
             let yts = require("secktor-pack");
             let search = await yts(text);
             let anu = search.videos[0];
