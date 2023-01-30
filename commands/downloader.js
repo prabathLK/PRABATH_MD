@@ -304,7 +304,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "yts",
-            alias: ["සොයන්න"],
+            alias: ["සොයන්න","yt"],
             desc: "Gives descriptive info of query from youtube..",
             category: "downloader",
             react: "🔎",
