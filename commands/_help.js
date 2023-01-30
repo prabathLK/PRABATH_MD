@@ -66,13 +66,13 @@ Secktor.cmd({
                 for (const category in cmds) {
                     str += `
 ┃  ╭──────────────❖
-┃  │  ${(category)} 
+┃  │  ${typewriter(category)} 
 ┃  ╰┬─────────────❖
 ┃  ┌┤\n`
                     for (const plugins of cmds[category]) {
-                        str += `┃  │ ⦁ ${plugins}\n`
+                        str += `┋  │ ⦁ ${plugins}\n`
                     }
-                    str += `┃  ╰─────────────❖`
+                    str += `┋  ╰─────────────❖`
                 }
 
                 str += `\n╰────────────❖\n`
