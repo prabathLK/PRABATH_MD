@@ -76,7 +76,7 @@ cmd({
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp4 ${i.url}`,
-                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
+                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp} / ${fileSizeInMegabytes} MB`,
                 })
             }
             const sections = [
