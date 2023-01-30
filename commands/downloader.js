@@ -515,7 +515,7 @@ cmd({
             await Void.sendMessage(citel.chat, 
     { document: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mpeg' },{quoted: citel},{fileName: `${title}.mp3})
             } else {
-                citel.reply(` *The limit has been exceeded.*❗`);
+                citel.reply(` *limit has been exceeded.*❗`);
             }
             fs.unlinkSync(`./${randomName}`);
         } catch (e) {
