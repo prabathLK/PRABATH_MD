@@ -20,7 +20,7 @@ const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "menu",
-            alias: ["මෙනු"],
+            alias: ["මෙනු","මෙනූ"],
             desc: "Help list",
             category: "general",
             react: "🔖",
@@ -31,7 +31,7 @@ Secktor.cmd({
             if (text.split(" ")[0]) {
                 let arr = [];
                 const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-                if (!cmd) return await citel.reply("*❌No Such commands.*");
+                if (!cmd) return await citel.reply("*⛔ No Such commands.*");
                 else arr.push(`*🍁Command:* ${cmd.pattern}`);
                 if (cmd.category) arr.push(`*🧩Category:* ${cmd.category}`);
                 if (cmd.alias) arr.push(`*🧩Alias:* ${cmd.alias}`);
@@ -48,9 +48,9 @@ Secktor.cmd({
                 })
                 const time = moment(moment())
                     .format('HH:mm:ss')
-                moment.tz.setDefault('Asia/KOLKATA')
+                moment.tz.setDefault('Asia/Colombo')
                     .locale('id')
-                const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const date = moment.tz('Asia/Colombo').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
                 let str = `🔖 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 🔖\n`
                 str +=
