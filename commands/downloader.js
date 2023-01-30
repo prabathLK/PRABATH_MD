@@ -518,7 +518,6 @@ cmd({
                     fileName: titleYt + ".mp3",
                     headerType: 4,
                     }
-                    }
                 await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 return fs.unlinkSync(`./${randomName}`);
             } else {
