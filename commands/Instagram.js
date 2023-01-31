@@ -1,4 +1,4 @@
-const { Insta,cmd } = require('../lib')
+const { Insta,cmd } = require('../scraper')
 cmd({
         pattern: "fbdl",
         react: "⬇️",
