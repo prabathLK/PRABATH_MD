@@ -1,23 +1,15 @@
-const axios = require('axios')
+const { Insta,cmd } = require('../lib')
 cmd({
-        pattern: "fbdl",
-        react: "ℹ️",
-        desc: "download facebook post.",
+        pattern: "insta",
+        react: "🥲",
+        desc: "download instagram post.",
         category: "downloader",
         filename: __filename
-    },    
-    async function get_fbdl() {
-    let url = 'https://www.getfvid.com/=(text)'
-    try {
-        const response = await axios.get(url)
-        console.log(response.data)
-        return response.data
-    } catch (error) {
-        console.log(error)
-        return false
-    }
+    },
+    async(Void, citel,text,{isCreator}) => {
+if(!text) return citel.reply('Need post url.')
+let response = await Insta(text)
+for (let i=0;i<response.length;i++) {
+await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagram.*`, citel)
 }
-
-get_fbdl()
-
-module.exports = get_fbdl
+    });
