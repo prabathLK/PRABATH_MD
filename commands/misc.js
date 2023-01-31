@@ -17,7 +17,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
   //---------------------------------------------------------------------------
  cmd({
     pattern: "setwelcome",
-    alias: ["සෙට් වෙල්කම්"],
+    alias: ["සෙට් වෙල්කම්","applywelcome"],
     desc: "sets welcome message in specific group.",
     category: "misc",
     react: "✅",
@@ -30,7 +30,7 @@ async(Void, citel, text,{ isCreator }) => {
                 return citel.reply('Welcome added added for this group.')
             } else {
                 await await sck.updateOne({ id: citel.chat }, { welcome:text ,events:'true'})
-                return citel.reply('Welcome updated successfully.')
+                return citel.reply('*Welcome updated successfully.*✅')
                 
             }      
 }
@@ -50,7 +50,7 @@ async(Void, citel, text,{ isCreator }) => {
                 return citel.reply('Goodbye added for this group.');
             } else {
                 await await sck.updateOne({ id: citel.chat }, { goodbye:text,events:'true' })
-                return citel.reply('Goodbye updated successfully.');     
+                return citel.reply('*Goodbye updated successfully.*✅');     
             }      
 }
 )
@@ -160,7 +160,7 @@ async(Void, citel, text,{ isCreator }) => {
          },
          async(Void, citel, text) => {
              const upt = runtime(process.uptime())
-             citel.reply(`Uptime of ${tlang().title}: ${upt}`)
+             citel.reply(`BOT-UPTIME OF ${tlang().title}: ${upt}`)
          }
      )
      //---------------------------------------------------------------------------
@@ -277,16 +277,7 @@ async(Void, citel, text,{ isCreator }) => {
                  video: {
                      url: text.split(" ")[0],
                  },
-                 caption: "*HERE WE GO*",
-                 contextInfo: {
-                     externalAdReply: {
-                         title: tlang().title,
-                         body: `${citel.pushName}`,
-                         thumbnail: log0,
-                         mediaType: 2,
-                         mediaUrl: ``,
-                         sourceUrl: ``,
-                     },
+                 caption: "*DOWNLOADED✅*",
                  },
              }, {
                  quoted: citel,
