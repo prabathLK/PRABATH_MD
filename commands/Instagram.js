@@ -12,7 +12,7 @@ for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagram.*`, citel)
 }
     });
-Module({
+cmd({
     pattern: "fb",
     desc: "Facebook video downloader",
     category: "downloader",
