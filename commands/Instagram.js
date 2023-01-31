@@ -6,8 +6,7 @@ cmd({
         category: "downloader",
         filename: __filename
     },    
-
-async function get_fbdl() {
+    async function get_fbdl() {
     let url = 'https://www.getfvid.com/=(text)'
     try {
         const response = await axios.get(url)
