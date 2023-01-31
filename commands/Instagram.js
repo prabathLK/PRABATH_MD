@@ -1,6 +1,6 @@
-const { Insta,cmd } = require('../scraper')
+const { Insta,cmd } = require('../lib')
 cmd({
-        pattern: "fbdl",
+        pattern: "Insta",
         react: "⬇️",
         desc: "download instagram post.",
         category: "downloader",
