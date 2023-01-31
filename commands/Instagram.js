@@ -20,7 +20,7 @@ cmd({
     category: "downloader",
     filename: __filename
  }, 
- async (Void, query) => {
+ async (!msg, query) => {
      var q = !msg.reply_message.message ? query[1] : msg.reply_message.message
      let _q = !msg.reply_message.message ? query[1] : msg.reply_message.message
      if (/\bhttps?:\/\/\S+/gi.test(q)) q = q.match(/\bhttps?:\/\/\S+/gi)[0]
