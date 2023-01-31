@@ -1,4 +1,4 @@
-const { fbdl,cmd } = require('../lib')
+const axios = require('axios')
 cmd({
         pattern: "fbdl",
         react: "ℹ️",
@@ -7,7 +7,7 @@ cmd({
         filename: __filename
     },    
 
-async function get_FACEBOOK() {
+async function get_fbdl() {
     let url = 'https://www.getfvid.com/=(text)'
     try {
         const response = await axios.get(url)
@@ -19,6 +19,6 @@ async function get_FACEBOOK() {
     }
 }
 
-get_FACEBOOK()
+get_fbdl()
 
-module.exports = get_FACEBOOK
+module.exports = get_fbdl
