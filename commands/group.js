@@ -28,8 +28,9 @@ cmd({
             if (!text.split(" ")[0] && !text.split(" ")[0].includes("whatsapp.com"))
                 citel.reply("Link Invalid, Please Send a valid whatsapp Group Link!");
             let result = text.split(" ")[0].split("https://chat.whatsapp.com/")[1];
+                citel.reply("*Joining Whatsapp Group 🔄.*");
             await Void.groupAcceptInvite(result)
-                .then((res) => citel.reply("✅ Joined Group"))
+                .then((res) => citel.reply("✅ Joined Whatsapp Group"))
                 .catch((err) => citel.reply("Error in Joining Group❗"));
 
         }
@@ -37,7 +38,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "sticker",
-            alias: ["ස්ටිකර්"],
+            alias: ["ස්ටිකර්","ස්ටිකර"],
             desc: "Makes sticker of replied image/video.",
             category: "group",
             react: "🔄",
@@ -610,6 +611,7 @@ cmd({
             try {
                 let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
                 if (!users) return;
+                citel.reply("*Successful Kicked*✅*");
                 await Void.groupParticipantsUpdate(citel.chat, [users], "remove");
             } catch {
                 //		citel.reply(tlang().botAdmin);
