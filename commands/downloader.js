@@ -31,6 +31,7 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tts",
+            react: "🔊",
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
@@ -39,8 +40,9 @@ cmd({
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
             let texttts = text
+            citel.react("📢");
             const ttsurl = googleTTS.getAudioUrl(texttts, {
-                lang: "en",
+                lang: "si",
                 slow: false,
                 host: "https://translate.google.com",
             });
@@ -154,9 +156,9 @@ cmd({
 │☍ ⦁ *Uploaded:* ${anu.ago}
 │☍ ⦁ *Author:* ${anu.author.name}
 ╰────────────────❖
-⦿ *URL:* ${anu.url}
+⦿. *URL:* ${anu.url}
 
-⦿ *REQUEST BY:* ${citel.pushName}
+⦿. *REQUEST BY:* ${citel.pushName}
 `,
                 footer: tlang().footer,
                 buttons: buttons,
@@ -229,7 +231,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "mediafire",
-            alias: ["mf","මීඩියාෆයර්"],
+            alias: ["mf","මීඩියාෆයර්","mfire"],
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             react: "⬇️",
