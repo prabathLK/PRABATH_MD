@@ -102,11 +102,11 @@ cmd({
         ];
         const uptime = process.uptime();
         timestampe = speed();
-        citel.reply("*Checking system status.*");
+        citel.reply("*Checking System Status.*");
         latensie = speed() - timestampe;
         let ter = `
  📎*${tlang().title}*📎
-🌍 *Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+🌍 *Description:* This bot system is designed to make things easier 🇱🇰
 📎 *Speed:* ${latensie.toFixed(4)} ms
 ⏱️ *Uptime:* ${runtime(process.uptime())}
 📟 *Version:* 1.0.0
