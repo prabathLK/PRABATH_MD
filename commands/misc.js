@@ -276,9 +276,9 @@ async(Void, citel, text,{ isCreator }) => {
              Void.sendMessage(citel.chat, {
                  video: {
                      url: text.split(" ")[0],
-                 }
-                 caption: "*DOWNLOADED✅*",
                  },
+                 caption: "*DOWNLOADED✅*",
+                 }
              }, {
                  quoted: citel,
              });
