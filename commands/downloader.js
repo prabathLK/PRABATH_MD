@@ -104,7 +104,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "song",
-            alias: ["ගීතය","සෝන්ග්","සින්දුව","සිංදුව"],
+            alias: ["ගීතය","සෝන්ග්","සින්දුව","සිංදුව","play"],
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             react: "🎵",
@@ -154,6 +154,8 @@ cmd({
 │☍ ⦁ *Uploaded:* ${anu.ago}
 │☍ ⦁ *Author:* ${anu.author.name}
 ╰────────────────❖
+⦿ *URL:* ${anu.url}
+
 ⦿ *REQUEST BY:* ${citel.pushName}
 `,
                 footer: tlang().footer,
@@ -487,7 +489,7 @@ cmd({
         try {
             let urlYt = text;
             if (!urlYt.startsWith("http")) {
-                citel.reply(`❌ Give youtube link!`);
+                citel.reply(`*Give Youtube Link!*❗`);
                 return;
             }
             let infoYt = await ytdl.getInfo(urlYt);
