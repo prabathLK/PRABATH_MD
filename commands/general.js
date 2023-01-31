@@ -102,6 +102,7 @@ cmd({
         ];
         const uptime = process.uptime();
         timestampe = speed();
+        citel.reply("*Checking system status.*");
         latensie = speed() - timestampe;
         let ter = `
  📎*${tlang().title}*📎
