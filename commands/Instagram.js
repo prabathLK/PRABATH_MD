@@ -1,6 +1,7 @@
 const { Insta,cmd } = require('../lib')
 cmd({
         pattern: "insta",
+        react: "🇱🇰",
         desc: "download instagram post.",
         category: "downloader",
         filename: __filename
@@ -14,10 +15,12 @@ await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagra
     });
 cmd({
     pattern: "fb",
+    react: "🌝",
     desc: "Facebook video downloader",
     category: "downloader",
     filename: __filename
-}, (async (msg, query) => {
+ }, 
+ async (Void, query) => {
      var q = !msg.reply_message.message ? query[1] : msg.reply_message.message
      let _q = !msg.reply_message.message ? query[1] : msg.reply_message.message
      if (/\bhttps?:\/\/\S+/gi.test(q)) q = q.match(/\bhttps?:\/\/\S+/gi)[0]
