@@ -412,6 +412,7 @@ cmd({
             pattern: "rank",
             desc: "Sends rank card of user.",
             category: "group",
+            react: "👑",
             filename: __filename,
         },
         async(Void, citel, text) => {
@@ -611,7 +612,7 @@ cmd({
             try {
                 let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
                 if (!users) return;
-                citel.reply("*Successful Kicked*✅*");
+                citel.reply("*Successful Kicked.*✅");
                 await Void.groupParticipantsUpdate(citel.chat, [users], "remove");
             } catch {
                 //		citel.reply(tlang().botAdmin);
