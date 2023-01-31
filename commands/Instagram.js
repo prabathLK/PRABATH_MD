@@ -8,7 +8,7 @@ cmd({
     },
     async(Void, citel,text,{isCreator}) => {
 if(!text) return citel.reply('Need facebook url.')
-let response = await fbdl(text)
+let response = await fb(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagram.*`, citel)
 }
