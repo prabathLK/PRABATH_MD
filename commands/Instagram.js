@@ -3,7 +3,7 @@ cmd({
         pattern: "hi",
         react: "🙋‍♂️",
         desc: "download instagram post.",
-        category: "downloader",
+        category: "other",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
