@@ -70,7 +70,7 @@ Secktor.cmd({
      ╰─────────────────╯
        \n`
                     for (const plugins of cmds[category]) {
-                        str += ` ⦁ ${plugins}\n`
+                        str += `     ⦁ ${plugins}\n`
                     }
                     str += `     `
                 }
