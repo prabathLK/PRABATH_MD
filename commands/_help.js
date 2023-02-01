@@ -88,12 +88,6 @@ Secktor.cmd({
                         displayText: 'TEST PING'
                     },
                     type: 1
-                }, {
-                    buttonId: `${prefix}list`,
-                    buttonText: {
-                        displayText: 'LIST MENU'
-                    },
-                    type: 1
                 }]
                 let buttonMessaged = {
                     image: { url: await botpic() },
