@@ -67,15 +67,15 @@ Secktor.cmd({
                     str += `
      ╭─────────────────╮
      ☰  ${tiny(category)} ☰
-     ╰┬────────────────╯
-     ┌┤\n`
+     ╰─────────────────╯
+       \n`
                     for (const plugins of cmds[category]) {
-                        str += `  │ ⦁ ${plugins}\n`
+                        str += ` ⦁ ${plugins}\n`
                     }
-                    str += `     ╰━━━━━━━━━━━━━━━━`
+                    str += `     `
                 }
 
-                str += `\n   ╰━━━━━━━━━━━━━━━\n`
+                str += `\n  \n`
                 let generatebutton = [{
                     buttonId: `${prefix}owner`,
                     buttonText: {
