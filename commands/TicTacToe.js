@@ -14,7 +14,7 @@
  const ty = eco.connect(mongodb);
 cmd(
   {
-    pattern: "delttt",
+    pattern: "delxo",
     desc: "deletes TicTacToe running session.",
     filename: __filename,
     category: "game",
@@ -43,10 +43,11 @@ cmd(
   
 cmd(
   {
-    pattern: "ttt",
+    pattern: "xo",
     desc: "Play TicTacToe",
     filename: __filename,
     category: "game",
+    react: "❌",
   },
   async (Void,citel,text) => {
     if (!citel.isGroup) return citel.reply(tlang().group);
@@ -86,8 +87,8 @@ cmd(
           }[v];
         });
         let str = `
-Current turn: @${room.game.currentTurn.split("@")[0]}
-Room ID: ${room.id}
+*Current turn:* @${room.game.currentTurn.split("@")[0]}
+*Room ID:* ${room.id}
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
@@ -151,10 +152,10 @@ cmd(
       ) {
         citel.reply(
           {
-            "-3": "The game is over.",
-            "-2": "Invalid",
-            "-1": "_Invalid Position_",
-            0: "_Invalid Position_",
+            "-3": "*The game is over.*",
+            "-2": "*Invalid*",
+            "-1": "*Invalid Position*",
+            0: "*Invalid Position*",
           }[ok]
         );
         return !0;
@@ -188,7 +189,7 @@ ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
 ${
   isWin
-    ? `@${winner.split("@")[0]} Won ! and got 2000💎 in wallet🤑`
+    ? `@${winner.split("@")[0]} Won ! and got 2000💎 in wallet🙋‍♂️`
     : isTie
     ? `Game Tied,well done to both of you players.`
     : `Current Turn ${["❌", "⭕"][1 * room.game._currentTurn]} @${
