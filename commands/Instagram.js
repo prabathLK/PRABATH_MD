@@ -20,7 +20,7 @@ cmd({
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('👨‍💻 *𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧* 👨‍💻
+if(!text) return citel.reply('👨‍💻 *DOWNLOAD COMMAND LIST* 👨‍💻
 
 
 
