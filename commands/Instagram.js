@@ -20,50 +20,8 @@ cmd({
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('👨‍💻 *DOWNLOAD COMMAND LIST* 👨‍💻
-
-
-
-
-
-📟 *Command:-* .song
-ℹ️ *Description:-* Song Download From Youtube
-🔥 *Help:-* .song ලෙලෙනා
-
-
-📟 *Command:-* .video
-ℹ️ *Description:-* Video Download From Youtube
-🔥 *Help:-* .video නේනා
-
-
-📟 *Command:-* .tgs
-ℹ️ *Description:-* Download Telegram Stickers
-🔥 *help:-* .tga Enter Telegram Sticker Url 
-
-
-📟 *Command:-* .ytmp4
-ℹ️ *Description:-* Download Video Youtube Link
-🔥 *Help:-* .ytmp4 Enter Youtube Video Url
-
-
-📟 *Command:-* .ytmp3
-ℹ️ *Description:-* Download Songs Youtube Link
-🔥 *Help:-* .ytmp3 Enter Youtube Video Url
-
-
-📟 *Command:-* .ytdoc
-ℹ️ *Description:-* Song Download Form Youtube (Document)
-🔥 *Help:-* ytdoc Enter Youtube Video Url
-
-
-📟 *Command:-* .mediafire
-ℹ️ *Description:-* Download Content From Mediafire Link
-🔥 *Help:-* .mediafire Enter Mediafire Url
-
-
-📟 *Command:-* .yts
-ℹ️ *Description:-* Search Youtube Videos
-🔥 *Help:-* .yts ලෙලෙනා')
+if(!text) return citel.reply('👨‍💻 *DOWNLOAD COMMAND LIST* 👨‍💻\n \n \n \n 📟 *Command:-* .song\n ℹ️ *Description:-* Song Download From Youtube\n 
+🔥 *Help:-* .song ලෙලෙනා\n \n 📟 *Command:-* .video\n ℹ️ *Description:-* Video Download From Youtube\n 🔥 *Help:-* .video නේනා')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
