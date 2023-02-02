@@ -20,8 +20,7 @@ cmd({
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('┏━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n┃  👨‍💻 *𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧* 👨‍💻\n
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+if(!text) return citel.reply('👀')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
