@@ -1,7 +1,6 @@
 const { fbdl,cmd } = require('../lib')
 cmd({
         pattern: "item1",
-        react: "✅",
         desc: "download instagram post.",
         category: "other",
         filename: __filename
@@ -16,7 +15,6 @@ await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagra
 
 cmd({
         pattern: "hi",
-        react: "🙋‍♂️",
         desc: "download instagram post.",
         category: "Auto Reply",
         filename: __filename
