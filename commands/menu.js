@@ -1,12 +1,12 @@
 const { fbdl,cmd } = require('../lib')
 cmd({
-        pattern: "item1",
+        pattern: "logo",
         desc: "download instagram post.",
         category: "other",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('*Item name:* Test1\n *Details*: Brand new and easy use\n *Price:* 3500')
+if(!text) return citel.reply('    👨‍💻 *LOGO COMMAND LIST* 👨‍💻\n\n\n\n*Type in front of the word you want to create*\n\n\nlogo1\nLogo2\nLogo3\n\Logo4\nLogo5\nLogo6\nLogo7\nLogo8\nLogo9\nLogo10\nLogo11\nLogo12\nLogo13\nLogo14\nLogo15\nLogo16\Logo17\nLogo18\nLogo19\nLogo20\nLogo21\nLogo22\nLogo23\nLogo24\nLogo25\nLogo26\nLogo27\nLogo28\nLogo29\nLogo30')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
