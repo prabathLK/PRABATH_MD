@@ -6,7 +6,7 @@ cmd({
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('    👨‍💻 *LOGO COMMAND LIST* 👨‍💻\n\n\n\n*Type in front of the word you want to create*\n\n\nlogo1\nLogo2\nLogo3\n\Logo4\nLogo5\nLogo6\nLogo7\nLogo8\nLogo9\nLogo10\nLogo11\nLogo12\nLogo13\nLogo14\nLogo15\nLogo16\Logo17\nLogo18\nLogo19\nLogo20\nLogo21\nLogo22\nLogo23\nLogo24\nLogo25\nLogo26\nLogo27\nLogo28\nLogo29\nLogo30')
+if(!text) return citel.reply('    👨‍💻 *LOGO COMMAND LIST* 👨‍💻\n\n\n\n*Type in front of the word you want to create*\n\n\n⦿.Logo1\n\n⦿.Logo2\\n⦿.nLogo3\n\n⦿.Logo4\n\n⦿.Logo5\n\n⦿.\n⦿.Logo6\n\n⦿.Logo7\n\n⦿.Logo8\n\n⦿.Logo9\n\n⦿.Logo10\n\n⦿.Logo11\n\n⦿.Logo12\n\n⦿.Logo13\n\n⦿.Logo14\n\n⦿.Logo15\n\n⦿.Logo16\n\n⦿.Logo17\n\n⦿.Logo18\n\n⦿.Logo19\n\n⦿.Logo20\n\n⦿.Logo21\n\n⦿.Logo22\n\n⦿.Logo23\n\n⦿.Logo24\n\n⦿.Logo25\n\n⦿.Logo26\n\n⦿.Logo27\n\n⦿.Logo28\n\n⦿.Logo29\n\n⦿.Logo30')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
