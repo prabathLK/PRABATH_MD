@@ -56,7 +56,7 @@ await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagra
     });
 
 cmd({
-        pattern: "genaralcmd",
+        pattern: "gamecmd",
         desc: "download instagram post.",
         category: "Auto Reply",
         filename: __filename
