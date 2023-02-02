@@ -17,8 +17,8 @@ const maker = require('mumaker')
     //---------------------------------------------------------------------------
 cmd({ pattern: "test", alias: ["logo1test"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
         if (!text) return citel.reply('_Need text._')
-        let anu = await maker.textpro('https://fdown.net/download.php', text)
-        Void.sendMessage(citel.chat, { image: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
+        let anu = await maker.textpro('https://fdown.net/download.php', Url)
+        Void.sendMessage(citel.chat, { text: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
     })
     //---------------------------------------------------------------------------
 cmd({ pattern: "test1", alias: ["logo2test"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
