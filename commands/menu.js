@@ -48,7 +48,7 @@ cmd({
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply(' 👨‍💻 *GENERAL COMMAND LIST* 👨‍💻\n\n\n\n\n')
+if(!text) return citel.reply(' 👨‍💻 *GENERAL COMMAND LIST* 👨‍💻\n\n\n\n\n📟 *Command:-* .alive\nℹ️ *Description:-* Test bot online or offline\n🔥 *Help:-* .alive \n\n\n📟 *Command:-* .ping\nℹ️ *Description:-* Testing Ping\n🔥 *Help:-* .ping \n\n\n📟 *Command:-* .owner\nℹ️ *Description:-* Bot owner\n🔥 *Help:-* .owner')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
