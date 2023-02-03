@@ -83,3 +83,17 @@ await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagra
 }
     });
 
+cmd({
+        pattern: "concmd",
+        desc: "download instagram post.",
+        category: "Auto Reply",
+        filename: __filename
+    },
+    async(Void, citel,text,{isCreator}) => {
+if(!text) return citel.reply('👨‍💻 *CONVERTER COMMAND LIST* 👨‍💻\n\n\n\n\n📟 *Command:-* .toaudio\nℹ️ *Description:-* converte video to audio\n🔥 *Help:-* .toaudio tag Any Video\n\n\n📟 *Command:-* .sticker\nℹ️ *Description:-* Photo or video to sticker \n🔥 *Help:-* .sticker tag video or photo')
+let response = await fbdl(text)
+for (let i=0;i<response.length;i++) {
+await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
+}
+    });
+
