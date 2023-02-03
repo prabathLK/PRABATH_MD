@@ -3,7 +3,6 @@ cmd({
         pattern: "logocmd",
         desc: "download instagram post.",
         category: "other",
-        react: "💥",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
