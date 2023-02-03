@@ -68,3 +68,18 @@ for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
 }
     });
+
+cmd({
+        pattern: "ownercmd",
+        desc: "download instagram post.",
+        category: "Auto Reply",
+        filename: __filename
+    },
+    async(Void, citel,text,{isCreator}) => {
+if(!text) return citel.reply('👨‍💻 *OWNER COMMAND LIST* 👨‍💻\n\n\n\n\n📟 *Command:-* .install\nℹ️ *Description:-* Install Plugins\n🔥 *Help:-* .install Plugin Url \n\n\n📟 *Command:-* .plugins\nℹ️ *Description:-* Install Plugins View \n🔥 *Help:-* .plugins \n\n\n📟 *Command:-* .block\nℹ️ *Description:-* Block User \n🔥 *Help:-* .block Tag user or PM Chat\n\n\n📟 *Command:-* .unblock\nℹ️ *Description:-* Unblock User \n🔥 *Help:-* .unblock Tag user or PM Chat\n\n\n📟 *Command:-* .remove\nℹ️ *Description:-* Remove Plugins \n🔥 *Help:-* .remove plugin url\n\n\n📟 *Command:-* .join\nℹ️ *Description:-* Join Group Using Whatsapp group url \n🔥 *Help:-* .join whatsapp group url\n\n\n*📟Command:-* .restart\nℹ️ *Description:-* Restart Bot \n🔥 *Help:-* .restart\n\n\n📟 *Command:-* .update \nℹ️ *Description:-* update bot \n🔥 *Help:-* .update\n\n\n📟 *Command:-* .settings\nℹ️ *Description:-* Change some settings \n🔥 *Help:-* .settings')
+let response = await fbdl(text)
+for (let i=0;i<response.length;i++) {
+await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
+}
+    });
+
