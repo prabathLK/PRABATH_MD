@@ -47,7 +47,6 @@ cmd(
     desc: "Play TicTacToe",
     filename: __filename,
     category: "game",
-    react: "❌",
   },
   async (Void,citel,text) => {
     if (!citel.isGroup) return citel.reply(tlang().group);
