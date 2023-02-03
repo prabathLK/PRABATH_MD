@@ -19,8 +19,7 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "menu",
-            alias: ["මෙනු","මෙනූ"],
+            pattern: "closedmenuanewcmdactiveble",
             desc: "Help list",
             category: "general",
             react: "🔖",
@@ -102,8 +101,8 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "list",
-            alias: ["ලිස්ට්"],
+            pattern: "deltedmyownerlist",
+            alias: ["notworkingnewlistactiveble"],
             desc: "list menu",
             category: "general",
             react: "📜"
