@@ -3,6 +3,7 @@ cmd({
         pattern: "logocmd",
         desc: "download instagram post.",
         category: "other",
+        react: "🖼️",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -17,6 +18,7 @@ cmd({
         pattern: "downloadcmd",
         desc: "download instagram post.",
         category: "Auto Reply",
+        react: "⬇️",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -31,6 +33,7 @@ cmd({
         pattern: "groupcmd",
         desc: "download instagram post.",
         category: "other",
+        react: "🎲",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -45,6 +48,7 @@ cmd({
         pattern: "genaralcmd",
         desc: "download instagram post.",
         category: "Auto Reply",
+        react: "👨‍💻",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -59,6 +63,7 @@ cmd({
         pattern: "gamecmd",
         desc: "download instagram post.",
         category: "Auto Reply",
+        react: "🪀",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -73,6 +78,7 @@ cmd({
         pattern: "ownercmd",
         desc: "download instagram post.",
         category: "Auto Reply",
+        react: "👨‍💻",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -87,6 +93,7 @@ cmd({
         pattern: "concmd",
         desc: "download instagram post.",
         category: "Auto Reply",
+        react: "🎊",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
@@ -101,6 +108,7 @@ cmd({
         pattern: "othercmd",
         desc: "download instagram post.",
         category: "Auto Reply",
+        react: "ℹ️",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
