@@ -1,6 +1,6 @@
 const { fbdl,cmd } = require('../lib')
 cmd({
-        pattern: "test",
+        pattern: "logo",
         desc: "download instagram post.",
         category: "other",
         filename: __filename
