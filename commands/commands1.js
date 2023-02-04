@@ -5,7 +5,7 @@ cmd({
         category: "other",
         filename: __filename
     },
-    async(Void, citel,text,{isCreator}) => {
+    async(Void, citel,image,{isCreator}) => {
 if(!image) return citel.reply('https://telegra.ph/file/a78da5c15204ed08c7e84.jpg')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
