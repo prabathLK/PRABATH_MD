@@ -13,7 +13,7 @@ const { sck, sck1,cmd, jsonformat, botpic, TelegraPh, RandomXP, Config, tlang, w
 const moment = require("moment-timezone");
 const fs = require('fs-extra')
 const Levels = require("discord-xp");
-const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
+const { Sticker, createSticker } = require("wa-sticker-formatter");
 //---------------------------------------------------------------------------
 cmd({
             pattern: "join",
