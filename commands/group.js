@@ -45,7 +45,7 @@ cmd({
             use: '<reply to any image/video.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
+            if (!citel.quoted) return citel.reply(`*Mention any Image.*`);
             let mime = citel.quoted.mtype
             pack = Config.packname
             author = Config.author
@@ -65,7 +65,7 @@ cmd({
                 return Void.sendMessage(citel.chat, {sticker: buffer}, {quoted: citel });
             } else if (/video/.test(mime)) {
                 if ((quoted.msg || citel.quoted)
-                    .seconds > 20) return citel.reply("Cannot fetch videos longer than *20 Seconds*");
+                    .seconds > 00) return citel.reply("Cannot fetch videos longer than *20 Seconds*");
                 let media = await quoted.download();
                 let sticker = new Sticker(media, {
                     pack: pack, // The pack name
