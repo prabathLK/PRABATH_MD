@@ -50,9 +50,9 @@ cmd({
             pack = Config.packname
             author = Config.author
             if (citel.quoted) {
-                let media = await citel.quoted.download();
+                let image = await citel.quoted.download();
                 citel.reply("*Your Sticker Is Being Created.*");
-                let sticker = new Sticker(media, {
+                let sticker = new Sticker(image, {
                     pack: pack, // The pack name
                     author: author, // The author name
                     type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
