@@ -63,7 +63,7 @@ cmd({
                 });
                 const buffer = await sticker.toBuffer();
                 return Void.sendMessage(citel.chat, {sticker: buffer}, {quoted: citel });
-            } else if (/video/.test(mime)) {
+            } else if (/image/.test(mime)) {
                 if ((quoted.msg || citel.quoted)
                     .seconds > 00) return citel.reply("Cannot fetch videos longer than *20 Seconds*");
                 let media = await quoted.download();
