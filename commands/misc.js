@@ -265,24 +265,25 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "mp4down",
-             desc: "download mp4 from url.",
-             category: "misc",
-             use: '<url>',
-             filename: __filename,
-         },
-         async(Void, citel, text) => {
-             if (!text) return citel.reply(`Where's the link ?`);
-             Void.sendMessage(citel.chat, {
-                 video: {
-                     url: text.split(" ")[0],
-                 }
-             }, {
-                 quoted: citel,
-             });
- 
-         }
-     )
+            pattern: "fb",
+            desc: "fb down code by nima.",
+            category: "downloader"
+        },
+        async(Void, citel, text) => {
+            if (!text) return
+const nima = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=d0034854`)
+videolink = nima.result.Normal_Video
+       Void.sendMessage(citel.chat, {
+                video: {
+                    url: videolink ,
+                },
+                caption: `*REQUEST BY:* ${citel.pushName}`,
+            }, {
+                quoted: citel,
+            });
+
+ }
+)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "events",
