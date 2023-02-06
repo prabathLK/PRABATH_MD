@@ -86,8 +86,8 @@ cmd(
           }[v];
         });
         let str = `
-*Current turn:* 🙋‍♂️ @${room.game.currentTurn.split("@")[0]}
-*Room ID:* 🆔 ${room.id}
+*දැන් තරග වදින්නේ:* 🙋‍♂️ @${room.game.currentTurn.split("@")[0]}
+*තරගකරුගේ ID අංකය:* 🆔 ${room.id}
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
