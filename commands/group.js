@@ -109,7 +109,6 @@ cmd({
             alias: ["අන්බ්ලොක්","අන්ලොක්"],
             desc: "Unblocked to the quoted user.",
             category: "owner",
-            react: "✅",
             filename: __filename,
 
         },
@@ -581,7 +580,6 @@ cmd({
             alias: ["කික්","රිමෝව්"],
             desc: "Kicks replied/quoted user from group.",
             category: "group",
-            react: "🚫",
             filename: __filename,
             use: '<quote|reply|number>',
         },
@@ -706,10 +704,10 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "hidetag",
-            alias: ["හයිඩ් ටැග්"],
+            alias: ["htg"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
-            react: "🤫",
+            react: "😾",
             filename: __filename,
             use: '<text>',
         },
@@ -883,7 +881,6 @@ cmd({
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
-            react: "🚫",
             filename: __filename,
             use: '<quote/reply user.>',
         },
