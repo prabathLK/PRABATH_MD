@@ -34,9 +34,9 @@ cmd(
         )
       ) {
         delete this.game
-        return citel.reply(`_Successfully Deleted running TicTacToe game._`);
+        return citel.reply(`*Successfully Deleted running Xo game* ✅_`);
         } else {
-              return citel.reply(`No TicTacToe game🎮 is running.`)
+              return citel.reply(`*No Xo game is running* ❗`)
                     
         }
   })
@@ -61,7 +61,7 @@ cmd(
             [room.game.playerX, room.game.playerO].includes(citel.sender)
         )
       )
-        return citel.reply("_A game is already going on_");
+        return citel.reply("*A game is already going on* ❗");
       let room = Object.values(this.game).find(
         (room) =>
           room.state === "WAITING" && (text ? room.name === text : true)
@@ -86,8 +86,8 @@ cmd(
           }[v];
         });
         let str = `
-*Current turn:* @${room.game.currentTurn.split("@")[0]}
-*Room ID:* ${room.id}
+*Current turn:* 🙋‍♂️ @${room.game.currentTurn.split("@")[0]}
+*Room ID:* 🆔 ${room.id}
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
@@ -106,7 +106,7 @@ ${arr.slice(6).join("  ")}
           state: "WAITING",
         };
         if (text) room.name = text;
-        citel.reply("_Waiting for player,use .ttt to join this game._ ");
+        citel.reply("*ක්‍රීඩා කිරීමට තවත් කෙනෙකු අවශ්‍ය වේ! සම්බන්ද වීමට .xo ලෙස ටයිප් කරන්න* ❗ ");
         this.game[room.id] = room;
       }
     }
@@ -151,10 +151,10 @@ cmd(
       ) {
         citel.reply(
           {
-            "-3": "*The game is over.*",
-            "-2": "*Invalid*",
-            "-1": "*Invalid Position*",
-            0: "*Invalid Position*",
+            "-3": "*The game is over.*❗",
+            "-2": "*Invalid*❗",
+            "-1": "*Invalid Position*❗",
+            0: "*Invalid Position*❗",
           }[ok]
         );
         return !0;
@@ -188,10 +188,10 @@ ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
 ${
   isWin
-    ? `@${winner.split("@")[0]} Won ! and got 2000💎 in wallet🙋‍♂️`
+    ? `@${winner.split("@")[0]} ඔබ තරගයෙන් ජයග්‍රහණය කර ඇත. 🙋‍♂️`
     : isTie
-    ? `Game Tied,well done to both of you players.`
-    : `Current Turn ${["❌", "⭕"][1 * room.game._currentTurn]} @${
+    ? `ජය පරාජය තොරවකින් ඔබලා දෙදෙනාම සම ජයග්‍රහණ ලබාගෙන ඇත. 👬`
+    : `*Current Turn* ${["❌", "⭕"][1 * room.game._currentTurn]} @${
         room.game.currentTurn.split("@")[0]
       }`
 }
@@ -208,8 +208,8 @@ ${
           text: str,
           buttons: [
             {
-              buttonId: `${prefix}ttt`,
-              buttonText: { displayText: "Play again" },
+              buttonId: `${prefix}xo`,
+              buttonText: { displayText: "නැවත ක්‍රීඩාව කරන්න." },
             },
           ],
           mentions: [room.game.playerO,room.game.playerX],
