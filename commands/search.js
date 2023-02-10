@@ -134,7 +134,6 @@ cmd({
 cmd({
             pattern: "google",
             category: "search",
-            react: "🔎",
             desc: "Sends info of given query from Google Search.",
             use: '<text>',
             filename: __filename,
@@ -158,7 +157,6 @@ cmd({
 cmd({
             pattern: "image",
             category: "search",
-            react: "🔎",
             desc: "Searches Image on Google",
             use: '<text>',
             filename: __filename,
