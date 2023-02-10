@@ -377,7 +377,7 @@ cmd({
                 });
                 let stats = fs.statSync(`./${randomName}`);
                 let fileSizeInBytes = stats.size;
-                let fileSizeInMegabytes = fileSizeInBytes / (720 * 720);
+                let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
                 if (fileSizeInMegabytes <= dlsize) {
                     let yts = require("secktor-pack");
                 citel.reply(`*Hello ${citel.pushName} I Am Downloading Your Video*`);
