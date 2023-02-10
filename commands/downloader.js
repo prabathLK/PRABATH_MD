@@ -121,7 +121,7 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: "VIDEO `${fileSizeInMegabytes}` MB",
+                        displayText: "VIDEO",
                     },
                     type: 1,
                 },
@@ -377,7 +377,7 @@ cmd({
                 });
                 let stats = fs.statSync(`./${randomName}`);
                 let fileSizeInBytes = stats.size;
-                let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
+                let fileSizeInMegabytes = fileSizeInBytes / (720 * 720);
                 if (fileSizeInMegabytes <= dlsize) {
                     let yts = require("secktor-pack");
                 citel.reply(`*Hello ${citel.pushName} I Am Downloading Your Video*`);
