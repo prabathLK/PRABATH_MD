@@ -121,7 +121,7 @@ cmd({
             let buttons = [{
                     buttonId: `${prefix}ytmp4 ${anu.url}`,
                     buttonText: {
-                        displayText: `VIDEO ${fileSizeInMegabytes} MB`,
+                        displayText: "VIDEO `${fileSizeInMegabytes}` MB",
                     },
                     type: 1,
                 },
