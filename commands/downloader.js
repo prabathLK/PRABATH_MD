@@ -15,7 +15,7 @@ const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
 var videotime = 6000 // 100 min
-var dlsize = 45 // 45mb
+var dlsize = 40 // 40mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
@@ -92,7 +92,7 @@ cmd({
             const listMessage = {
                 text: teskd,
                 footer: tlang().footer,
-                title: `${tlang().title}.*`,
+                title: `${tlang().title}.`,
                 buttonText: "Select Video",
                 mentions: await Void.parseMention(teskd),
                 sections
@@ -106,7 +106,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "song",
-            alias: ["ගීතය","සෝන්ග්","සින්දුව","සිංදුව","play"],
+            alias: ["ගීතය","සෝන්ග්","සින්දුව","සිංදුව","play","mp3"],
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             react: "🎵",
