@@ -324,7 +324,7 @@ cmd({
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
-                    rowId: `${prefix}song ${i.url}`,
+                    rowId: `${prefix}ytssearch ${i.url}`,
                     description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
                 })
             }
