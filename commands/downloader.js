@@ -311,17 +311,16 @@ cmd({
             alias: ["සොයන්න","yt"],
             desc: "Gives descriptive info of query from youtube..",
             category: "downloader",
-            react: "🔎",
             filename: __filename,
             use: '<yt search text>',
         },
         async(Void, citel, text) => {
             let yts = require("secktor-pack");
-            citel.reply("*Serching. 🔎*");
-            if (!text) return citel.reply(`Example : ${prefix}yts `);
+            citel.reply("*Searching on YouTube* 🌎");
+            if (!text) return citel.reply(`*Enter the search word* ❗`);
             let search = await yts(text);
             listSerch = []
-            teskd = `*YOUTUBE SEARCH RESULTS*\n\n\n\n ⦁ *TOTAL REQUEST:* ${search.all.length}\n\n\n ⦿.*REQUEST BY:* ${citel.pushName}\n\n\n\n\n 👨‍💻 *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗘𝗔𝗥𝗖𝗛* 👨‍💻`
+            teskd = `*YOUTUBE SEARCH RESULTS*\n\n\n\n ⦁ *TOTAL REQUEST:* ${search.all.length}\n\n\n ⦿.*REQUEST BY:* ${citel.pushName}`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
