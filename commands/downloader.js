@@ -321,19 +321,7 @@ cmd({
             if (!text) return citel.reply(`Example : ${prefix}yts `);
             let search = await yts(text);
             listSerch = []
-            teskd = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-┃  *YOUTUBE SEARCH RESULTS*
-┗━━━━━━━━━━━━━━━━━━━━━━━━━
-*Hello .*
-*I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
-
-⦁ *BOT RUNNING TIME:* ${runtime(process.uptime())}
-
-⦁ *TOTAL REQUEST:* ${search.all.length}
-
-
-
-👨‍💻 *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗘𝗔𝗥𝗖𝗛* 👨‍💻`
+            teskd = `*YOUTUBE SEARCH RESULTS*\n\n\n\n ⦁ *TOTAL REQUEST:* ${search.all.length}\n\n\n ⦿.*REQUEST BY:* ${citel.pushName}\n\n\n\n\n 👨‍💻 *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗘𝗔𝗥𝗖𝗛* 👨‍💻`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
