@@ -321,7 +321,19 @@ cmd({
             if (!text) return citel.reply(`Example : ${prefix}yts `);
             let search = await yts(text);
             listSerch = []
-            teskd = `Searched for ${text}.\n_All Request 🔎 + ${search.all.length}._`
+            teskd = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
+┃  *YOUTUBE SEARCH RESULTS*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━
+*Hello .*
+*I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
+
+⦁ *BOT RUNNING TIME:* ${runtime(process.uptime())}
+
+⦁ *TOTAL REQUEST:* ${search.all.length}
+
+
+
+👨‍💻 *𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗦𝗘𝗔𝗥𝗖𝗛* 👨‍💻`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
@@ -332,7 +344,7 @@ cmd({
             const sections = [
 
                 {
-                    title: "All Request ✅ / Total Search 🔎" + search.all.length,
+                    title: "Select And Send",
                     rows: listSerch
                 }
 
@@ -341,7 +353,7 @@ cmd({
                 text: teskd,
                 footer: tlang().footer,
                 title: ``,
-                buttonText: "Songs",
+                buttonText: "Select",
                 mentions: await Void.parseMention(teskd),
                 sections
             }
