@@ -320,25 +320,34 @@ cmd({
             citel.reply("*Serching. 🔎*");
             if (!text) return citel.reply(`Example : ${prefix}yts `);
             let search = await yts(text);
-            let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
-            let no = 1;
+            listSerch = []
+            teskd = `Searched for ${text}.\n_All Request 🔎 + ${search.all.length}._`
             for (let i of search.all) {
-                textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
-          i.type
-        }\n👁️‍🗨️Views : ${i.views}\n⌛Duration : ${
-          i.timestamp
-        }\n🌟Upload At : ${i.ago}\n👑Author : ${i.author.name}\n🎵Url : ${
-          i.url
-        }\n\n──────────────\n\n`;
+                listSerch.push({
+                    title: i.title,
+                    rowId: `${prefix}song ${i.url}`,
+                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
+                })
             }
-            return Void.sendMessage(citel.chat, {
-                image: {
-                    url: search.all[0].thumbnail,
-                },
-                caption: textt,
-            }, {
-                quoted: citel,
-            });
+            const sections = [
+
+                {
+                    title: "All Request ✅ / Total Search 🔎" + search.all.length,
+                    rows: listSerch
+                }
+
+            ]
+            const listMessage = {
+                text: teskd,
+                footer: tlang().footer,
+                title: ``,
+                buttonText: "Songs",
+                mentions: await Void.parseMention(teskd),
+                sections
+            }
+            return Void.sendMessage(citel.chat, listMessage, {
+                quoted: citel
+            })
         }
     )
     //---------------------------------------------------------------------------
