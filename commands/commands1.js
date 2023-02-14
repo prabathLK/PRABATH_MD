@@ -1,14 +1,19 @@
-const { fbdl,cmd } = require('../lib')
-cmd({
-        pattern: "uncoun",
-        desc: "download instagram post.",
-        category: "other",
-        filename: __filename
-    },
-    async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('https://telegra.ph/file/a78da5c15204ed08c7e84.jpg')
-let response = await fbdl(text)
-for (let i=0;i<response.length;i++) {
-await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
+const { tlang,cmd } = require('../lib')
+const Config = require('../config')
+const axios = require('axios')
+// Put here your url with modified words and urls
+const url = 'https://raw.githubusercontent.com/SamPandey001/Secktor-Plugins/main/plugins/bgm/bgm.js'
+
+/**
+ cmd({
+            pattern: "bgm",
+            category: "owner",
+            use: '',
+        },
+**/ 
+cmd({ on: "text" }, async (Void,citel,text,{isCreator})=> {
+  let { data } = await axios.get(url)
+  for (vr in data){
+ if(citel.text.toLowerCase().includes(vr)) return Void.sendMessage(citel.chat,{audio: { url : data[vr]},mimetype: 'audio/mpeg'},{quoted:citel})   
 }
-    });
+})
