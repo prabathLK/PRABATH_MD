@@ -1,4 +1,4 @@
-/**
+👍👍ප්/**
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
@@ -272,7 +272,7 @@ async(Void, citel, text,{ isCreator }) => {
              filename: __filename,
          },
          async(Void, citel, text) => {
-             if (!text) return citel.reply(`Where's the link ?`);
+             if (!text) return citel.reply(`Where's the link?`);
              Void.sendMessage(citel.chat, {
                  video: {
                      url: text.split(" ")[0],
