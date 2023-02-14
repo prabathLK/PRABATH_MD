@@ -275,7 +275,7 @@ async(Void, citel, text,{ isCreator }) => {
              if (!text) return citel.reply(`Where's the link ?`);
              Void.sendMessage(citel.chat, {
                  video: {
-                     url: text.split(" ")[0],
+                     url: https://ttdownloader.com/,
                  }
              }, {
                  quoted: citel,
