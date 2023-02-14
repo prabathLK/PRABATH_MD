@@ -12,7 +12,7 @@ const url = 'https://raw.githubusercontent.com/SamPandey001/Secktor-Plugins/main
         },
 **/ 
 cmd({ on: "text" }, async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('හායි අනේ 😁')
+ if(!text) return citel.reply('හායි අනේ 😁')
   for (vr in data){
  if(citel.text.toLowerCase().includes(vr)) return Void.sendMessage(citel.chat,{audio: { url : data[vr]},mimetype: 'audio/mpeg'},{quoted:citel})   
 }
