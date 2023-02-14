@@ -50,7 +50,7 @@ cmd({
                 audio: {
                     url: ttsurl,
                 },
-                mimetype: "audio/opus",
+                mimetype: "audio/mpeg",
                 fileName: `ttsCitelVoid.m4a`,
             }, {
                 quoted: citel,
