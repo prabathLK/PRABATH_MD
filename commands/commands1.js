@@ -2,7 +2,7 @@ const { tlang,cmd } = require('../lib')
 const Config = require('../config')
 const axios = require('axios')
 // Put here your url with modified words and urls
-const url = 'https://raw.githubusercontent.com/SamPandey001/Secktor-Plugins/main/plugins/bgm/bgm.js'
+const url = 'https://gist.github.com/prabathLK/f602911954a959c8730aeb00a588d15d/raw'
 
 /**
  cmd({
