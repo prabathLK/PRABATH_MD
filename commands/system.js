@@ -266,7 +266,7 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivemessage = Config.ALIVE_MESSAGE || `**`
             const alivtxt = `
-*HEY, ${citel.pushName},*
+*Hello, ${citel.pushName},*
 *I Am ${tlang().title}.
 ${alivemessage}
 
