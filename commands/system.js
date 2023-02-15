@@ -264,29 +264,27 @@ cmd({
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `**`
-            const alivtxt = `
-*Hello, ${citel.pushName},*
-*I Am ${tlang().title}.
-${alivemessage}
-
-*Version:-* 1.0V
-*Uptime:-* _${runtime(process.uptime())}_
-*Owner:-* _${Config.ownername}_
-
-*Type* ${prefix}menu *for my command list.*
-
-*Powered by* ${Config.ownername}
-`;
-            let aliveMessage = {
+            let buttons = [{
+                    buttonId: `${prefix}menu `,
+                    buttonText: {
+                        displayText: "menu",
+                    },
+                    type: 1,
+                },
+            ];
+            let buttonMessage = {
                 image: {
                     url: await botpic(),
                 },
-                caption: alivtxt,
+                caption: `
+        ${tlang().title} 
+I Am Alive Now And You Can Use Bot 
+`,
                 footer: tlang().footer,
+                buttons: buttons,
                 headerType: 4,
             };
-             return Void.sendMessage(citel.chat, aliveMessage, {
+            return Void.sendMessage(citel.chat, buttonMessage, {
                 quoted: citel,
             });
 
