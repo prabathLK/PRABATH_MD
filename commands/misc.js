@@ -446,7 +446,6 @@ cmd({
   pattern: "bot",
   desc: "activates and deactivates bot.\nuse buttons to toggle.",
   category: "misc",
-  react: "🙋‍♂️",
   filename: __filename,
 },
 async(Void, citel, text,{isCreator}) => {
@@ -457,11 +456,11 @@ switch (text.split(" ")[0]) {
          let checkgroup = await sck.findOne({ id: citel.chat })
          if (!checkgroup) {
              await new sck({ id: citel.chat, botenable: "true" }).save()
-             return citel.reply(`Successfully Enabled *${tlang().title}*`)
+             return citel.reply(`Successfully Enabled ✅ *${tlang().title}*`)
          } else {
              if (checkgroup.botenable == "true") return citel.reply("*Bot* was already enabled")
              await sck.updateOne({ id: citel.chat }, { botenable: "true" })
-             return citel.reply(`Successfully Enabled *${tlang().title}*`)
+             return citel.reply(`Successfully Enabled ✅ *${tlang().title}*`)
          }
      }
   
@@ -472,11 +471,11 @@ case 'off':{
              if (!checkgroup) {
                  await new sck({ id: citel.chat, botenable: "false" })
                      .save()
-                 return citel.reply(`Successfully disabled *${tlang().title}*`)
+                 return citel.reply(`Successfully disabled ✅ *${tlang().title}*`)
              } else {
                  if (checkgroup.botenable == "false") return citel.reply("*Bot* was already disabled")
                  await sck.updateOne({ id: citel.chat }, { botenable: "false" })
-                 return citel.reply(`Successfully disabled *${tlang().title}*`)
+                 return citel.reply(`Successfully disabled ✅ *${tlang().title}*`)
              }
          }
 }
