@@ -104,7 +104,7 @@ cmd({
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
-if(!text) return citel.reply('👨‍💻 *OTHER  COMMAND LIST* 👨‍💻\n\n\n\n\n📟 *Command:-* .system\nℹ️ *Description:-* system status\n🔥 *Help:-* .status\n\n\n📟 *Command:-* .weather\nℹ️ *Description:-* weather test  \n🔥 *Help:-* .weather Your location\n\n\n📟 *Command:-* .eval\nℹ️ *Description:-* run codes\n🔥 *Help:-* .eval \n\n\n📟 *Command:-* .chat\nℹ️ *Description:-* Chat Bot\n🔥 *Help:-* . .chat Hi Bot\n\n\n📟 *Command:-* .trt\nℹ️ *Description:-* Google translate  \n🔥 *Help:-* .trt Hi')
+if(!text) return citel.reply('👨‍💻 *OTHER  COMMAND LIST* 👨‍💻\n\n\n\n\n📟 *Command:-* .system\nℹ️ *Description:-* system status\n🔥 *Help:-* .status\n\n\n📟 *Command:-* .weather\nℹ️ *Description:-* weather test  \n🔥 *Help:-* .weather Your location\n\n\n📟 *Command:-* .eval\nℹ️ *Description:-* run codes\n🔥 *Help:-* .eval \n\n\n📟 *Command:-* .chat\nℹ️ *Description:-* Chat Bot\n🔥 *Help:-* . .chat  Bot\n\n\n📟 *Command:-* .trt\nℹ️ *Description:-* Google translate  \n🔥 *Help:-* .trt active')
 let response = await fbdl(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[f], `*Downloaded Media from instagram.*`, citel)
