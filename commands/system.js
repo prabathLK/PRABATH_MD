@@ -289,10 +289,10 @@ cmd({
 
 ● *Hello*, ${citel.pushName}, 🙋‍♂️
 
- ● *BOT ACTIVE NOW* 🙋‍♂️
+● *BOT ACTIVE NOW* 🙋‍♂️
 
-*YOU CAN USE BOT* ✅
-*MADE BY PRABATH* 👨‍💻
+● *YOU CAN USE BOT* ✅
+● *MADE BY PRABATH* 👨‍💻
 
 
 ● *Uptime:-* ${runtime(process.uptime())}
