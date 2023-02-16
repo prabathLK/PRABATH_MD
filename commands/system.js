@@ -278,9 +278,8 @@ cmd({
                 },
                 caption: `
         ${tlang().title} 
-*Hello, ${citel.pushName},*
-*I Am ${tlang().title}.
-${alivemessage}
+*Hello, ${citel.pushName},
+*BOT ACTIVE NOW*
 
 *Version:-* 3.1.5 V
 *Uptime:-* ${runtime(process.uptime())}
