@@ -105,7 +105,7 @@ cmd({
         async(Void, citel, text) => {
             if (isNaN(text.split(" ")[0]) || !text) {
                 let text = tiny(
-                    "Fancy text generator\n\nExample: .fancy 32 Secktor\n\n"
+                    "Fancy text generator\n\nExample: .fancy 32 Prabath\n\n"
                 );
                 listall("Secktor Bot").forEach((txt, num) => {
                     text += `${(num += 1)} ${txt}\n`;
@@ -140,10 +140,9 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "toaudio",
+        pattern: "mp4audio",
         desc: "changes type to audio.",
         category: "converter",
-        react: "🎵",
         use: '<reply to any audio>',
         filename: __filename
     },
