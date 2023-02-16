@@ -265,9 +265,16 @@ cmd({
         },
         async(Void, citel, text, isAdmins) => {
             let buttons = [{
-                    buttonId: `${prefix}menu `,
+                    buttonId: `${prefix}menu`,
                     buttonText: {
-                        displayText: "menu",
+                        displayText: "MENU",
+                    },
+                    type: 1,
+                },
+                {
+                    buttonId: `${prefix}owner`,
+                    buttonText: {
+                        displayText: "OWNER",
                     },
                     type: 1,
                 },
@@ -278,14 +285,17 @@ cmd({
                 },
                 caption: `
         ${tlang().title} 
-*Hello, ${citel.pushName},
+*Hello*, ${citel.pushName},
+
 *BOT ACTIVE NOW*
 
-*Version:-* 3.1.5 V
+*YOU CAN USE BOT*
+*MADE BY PRABATH*
+
+
 *Uptime:-* ${runtime(process.uptime())}
 *Owner:-* ${Config.ownername}
 
-*Type* ${prefix}menu *for my command list.*
 
 *Powered by* ${Config.ownername} 
 `,
