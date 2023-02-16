@@ -284,7 +284,7 @@ cmd({
                     url: await botpic(),
                 },
                 caption: `
-       👨‍💻 ${tlang().title} 👨‍💻
+     👨‍💻 ${tlang().title} 👨‍💻
 
 
 ● *Hello*, ${citel.pushName}, 🙋‍♂️
