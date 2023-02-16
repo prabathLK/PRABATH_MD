@@ -278,7 +278,17 @@ cmd({
                 },
                 caption: `
         ${tlang().title} 
-I Am Alive Now And You Can Use Bot 
+*Hello, ${citel.pushName},*
+*I Am ${tlang().title}.
+${alivemessage}
+
+*Version:-* 3.1.5 V
+*Uptime:-* ${runtime(process.uptime())}
+*Owner:-* ${Config.ownername}
+
+*Type* ${prefix}menu *for my command list.*
+
+*Powered by* ${Config.ownername} 
 `,
                 footer: tlang().footer,
                 buttons: buttons,
