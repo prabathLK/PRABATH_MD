@@ -284,17 +284,19 @@ cmd({
                     url: await botpic(),
                 },
                 caption: `
-        ${tlang().title} 
-*Hello*, ${citel.pushName},
-
-*BOT ACTIVE NOW*
-
-*YOU CAN USE BOT*
-*MADE BY PRABATH*
+       👨‍💻 ${tlang().title} 👨‍💻
 
 
-*Uptime:-* ${runtime(process.uptime())}
-*Owner:-* ${Config.ownername}
+● *Hello*, ${citel.pushName}, 🙋‍♂️
+
+ ● *BOT ACTIVE NOW* 🙋‍♂️
+
+*YOU CAN USE BOT* ✅
+*MADE BY PRABATH* 👨‍💻
+
+
+● *Uptime:-* ${runtime(process.uptime())}
+● *Owner:-* ${Config.ownername}
 
 
 *Powered by* ${Config.ownername} 
