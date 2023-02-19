@@ -48,10 +48,8 @@ description: ' '
 
 
 ⦁ *RUNNING TIME :* ${runtime(process.uptime())}
-⦁ *RAM USAGE    :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 
-
-
+ MADE BY PRABATH ✅.
 
 👨‍💻 *YOUTUBE DOWNLADER* 👨‍💻`
             const sections = [
