@@ -1,14 +1,11 @@
 const { tlang, cmd,fetchJson, sleep, getBuffer, runtime, prefix, formatp, Config } = require('../lib')
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
-var videotime = 6000 // 100 min
-var dlsize = 200 // 200mb
 
-  cmd({
+ cmd({
             pattern: "ytd",
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
-            react: "🪄",
             filename: __filename,
             use: '<faded-Alan walker.>',
         },
