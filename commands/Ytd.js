@@ -53,7 +53,7 @@ description: ' '
 
 
 
-⦿. *REQUEST BY:* {citel.pushName}
+⦿. *REQUEST BY:* ${citel.pushName}
 
 
 👨‍💻 *YOUTUBE DOWNLADER* 👨‍💻`
