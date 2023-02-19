@@ -276,7 +276,7 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `Searched for ${text}.\n_All Request 🔎 + ${search.all.length}._`
+            teskd = `*AUDIO DOWNLOADER* \n\n\n *Searched for* ${text}.\n\n *MADE BY PRABATH* ✅`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
@@ -296,7 +296,7 @@ cmd({
                 text: teskd,
                 footer: tlang().footer,
                 title: ``,
-                buttonText: "Songs",
+                buttonText: "Select",
                 mentions: await Void.parseMention(teskd),
                 sections
             }
