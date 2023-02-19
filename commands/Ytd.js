@@ -30,12 +30,12 @@ rowId: `${prefix}ytdoc ${anu.url}`,
 description: ' '
 },
 {
-title: 'SEARCH MORE VIDEO',
+title: 'SEARCH MORE VIDEO ➕',
 rowId: `${prefix}video ${text}`,
 description: ' '
 },
 {
-title: 'SEARCH MORE AUDIO',
+title: 'SEARCH MORE AUDIO ➕',
 rowId: `${prefix}audio ${text}`,
 description: ' '
 }
@@ -43,13 +43,18 @@ description: ' '
             ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃   *YOUTUBE DOWNLOADER*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
-*Hello .* ${citel.pushName}
-*I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
 
 
 ⦁ *RUNNING TIME :* ${runtime(process.uptime())}
 
- MADE BY PRABATH ✅.
+⦁ *MADE BY PRABATH* ✅.
+ 
+⦁ *Use it to download YouTube videos, songs easily* 🪄
+
+
+
+⦿. *REQUEST BY:* {citel.pushName}
+
 
 👨‍💻 *YOUTUBE DOWNLADER* 👨‍💻`
             const sections = [
@@ -64,7 +69,7 @@ description: ' '
                 text: ted,
                 footer: tlang().footer,
                 title: ``,
-                buttonText: "Select",
+                buttonText: "Results",
                 mentions: await Void.parseMention(ted),
                 sections
             }
