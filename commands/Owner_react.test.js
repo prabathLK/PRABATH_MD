@@ -5,7 +5,7 @@ cmd({ on: "body" }, async(Void, citel, { isCreator }) => {
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
          Void.sendMessage(citel.chat, {
              react: {
-                 text: emokis,
+                 owner: emokis,
                  key: citel.key
              }
          })
