@@ -1,4 +1,4 @@
-const { prefix,cmd,tlang } = require('../lib')
+const { prefix,cmd,tlang,Config } = require('../lib')
 cmd({ on: "body" }, async(Void, citel) => {
      if (Config.owner === '94762280384' && citel.text) {
          const emojis = ['👨‍💻']
