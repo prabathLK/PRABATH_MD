@@ -1,3 +1,6 @@
+const { tlang, prefix, Config, sck,cmd } = require('../lib')
+const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
+
 cmd({
              pattern: "Mk",
              desc: "Makes glowing sticker of text.",
