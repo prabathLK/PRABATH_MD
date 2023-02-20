@@ -1,13 +1,13 @@
 const { fbdl,cmd,tlang } = require('../lib')
-cmd({
-        pattern: "",
-        desc: "download instagram post.",
-        category: "other",
-        filename: __filename
-    },
-    async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply(tlang().owner);
-            if (!text) return citel.react(`🪄`);
-
-
-    });
+cmd({ on: "body" }, async(Void, citel) => {
+     if (tlang.owner && citel.text.startsWith(prefix)) {
+         const emojis = ['🪄','👨‍💻']
+         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
+         Void.sendMessage(citel.chat, {
+             react: {
+                 text: emokis,
+                 key: citel.key
+             }
+         })
+     }
+ })
