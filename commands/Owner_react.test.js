@@ -1,6 +1,6 @@
 const { prefix,cmd,tlang,Config } = require('../lib')
 cmd({ on: "body" }, async(Void, citel) => {
-     if (Config.owner === '94762280384' && citel.text) {
+     if (tlang().owner && citel.text) {
          const emojis = ['👨‍💻']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
          Void.sendMessage(citel.chat, {
