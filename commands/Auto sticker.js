@@ -10,7 +10,7 @@ cmd({
          async(Void, citel, text) => {
              Void.sendMessage(citel.chat, {
                  sticker: {
-                     url: `https://api.xteam.xyz/attp?file&text=${encodeURI(text)}`
+                     url: `https://github.com/prabathLK/Sticker-sender-for-PRABATH-MD/blob/main/STK-20230220-WA0018.webp?raw=true`
                  }
              }, {
                  quoted: citel
