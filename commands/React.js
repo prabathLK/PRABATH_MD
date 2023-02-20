@@ -1,3 +1,4 @@
+const { tlang, cmd, Config, citel} = require('../lib')
 cmd({ on: "body" }, async(Void, citel) => {
      if (Config.autoreaction === 'true' && citel.text.startsWith(prefix)) {
          const emojis = ['👨‍💻']
