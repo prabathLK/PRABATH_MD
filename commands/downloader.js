@@ -394,21 +394,10 @@ cmd({
                     let buttonMessage = {
                         document: fs.readFileSync(`./${randomName}`),
                         jpegThumbnail: log0,
-                        mimetype: 'video/mpeg',
+                        mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ℹ️ *Title* : ${titleYt}\n \n 🧩 *REQUEST BY:* ${citel.pushName}`,
+                        caption: ` ● 𝙼𝙰𝙳𝙴 𝙱𝚈 𝙿𝚁𝙰𝙱𝙰𝚃𝙷 ✅\n \n ● 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝚈: ${citel.pushName}`,
                         headerType: 4,
-                        contextInfo: {
-                            externalAdReply: {
-                                title: titleYt,
-                                body: citel.pushName,
-                                thumbnail: await getBuffer(search.all[0].thumbnail),
-                                renderLargerThumbnail: true,
-                                mediaType: 2,
-                                mediaUrl: search.all[0].thumbnail,
-                                sourceUrl: search.all[0].thumbnail
-                            }
-                        }
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
