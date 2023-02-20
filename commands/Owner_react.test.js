@@ -1,5 +1,6 @@
 const { prefix,cmd,tlang } = require('../lib')
 cmd({ on: "body" }, async(Void, citel) => {
+     if (!isCreator) return citel.reply(tlang().owner);
      if (tlang().owner && citel.text) {
          const emojis = ['👨‍💻']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
