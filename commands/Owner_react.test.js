@@ -1,6 +1,6 @@
 const { fbdl,cmd,tlang } = require('../lib')
 cmd({
-        pattern: "react",
+        pattern: "",
         desc: "download instagram post.",
         category: "other",
         filename: __filename
