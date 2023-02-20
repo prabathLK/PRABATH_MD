@@ -1,6 +1,6 @@
 const { tlang, cmd, Config, citel} = require('../lib')
 cmd({ on: "body" }, async(Void, citel) => {
-     if (Config.autoreaction === 'true' && citel.text.startsWith(prefix)) {
+     if (citel().owner && citel.text) {
          const emojis = ['👨‍💻']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
      for (let i of owner) {
