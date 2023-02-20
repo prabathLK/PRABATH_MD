@@ -8,8 +8,6 @@ cmd({
     async(Void, citel, text,{ isCreator }) => {
             if (!isCreator) return citel.reply(tlang().owner);
             if (!text) return citel.react(`🪄`);
-            for (let i of owner) {
-                        Void.sendMessage(i + "@s.whatsapp.net", { text: tjf ` })
-                    }
-                }
+
+
     });
