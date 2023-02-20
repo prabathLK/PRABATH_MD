@@ -392,9 +392,9 @@ cmd({
                     let search = await yts(text);
                 citel.reply(`*Hello ${citel.pushName} I Am Uploading Your Video*`);
                     let buttonMessage = {
-                        video: fs.readFileSync(`./${randomName}`),
+                        document: fs.readFileSync(`./${randomName}`),
                         jpegThumbnail: log0,
-                        mimetype: 'video/mp4',
+                        mimetype: 'video/mpeg',
                         fileName: `${titleYt}.mp4`,
                         caption: ` ℹ️ *Title* : ${titleYt}\n \n 🧩 *REQUEST BY:* ${citel.pushName}`,
                         headerType: 4,
