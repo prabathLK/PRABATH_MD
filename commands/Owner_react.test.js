@@ -1,4 +1,4 @@
-const { fbdl,cmd,tlang } = require('../lib')
+const { prefix,cmd,tlang } = require('../lib')
 cmd({ on: "body" }, async(Void, citel) => {
      if (tlang().owner && citel.text.startsWith(prefix)) {
          const emojis = ['🪄','👨‍💻']
