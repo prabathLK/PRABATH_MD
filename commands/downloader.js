@@ -396,7 +396,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ● 𝙼𝙰𝙳𝙴 𝙱𝚈 𝙿𝚁𝙰𝙱𝙰𝚃𝙷 ✅\n \n ● 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝚈: ${citel.pushName}`,
+                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
                         headerType: 4,
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
@@ -455,18 +455,25 @@ cmd({
             citel.reply(`*Hello ${citel.pushName} I Am Downloading Your Song*`);
                 let search = await yts(text);
             citel.reply(`*Hello ${citel.pushName} I Am Uploading Your Song*`);
-            await Void.sendMessage(citel.chat, 
-    { audio: fs.readFileSync(`./${randomName}`), mimetype: 'audio/mp4' },{quoted: citel})
-            } else {
-                citel.reply(`*The limit has been exceeded.*❗`);
-            }
-            fs.unlinkSync(`./${randomName}`);
-        } catch (e) {
-            console.log(e)
-        }
+                let buttonMessage = {
+                        audio: fs.readFileSync(`./${randomName}`),
+                        jpegThumbnail: log0,
+                        mimetype: 'audio/mp4',
+                        fileName: `${titleYt}.mp4`,
+                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+                        headerType: 4,
+                    }
+                    return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
+                } else {
+                    citel.reply(`*The limit has been exceeded.*❗`);
+                }
 
-    }
-)
+                fs.unlinkSync(`./${randomName}`);
+            } catch (e) {
+                console.log(e)
+            }
+        }
+    )
 
   //---------------------------------------------------------------------------
 cmd({
