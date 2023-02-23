@@ -399,7 +399,7 @@ cmd({
                         caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
                         headerType: 4,
                     }
-                 citel.react("✅"),
+                 citel.react("✅")
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
                     citel.reply(`*The limit has been exceeded.*❗`);
