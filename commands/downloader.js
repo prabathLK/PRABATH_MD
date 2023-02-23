@@ -398,6 +398,7 @@ cmd({
                         fileName: `${titleYt}.mp4`,
                         caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
                         headerType: 4,
+                citel.react("✅");
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
