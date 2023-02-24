@@ -1,3 +1,4 @@
+const { Config, fetchJson,cmd,citel } = require('../lib')
 
 cmd({ on: "body" }, async(Void, citel) => {
      if (Config.owner === '94762280384' && citel.text.) {
