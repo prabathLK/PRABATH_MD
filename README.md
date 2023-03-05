@@ -26,7 +26,7 @@
 - Install [External Plugins](https://github.com/prabathLK/PRABATH-MD-Plugins)
 ## Deployment Methods
 ---
-1. ***Get [SESSION-ID](https://secktorbot.tech) by scanning QR code. `Whatapp>Three dots>Linked Devices`***
+1. ***Get [SCAN QR](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
 2.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 3.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
 4.  ***Deploy on [Heroku](https://secktorbot.tech/heroku)***
