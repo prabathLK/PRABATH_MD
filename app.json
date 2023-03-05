@@ -8,7 +8,7 @@
 "env": {
   "OWNER_NAME": {
   "description": "Name of Bot Owner",
-      "value": "Your Name."
+      "value": "prabath"
   },
   "ALIVE_MESSAGE": {
     "description": "Alive message for bot",
@@ -24,7 +24,7 @@
     },
    "ANTILINK_VALUES": {
     "description": "Put words for antilink",
-     "value": "chat.whatsapp.com,fb.com,instagram.com",
+     "value": "chat.whatsapp.com",
      "required" :false
     },
      "ANTILINK_ACTION": {
