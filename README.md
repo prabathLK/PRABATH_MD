@@ -1,5 +1,5 @@
   <p align="center">  
-  <a href="https://ibb.co/GxVWLqd/">
+  <a href="https://ibb.co/GxVWLqd">
     <img alt="secktor docs" height="300" src="https://ibb.co/GxVWLqd">
     <h1 align="center"> PRABATH-MD-WA-BOT👨‍💻</h1>
   </a>
