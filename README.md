@@ -26,7 +26,7 @@
   
 ## DEPLOYMENT METHODS.
 ---
-●. *** [SCAN QR ](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
+●. ***[SCAN QR ](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 
