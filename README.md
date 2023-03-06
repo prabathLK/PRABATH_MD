@@ -26,27 +26,25 @@
 - Install [External Plugins](https://github.com/prabathLK/PRABATH-MD-Plugins)
 ## Deployment Methods
 ---
-1. ***Get [SCAN QR](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
-2.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
-3.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
-4.  ***Deploy on [Heroku](https://secktorbot.tech/heroku)***
+●. ***Get [SCAN QR ](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
+●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
+●.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
+🛠️.  ***Deploy on [Heroku](https://secktorbot.tech/heroku)***
 
-5. ***[Deploy on Koyeb](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH-MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)***
+🛠️. ***[Deploy on Koyeb](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH-MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)***
 
-6.  ***[Deploy on Railway](https://secktorbot.tech/railway)***
+🛠️.  ***[Deploy on Railway](https://railway.app/new/template/NM7qyM?referralCode=tiXzWI)***
   
 
-8. if you get error in doing above try, [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
+●. if you get error in doing above try, [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
 ---
-9. More info about [Secktor](https://secktorbot.tech/).
-10. Deploy tutorial [Youtube Video](https://secktorbot.tech/youtube).
 
-11. SUPPORT GROUP: <a href="https://secktorbot.tech/support"><img alt="WhatsApp" src="https://camo.githubusercontent.com/2157131829ac512183ee8f8b6c6f803688a4cc66a2e686602844e80478401a7c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6f696e2047726f75702d3235443336363f7374796c653d666f722d7468652d6261646765266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465"/></a>
+●. SUPPORT GROUP: <a href="https://secktorbot.tech/support"><img alt="WhatsApp" src="https://camo.githubusercontent.com/2157131829ac512183ee8f8b6c6f803688a4cc66a2e686602844e80478401a7c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6f696e2047726f75702d3235443336363f7374796c653d666f722d7468652d6261646765266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465"/></a>
 
-12. Star ⭐ repo if you like  PRABATH-MD-WA-BOT. 👨‍💻
+●. Star ⭐ repo if you like  PRABATH-MD-WA-BOT. 👨‍💻
 ### Thanks To
 
 
 ## License
 
-The Secktor is made available under the [GPL-3 license](https://github.com/SamPandey001/Secktor-Md/blob/main/LICENCE). 
+The prabath-md is made available under the [GPL-3 license](https://github.com/SamPandey001/Secktor-Md/blob/main/LICENCE). 
