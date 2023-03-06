@@ -23,10 +23,9 @@
 
   <p align="center"> 📎 This is a whatsapp bot created based on Secktor MD Whatsapp bot which is a foreign whatsapp user bot.  Some of the commands here have been rearranged and replaced to suit Sri Lanka.🇱🇰  </p
  
-- Install [External Plugins](https://github.com/prabathLK/PRABATH-MD-Plugins)
-## Deployment Methods
+## DEPLOYMENT METHODS.
 ---
-●. ***Get [SCAN QR ](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
+●. *** [SCAN QR ](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 
