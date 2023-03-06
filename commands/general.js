@@ -47,27 +47,23 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "repoy",
-        alias: ["gjit", "sggc", "scripht"],
+        pattern: "script",
+        alias: ["git", "github", "repo"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
     },
     async(Void, citel) => {
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `*🌐 Prabath-MD Official ♦️*
+        let cap = `*🌐 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗 _𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 ♦️*
 
-    👥 beta testing wa group :  https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM
+●. *Support group :* https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM
 
-  🆔  Github:
+●. *Github:* https://github.com/PrabathLK/PRABATH-MD
 
-    https://github.com/PrabathLK/PRABATH-MD
+●. *Developer:* https://github.com/PrabathLK
 
-    👨🏻‍💻 Developer:
-
-    https://github.com/PrabathLK
-
-    ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜᴍᴅᴏꜰᴄᴛᴇᴀᴍ 🛡️`
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ-ᴏꜰᴄ-ᴛᴇᴀᴍ*`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
