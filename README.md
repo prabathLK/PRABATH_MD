@@ -29,8 +29,7 @@
   
   
 ---
-●. ***[SCAN QR ]
-  (https://prabath-md.onrender.com/).***
+●. ***[SCAN QR](https://prabath-md.onrender.com/).***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 
