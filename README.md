@@ -21,14 +21,14 @@
 
 <p align="center"><img src="https://profile-counter.glitch.me/{SamPandey001}/count.svg" alt="SamPandey001 :: Visitor's Count" /></p>
 
-  <p align="center"> 📎 This is a whatsapp bot created based on Secktor MD Whatsapp bot which is a foreign whatsapp user bot.  Some of the commands here have been rearranged and replaced to suit Sri Lanka.🇱🇰  </p
+  <p align="center"> 📎 This is a whatsapp bot created based on Secktor-md </p
  
   
  ***`DEPLOYMENT METHODS`***
   
   
 ---
-●. ***[SCAN QR ](https://prabath-md.onrender.com/). `Whatapp>Three dots>Linked Devices`***
+●. ***[SCAN QR ](https://prabath-md.onrender.com/).
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 
