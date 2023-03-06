@@ -31,11 +31,10 @@
 3.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
 4.  ***Deploy on [Heroku](https://secktorbot.tech/heroku)***
 
-5. ***[Deploy on Koyeb](https://secktorbot.me/koyeb)***
+5. ***[Deploy on Koyeb](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH-MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)***
 
 6.  ***[Deploy on Railway](https://secktorbot.tech/railway)***
   
-7. ***Deploy in [Linux](https://github.com/SamPandey001/Secktor-Deploy#deploy-in-any-shell-including-termux)***
 
 8. if you get error in doing above try, [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
 ---
