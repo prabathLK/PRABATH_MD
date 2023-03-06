@@ -23,7 +23,10 @@
 
   <p align="center"> 📎 This is a whatsapp bot created based on Secktor-md </p
   
- 
+
+---
+
+●. ***[Install Plugins](https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD-).***
   
  ***`DEPLOYMENT METHODS`***
   
