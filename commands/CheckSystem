@@ -1,0 +1,45 @@
+const { tlang,cmd, prefix,Config } = require('../lib')
+
+const axios = require('axios')
+
+const speed = require('performance-now')
+
+cmd({
+
+        pattern: "check",
+
+        desc: "Sends info about repo.",
+
+        category: "general",
+        
+        react: "✅",
+
+        filename: __filename,
+
+    },
+
+    async(Void, citel) => {
+
+        let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
+
+        let cap = `*All systems are fine* ✅`
+
+        let buttonMessaged = {
+
+            caption: cap,
+
+            footer: tlang().footer,
+
+            headerType: 4,
+
+            }
+
+        return await Void.sendMessage(citel.chat, buttonMessaged, {
+
+            quoted: citel,
+
+        });
+
+    }
+
+)
