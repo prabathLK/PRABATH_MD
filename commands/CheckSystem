@@ -1,24 +1,31 @@
-const { tlang,cmd, prefix,Config } = require('../lib')
-const axios = require('axios')
-const speed = require('performance-now')
+const { tlang,cmd } = require('../lib')
 
-cmd({
-        pattern: "check"
-        desc: "system check",
-        category: "general",       
-        react: "✅",
-        filename: __filename,
-    },
-    async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `*All systems are fine* ✅`
-        let buttonMessaged = {
-            caption: cap,
-            footer: tlang().footer,
-            headerType: 4,
-            }
-        return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel,
-        });
-    }
-)
+const Config = require('../config')
+
+const prefix = Config.prefix
+
+const maker = require('mumaker')
+
+    //---------------------------------------------------------------------------
+
+cmd({ pattern: "check", alias: ["testbot"], category: "textpro", react: "✅", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+
+        if (!text) return citel.reply('*All systems are fine* ✅')
+
+        let anu = await maker.textpro('https://fdown.net/download.php', Url)
+
+        Void.sendMessage(citel.chat, { video: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
+
+    })
+
+    //---------------------------------------------------------------------------
+
+cmd({ pattern: "gavkahqhw", alias: ["logo2test"], category: "textpro", react: "🌅", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+
+        if (!text) return citel.reply('*Good morning*🙋‍♂️')
+
+        let anu = await maker.textpro('', text)
+
+        Void.sendMessage(citel.chat, { image: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
+
+    })
