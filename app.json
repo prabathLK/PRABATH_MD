@@ -1,12 +1,12 @@
 {
 
-  "name": "Prabath-Md",
+  "name": "prabath-Md",
 
   "description": "A Whatsapp md bot built in NodeJs to make experience better",
 
   "logo": "https://i.imgur.com/H062oEI.jpeg",
 
-  "keywords": ["nodejs", "bot", "whatsapp bot", "multi device"],
+  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "SecktorBot", "Secktor","SecktorMD","theme bot","multi device"],
 
   "success_url": "/",
 
@@ -154,7 +154,7 @@
 
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
 
-         "value": "public"
+         "value": "private"
 
   },
 
@@ -172,12 +172,24 @@
 
     "description": "Put packname;authorname.",
 
-     "value": "PRABATH-MD🎊;𝙿𝚁𝙰𝙱𝙰𝚃𝙷✅",
+     "value": "SamPandey001;Secktor",
 
      "required": false 
 
   }
 
-}
+},
+
+  "formation": {
+
+      "worker": {
+
+          "quantity": 1,
+
+          "size": "free"
+
+      }
+
+  }
 
 }
