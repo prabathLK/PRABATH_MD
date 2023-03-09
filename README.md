@@ -52,7 +52,7 @@
  ---
 
 
-## 🟢 DEPLOY ON HEROKU 
+## DEPLOY ON HEROKU 
 
 1. First give an app name
 
