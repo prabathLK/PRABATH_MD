@@ -32,7 +32,7 @@
   
   
 ---
-●. ***[SCAN QR CODE](https://qr-scanner-for-prabath-md-production.up.railway.app/).***
+●. ***[SCAN QR CODE](https://qr-scanner-for-prabath-md-production.up.railway.app/)***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 
@@ -46,7 +46,7 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/NM7qyM?referralCode=tiXzWI)
   
 
- 🔴 [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
+ ## [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
  
  
  ---
@@ -54,19 +54,18 @@
 
 ## DEPLOY ON HEROKU 
 
-1. First give an app name
 
-2️. Now create the app
+1. Create app and give app name
 
-3️. Connect your GitHub account and connect the forked repository 
+2. Connect your GitHub account and connect the forked repository 
 
-4️. Enable automatic deploys
+3. Enable automatic deploys
 
-5️. Now deploy branch
+4. Now deploy branch
 
-6️. Now go to app settings
+5. Now go to app settings
 
-7️. Now create config vars
+6. Now create config vars
 
 ---
 
