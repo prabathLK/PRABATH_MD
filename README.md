@@ -46,26 +46,26 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/NM7qyM?referralCode=tiXzWI)
   
 
-✅. if you get error in doing above try, [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
+ 🔴 [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
 ---
 
 ●. SUPPORT GROUP: <a href="https://secktorbot.tech/support"><img alt="WhatsApp" src="https://camo.githubusercontent.com/2157131829ac512183ee8f8b6c6f803688a4cc66a2e686602844e80478401a7c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6f696e2047726f75702d3235443336363f7374796c653d666f722d7468652d6261646765266c6f676f3d7768617473617070266c6f676f436f6c6f723d7768697465"/></a>
 
-## DEPLOY ON HEROKU
+## 🟢 DEPLOY ON HEROKU 
 
-1️⃣. First give an app name
+1. First give an app name
 
-2️⃣. Now create the app
+2️. Now create the app
 
-3️⃣. Connect your GitHub account and connect the forked repository 
+3️. Connect your GitHub account and connect the forked repository 
 
-4️⃣. Enable automatic deploys
+4️. Enable automatic deploys
 
-5️⃣. Now deploy branch
+5️. Now deploy branch
 
-6️⃣. Now go to app settings
+6️. Now go to app settings
 
-7️⃣. Now create config vars
+7️. Now create config vars
 
 ---
 
