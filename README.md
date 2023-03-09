@@ -21,14 +21,14 @@
 
 <p align="center"><img src="https://profile-counter.glitch.me/{SamPandey001}/count.svg" alt="SamPandey001 :: Visitor's Count" /></p>
 
-  <p align="center"> 📎 This is a whatsapp bot created based on Secktor-md </p
+  <p align="center"> 🔴 This is a whatsapp bot created based on Secktor-md whatsapp bot.  </p
   
 
 ---
 
 ●. ***[Install Plugins](https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD-).***
   
- ***`DEPLOYMENT METHODS`***
+ ## DEPLOYMENT METHODS
   
   
 ---
