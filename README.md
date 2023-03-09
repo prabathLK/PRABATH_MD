@@ -47,11 +47,12 @@
   
 
  🔴 [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
----
+ 
+ 
+ ---
 
 
 ## 🟢 DEPLOY ON HEROKU 
-
 
 1. First give an app name
 
@@ -73,14 +74,21 @@
 
 ---
 
-SESSION_ID  = Scan the QR code and enter the code here 
-MONGODB_URI  = Enter mongoDB url
-OWNER_NAME  = Enter your name
-OWNER_NUMBER  = Enter your number 
-PACK_INFO  = Enter sticker pack name
-READ_MESSAGE  = Enter "true" or "false"
-DISABLE_PM  = Enter "true" or "false"
-WORKTYPE  = Enter "public" or "private"
+***SESSION_ID***  = Scan the QR code and enter the code here 
+
+***MONGODB_URI***  = Enter mongoDB url
+
+***OWNER_NAME***  = Enter your name
+
+***OWNER_NUMBER***  = Enter your number 
+
+***PACK_INFO***  = Enter sticker pack name
+
+***READ_MESSAGE***  = Enter "true" or "false"
+
+***DISABLE_PM***  = Enter "true" or "false"
+
+***WORKTYPE***  = Enter "public" or "private"
 
 ---
 
