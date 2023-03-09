@@ -53,19 +53,19 @@
 
 ## DEPLOY ON HEROKU
 
-1. First give an app name
+1️⃣. First give an app name
 
-2. Now create the app
+2️⃣. Now create the app
 
-3. Connect your GitHub account and connect the forked repository 
+3️⃣. Connect your GitHub account and connect the forked repository 
 
-4. Enable automatic deploys
+4️⃣. Enable automatic deploys
 
-5. Now deploy branch
+5️⃣. Now deploy branch
 
-6. Now go to app settings
+6️⃣. Now go to app settings
 
-7. Now create config vars
+7️⃣. Now create config vars
 
 ---
 
@@ -74,19 +74,12 @@
 ---
 
 SESSION_ID  = Scan the QR code and enter the code here 
-
 MONGODB_URI  = Enter mongoDB url
-
 OWNER_NAME  = Enter your name
-
 OWNER_NUMBER  = Enter your number 
-
 PACK_INFO  = Enter sticker pack name
-
 READ_MESSAGE  = Enter "true" or "false"
-
 DISABLE_PM  = Enter "true" or "false"
-
 WORKTYPE  = Enter "public" or "private"
 
 ---
