@@ -75,7 +75,7 @@
 
 ---
 
-● ***Copy and paste the following config vars 👇
+● ***Copy and paste the following config vars*** 👇
 
 ---
 
