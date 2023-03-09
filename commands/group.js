@@ -28,10 +28,9 @@ cmd({
             if (!text.split(" ")[0] && !text.split(" ")[0].includes("whatsapp.com"))
                 citel.reply("Link Invalid, Please Send a valid whatsapp Group Link!");
             let result = text.split(" ")[0].split("https://chat.whatsapp.com/")[1];
-                citel.reply("*Joining Whatsapp Group 🔄.*");
             await Void.groupAcceptInvite(result)
-                .then((res) => citel.reply("✅ Joined Whatsapp Group"))
-                .catch((err) => citel.reply("Error in Joining Group❗"));
+                .then((res) => citel.reply("*Joined the group* ✅"))
+                .catch((err) => citel.reply("*Joining the group is unsuccessful* ❌"));
 
         }
     )
@@ -79,7 +78,7 @@ cmd({
     async(Void, citel, text) => {
         citel.reply(`*Check your Inbox* ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
-            image: log0,
+            image: ,
             caption: `*Group Name: main bot group*\n*Group Link:* https://chat.whatsapp.com/EGGqct6UAD66iE4K9ywaLY`,
         });
 
@@ -595,8 +594,8 @@ cmd({
             try {
                 let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
                 if (!users) return;
-                citel.reply("*Successful Kicked.*✅");
                 await Void.groupParticipantsUpdate(citel.chat, [users], "remove");
+		
             } catch {
                 //		citel.reply(tlang().botAdmin);
 
