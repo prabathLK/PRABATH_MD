@@ -73,6 +73,7 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             let anu = search.videos[0]
+            const anu= await YT.mp4 (anu.url)
             let buttonMessage = {
                 document: fs.readFileSync(`./${randomName}`),
                 jpegThumbnail: log0,
