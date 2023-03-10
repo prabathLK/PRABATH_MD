@@ -80,8 +80,8 @@ cmd({
                 caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
                 headerType: 4,
             }
-            return Void.sendMessage(citel.chat, listMessage, {
-                quoted: citel
+            return Void.sendMessage(citel.chat, buttonMessage, {
+                quoted: citel,
             })
 
         }
