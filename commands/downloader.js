@@ -72,6 +72,7 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
+            let anu = search.videos[0]
             let buttonMessage = {
                 document: fs.readFileSync(`./${randomName}`),
                 jpegThumbnail: log0,
