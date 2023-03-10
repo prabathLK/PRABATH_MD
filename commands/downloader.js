@@ -72,7 +72,7 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
-            citel.reply(`ytmp4 anu.url`)
+            citel.reply(`${prefix}ytmp4 ${anu.url}`)
             const listMessage = {
                 footer: tlang().footer,
                 title: `${tlang().title}.`,
