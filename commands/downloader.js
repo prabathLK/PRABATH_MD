@@ -72,10 +72,13 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
-            citel.reply(`${prefix}ytmp4 ${anu.url}`)
-            const listMessage = {
-                footer: tlang().footer,
-                title: `${tlang().title}.`,
+            let buttonMessage = {
+                document: fs.readFileSync(`./${randomName}`),
+                jpegThumbnail: log0,
+                mimetype: 'video/mp4',
+                fileName: `${titleYt}.mp4`,
+                caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+                headerType: 4,
             }
             return Void.sendMessage(citel.chat, listMessage, {
                 quoted: citel
