@@ -44,9 +44,8 @@ rowId: `${prefix}othercmd`,
 description: ' '
 }
             ]
-            ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-┃   *PRABATH-MD-WHATSAPP-BOT*
-┗━━━━━━━━━━━━━━━━━━━━━━━━━
+            ted = 👨‍💻`*PRABATH-MD-WHATSAPP-BOT* 👨‍💻
+            
 *Hello .* ${citel.pushName}
 *I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
 
@@ -55,10 +54,7 @@ description: ' '
 ⦁ *RUNNING TIME :* ${runtime(process.uptime())}
 ⦁ *RAM USAGE    :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 
-
-
-
-👨‍💻 *𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧* 👨‍💻`
+MADE BY PRABATH ✅`
             const sections = [
 
                 {
