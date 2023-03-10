@@ -86,28 +86,12 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
-        const dbut = [{
-                buttonId: `${prefix}help`,
-                buttonText: {
-                    displayText: "Menu",
-                },
-                type: 1,
-            },
-
-            {
-                buttonId: `${prefix}rank`,
-                buttonText: {
-                    displayText: "Rank",
-                },
-                type: 1,
-            },
-        ];
         const uptime = process.uptime();
         timestampe = speed();
         citel.reply("*Checking System Status.*");
         latensie = speed() - timestampe;
         let ter = `
- 📎*${tlang().title}*📎
+ 📎${tlang().title}📎
 🌍 *Description:* This bot system is designed to make things easier 🇱🇰
 📎 *Speed:* ${latensie.toFixed(4)} ms
 ⏱️ *Uptime:* ${runtime(process.uptime())}
@@ -121,7 +105,6 @@ cmd({
             },
             caption: ter,
             footer: tlang().footer,
-            buttons: dbut,
             headerType: 4,
             }
         return await Void.sendMessage(citel.chat, buttonMessaged, {
