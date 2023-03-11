@@ -1,4 +1,4 @@
-const { cmd, sck1, tlang, botpic, runtime, prefix, Config } = require('../lib')
+const { cmd, sck1, tlang, botpic, runtime, prefix, citel, Config } = require('../lib')
 
 cmd({
 
