@@ -81,9 +81,9 @@ cmd({
 
                 image: { url: 'https://prabath-md-qr.onrender.com/' },
 
-                caption: `*_Scan Qr within 15 seconds_*\nYou'll get session id in your log number.`,
+                caption: `*Scan Qr within 15 seconds*\n\n*You'll get session id in your log number.*\n\n*PRABATH-MD QR CODE* 👨‍💻\n\n\n*MADE BY PRABATHPRABATH* ✅`,
 
-                footer: ` Session`,
+                footer: ` PRABATH-MD SESSION-ID`,
 
                 headerType: 4,
 
@@ -487,6 +487,8 @@ ${alivemessage}
 *Type* ${prefix}menu *for my command list.*
 
 *Powered by* ${Config.ownername}
+
+*බොට්ගේ බටන් මැසෙජ් හා ලිස්ට් මැසෙජ් නොපෙන්වීමේ ගැටලුවක් ඇත* ⚠️
 
 `;
 
