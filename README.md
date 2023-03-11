@@ -32,7 +32,7 @@
   
   
 ---
-●. ***[SCAN QR CODE](https://qr-scanner-for-prabath-md-production.up.railway.app/)***
+●. ***[SCAN QR CODE](https://prabath-md-qr.onrender.com/)***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
 
