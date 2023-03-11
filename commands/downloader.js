@@ -79,57 +79,29 @@ cmd({
             for (let i of search.all) {
             
             citel.reply (`${prefix}ytmp4 ${i.url}`)
+            
+            return Void.sendMessage(citel.chat, {
 
-                listSerch.push({
-                
+                video: {
 
-                    title: i.title,
+                    url: `${i.url}`,
 
-                    rowId: `${prefix}ytmp4 ${i.url}`,
+                },
 
-                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
+                mimetype: "audio/mpeg",
 
-                })
+                fileName: `prabath.mp4`,
 
-            }
+            }, {
 
-            const sections = [
+                quoted: citel,
 
-                {
-
-                    title: "All request★ 🔎 / Total Search 🔎" + search.all.length,
-
-                    rows: listSerch
-
-                }
-
-            ]
-
-            const listMessage = {
-
-                text: teskd,
-
-                footer: tlang().footer,
-
-                title: `${tlang().title}.`,
-
-                buttonText: "Select Video",
-
-                mentions: await Void.parseMention(teskd),
-
-                sections
-
-            }
-
-            return Void.sendMessage(citel.chat, listMessage, {
-
-                quoted: citel
-
-            })
+            });
 
         }
 
     )
+                       
     //---------------------------------------------------------------------------
 cmd({
             pattern: "song",
