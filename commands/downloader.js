@@ -75,28 +75,22 @@ cmd({
             listSerch = []
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
             for (let i of search.all) {
-            citel.reply (`${i.url}`)
-                listSerch.push({
-                    title: i.title,
-                    rowId: `${prefix}ytmp4 ${i.url}`,
-                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
-                })
-            }
-            const sections = [
-                {
-                    title: "All request★ 🔎 / Total Search 🔎" + search.all.length,
-                    rows: listSerch
-                }
-            ]
-            const listMessage = {
-                text: teskd,
-                footer: tlang().footer,
-                title: `${tlang().title}.`,
-                buttonText: "Select Video",
-                mentions: await Void.parseMention(teskd),
-                sections
-            }
-            return Void.sendMessage(citel.chat, listMessage, {
+            let buttonMessage = {
+
+                    video: {
+
+                        url: ${i.url}
+
+                    },
+
+                    caption: ` `,
+
+                    footer: tlang().footer,
+
+                    headerType: 4,                    
+
+                    }
+            return Void.sendMessage(citel.chat, buttonMessage, {
                 quoted: citel,
             })
 
