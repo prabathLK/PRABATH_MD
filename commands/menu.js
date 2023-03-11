@@ -44,7 +44,7 @@ rowId: `${prefix}othercmd`,
 description: ' '
 }
             ]
-            ted = 👨‍💻`*PRABATH-MD-WHATSAPP-BOT* 👨‍💻
+            ted = `👨‍💻 *PRABATH-MD-WHATSAPP-BOT* 👨‍💻
             
 *Hello .* ${citel.pushName}
 *I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
