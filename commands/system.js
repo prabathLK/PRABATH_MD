@@ -88,27 +88,7 @@ cmd({
                 headerType: 4,
 
 
-                contextInfo: {
-
-                    externalAdReply: {
-
-                        title: 'prabath-md Session',
-
-                        body: 'Get you Session ID',
-
-                        thumbnail: await botpic (),
-
-                        mediaType: 2,
-
-                        mediaUrl: ``,
-
-                        sourceUrl: ``,
-
-                    },
-
-                },
-
-            };
+            }
 
             await Void.sendMessage(citel.chat, buttonMessaged, {
 
