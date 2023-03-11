@@ -77,10 +77,11 @@ cmd({
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
 
             for (let i of search.all) {
+            
+            citel.reply (`${prefix}ytmp4 ${i.url}`)
 
                 listSerch.push({
                 
-                citel.reply (`${prefix}ytmp4 ${i.url}`)
 
                     title: i.title,
 
