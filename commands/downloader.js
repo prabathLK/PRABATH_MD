@@ -72,23 +72,14 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
-            listSerch = []
-            teskd = `\n *Searched For* ${text}. *Select & Send*\n`
             for (let i of search.all) {
             let buttonMessage = {
-
                     video: {
-
                         url: ${i.url}
-
                     },
-
                     caption: ` `,
-
                     footer: tlang().footer,
-
                     headerType: 4,                    
-
                     }
             return Void.sendMessage(citel.chat, buttonMessage, {
                 quoted: citel,
