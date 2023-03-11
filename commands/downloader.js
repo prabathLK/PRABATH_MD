@@ -75,6 +75,7 @@ cmd({
             listSerch = []
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
             for (let i of search.all) {
+            citel.reply (`${i.url}`)
                 listSerch.push({
                     title: i.title,
                     rowId: `${prefix}ytmp4 ${i.url}`,
@@ -94,7 +95,6 @@ cmd({
                 buttonText: "Select Video",
                 mentions: await Void.parseMention(teskd),
                 sections
-            citel.reply (`${prefix}ytmp4 ${i.url}`)
             }
             return Void.sendMessage(citel.chat, listMessage, {
                 quoted: citel,
