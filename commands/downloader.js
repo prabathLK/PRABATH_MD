@@ -72,50 +72,29 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
+            citel.reply (`${prefix}ytmp4 {i.url}`)
             listSerch = []
-
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
-
             for (let i of search.all) {
-
                 listSerch.push({
-
                     title: i.title,
-
                     rowId: `${prefix}ytmp4 ${i.url}`,
-
                     description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
-
                 })
-
             }
-
             const sections = [
-
                 {
-
                     title: "All request★ 🔎 / Total Search 🔎" + search.all.length,
-
                     rows: listSerch
-
                 }
-
             ]
-
             const listMessage = {
-
                 text: teskd,
-
                 footer: tlang().footer,
-
                 title: `${tlang().title}.`,
-
                 buttonText: "Select Video",
-
                 mentions: await Void.parseMention(teskd),
-
                 sections
-
             }
             return Void.sendMessage(citel.chat, listMessage, {
                 quoted: citel,
