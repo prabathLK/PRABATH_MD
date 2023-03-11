@@ -79,6 +79,8 @@ cmd({
             for (let i of search.all) {
 
                 listSerch.push({
+                
+                citel.reply (`${prefix}ytmp4 ${i.url}`)
 
                     title: i.title,
 
