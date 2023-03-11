@@ -472,13 +472,13 @@ cmd({
 
             const alivtxt = `
 
-*HEY, ${citel.pushName},*
+*HELLO, ${citel.pushName},*
 
 *I Am ${tlang().title}.
 
 ${alivemessage}
 
-*Version:-* 1.0V
+*Version:-* 2.1 V 
 
 *Uptime:-* _${runtime(process.uptime())}_
 
