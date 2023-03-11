@@ -73,18 +73,15 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             for (let i of search.all) {
-            let buttonMessage = {
-                    video: {
-                        url: ${i.url}
-                    },
-                    caption: ` `,
-                    footer: tlang().footer,
-                    headerType: 4,                    
-                    }
-            return Void.sendMessage(citel.chat, buttonMessage, {
+            return Void.sendMessage(citel.chat, {
+                video: {
+                    url: `${i.url}`,
+                },
+                mimetype: "video/mp4",
+                fileName: `${i.title}`,
+            }, {
                 quoted: citel,
-            })
-
+            });
         }
     )
     //---------------------------------------------------------------------------
