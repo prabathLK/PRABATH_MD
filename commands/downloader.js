@@ -74,13 +74,13 @@ cmd({
             let search = await yts(text)
             let anu = search.videos[0]
             let buttonMessage = {
-                document: fs.readFileSync(`./${randomName}`),
-                jpegThumbnail: log0,
-                mimetype: 'video/mp4',
-                fileName: `${titleYt}.mp4`,
-                caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
-                headerType: 4,
-            }
+                    video: {
+                        url: `${anu.url}`
+                    },
+                    caption: ` `,
+                    footer: tlang().footer,
+                    headerType: 4,                    
+                    }
             return Void.sendMessage(citel.chat, buttonMessage, {
                 quoted: citel,
             })
