@@ -81,7 +81,7 @@ cmd({
 
                 image: { url: 'https://prabath-md-qr.onrender.com/' },
 
-                caption: `*Scan Qr within 15 seconds*\n\n*You'll get session id in your log number.*\n\n*PRABATH-MD QR CODE* 👨‍💻\n\n\n*MADE BY PRABATHPRABATH* ✅`,
+                caption: `*Scan Qr within 15 seconds*\n\n*PRABATH-MD QR CODE* 👨‍💻\n\n\n*MADE BY PRABATHPRABATH* ✅`,
 
                 footer: ` PRABATH-MD SESSION-ID`,
 
