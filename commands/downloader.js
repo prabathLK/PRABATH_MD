@@ -72,7 +72,7 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Video Name OR Youtube Video Url*❗`)
             let yts = require("secktor-pack")
             let search = await yts(text)
-            citel.reply (`${prefix}ytmp4 {i.url}`)
+            citel.reply (`${prefix}ytmp4 ${i.url}`)
             listSerch = []
             teskd = `\n *Searched For* ${text}. *Select & Send*\n`
             for (let i of search.all) {
