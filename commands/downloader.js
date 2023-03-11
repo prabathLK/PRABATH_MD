@@ -74,8 +74,6 @@ cmd({
             let search = await yts(text)
             listSerch = []
 
-            teskd = `\n *Searched For* ${text}. *Select & Send*\n`
-
             for (let i of search.all) {
             
             citel.reply (`${prefix}ytmp4 ${i.url}`)
