@@ -73,17 +73,59 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
+
+            teskd = `\n *Searched For* ${text}. *Select & Send*\n`
+
             for (let i of search.all) {
-            return Void.sendMessage(citel.chat, {
-                video: {
-                    url: `${i.url}`,
-                },
-                mimetype: "video/mp4",
-                fileName: `${i.title}`,
-            }, {
-                quoted: citel,
-            });
+
+                listSerch.push({
+
+                    title: i.title,
+
+                    rowId: `${prefix}ytmp4 ${i.url}`,
+
+                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
+
+                })
+
+            }
+
+            const sections = [
+
+                {
+
+                    title: "All request★ 🔎 / Total Search 🔎" + search.all.length,
+
+                    rows: listSerch
+
+                }
+
+            ]
+
+            const listMessage = {
+
+                text: teskd,
+
+                footer: tlang().footer,
+
+                title: `${tlang().title}.`,
+
+                buttonText: "Select Video",
+
+                mentions: await Void.parseMention(teskd),
+
+                sections
+
+            }
+
+            return Void.sendMessage(citel.chat, listMessage, {
+
+                quoted: citel
+
+            })
+
         }
+
     )
     //---------------------------------------------------------------------------
 cmd({
