@@ -74,27 +74,55 @@ cmd({
             let search = await yts(text)
             listSerch = []
 
+            teskd = `\n *Searched For* ${text}. *Select & Send*\n`
+
             for (let i of search.all) {
-            
-            citel.reply (`${prefix}ytmp4 ${i.url}`)
-            
-            return Void.sendMessage(citel.chat, {
 
-                video: {
+                listSerch.push({
 
-                    url: `${i.url}`,
+                    title: i.title,
 
-                },
+                    rowId: `${prefix}ytmp4 ${i.url}`,
 
-                mimetype: "audio/mpeg",
+                    description: `*PRABATH-MD-WA-BOT* / ${i.timestamp}`
 
-                fileName: `prabath.mp4`,
+                })
 
-            }, {
+            }
 
-                quoted: citel,
+            const sections = [
 
-            });
+                {
+
+                    title: "All request★ 🔎 / Total Search 🔎" + search.all.length,
+
+                    rows: listSerch
+
+                }
+
+            ]
+
+            const listMessage = {
+
+                text: teskd,
+
+                footer: tlang().footer,
+
+                title: `${tlang().title}.`,
+
+                buttonText: "Select Video",
+
+                mentions: await Void.parseMention(teskd),
+
+                sections
+
+            }
+
+            return Void.sendMessage(citel.chat, listMessage, {
+
+                quoted: citel
+
+            })
 
         }
 
