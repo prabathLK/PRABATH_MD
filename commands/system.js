@@ -583,17 +583,17 @@ cmd({
             const alivtxt = `
 ┏━━━━━━━━━━━━━━━━━━━━━━━
 ┃
-┃ ⏱️ *Uptime:-* ${runtime(process.uptime())}
+┃  *Uptime:-* ${runtime(process.uptime())}
 ┃
-┃ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃  *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 ┃
-┃ ⚡ *Speed:-* ${latensie.toFixed(4)} ms
+┃  *Speed:-* ${latensie.toFixed(4)} ms
 ┃
-┃ 📱 *User:-* ${Config.ownername}
+┃  *User:-* ${Config.ownername}
 ┃
-┃ 👨‍💻 *Owner:-* Prabath 
+┃  *Owner:-* Prabath 
 ┃
-┃ 🧬 *Version:-* 3.0 V 
+┃  *Version:-* 3.0 V 
 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
