@@ -590,8 +590,6 @@ cmd({
 ┃
 ┃  *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 ┃
-┃  *Speed:-* ${latensie.toFixed(4)} ms
-┃
 ┃  *User:-* ${Config.ownername}
 ┃
 ┃  *Owner:-* Prabath 
