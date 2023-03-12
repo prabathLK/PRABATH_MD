@@ -468,28 +468,19 @@ cmd({
 
         async(Void, citel, text, isAdmins) => {
 
-            let alivemessage = Config.ALIVE_MESSAGE || `**`
 
             const alivtxt = `
+*Hello* ${citel.pushName}
+*I am ${tlang().title} 👨‍💻
 
-*HELLO, ${citel.pushName},*
 
-*I Am ${tlang().title}.
-
-${alivemessage}
-
-*Version:-* 2.1 V 
-
-*Uptime:-* _${runtime(process.uptime())}_
-
-*Owner:-* _${Config.ownername}_
-
-*Type* ${prefix}menu *for my command list.*
-
-*Powered by* ${Config.ownername}
-
-*බොට්ගේ බටන් මැසෙජ් හා ලිස්ට් මැසෙජ් නොපෙන්වීමේ ගැටලුවක් ඇත* ⚠️
-
+┏━━━━━━━━━━━━━━━━━
+┃ ● *Uptime:-* ${runtime(process.uptime())}
+┃ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃.● *User:-* ${Config.ownername}
+┃ ● *Owner:-* Prabath 
+┃ ● *Version:-* 3.0 V 
+┗━━━━━━━━━━━━━━━━━━
 `;
 
             let aliveMessage = {
