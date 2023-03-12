@@ -8,7 +8,7 @@
  * @description : Secktor,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
-
+const os = require('os');
 const { tlang, botpic,cmd, prefix, runtime,Config } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
@@ -91,17 +91,25 @@ cmd({
         citel.reply("*Checking System Status.*");
         latensie = speed() - timestampe;
         let ter = `
- 📎${tlang().title}📎
-🌍 *Description:* This bot system is designed to make things easier 🇱🇰
-📎 *Speed:* ${latensie.toFixed(4)} ms
-⏱️ *Uptime:* ${runtime(process.uptime())}
-📟 *Version:* 1.0.0
-🙋‍♂️ *Owner:*  ${Config.ownername}
-*Powered by ${tlang().title}*
+┏━━━━━━━━━━━━━━━━━━━━━━━
+┃
+┃ ⏱️ *Uptime:-* ${runtime(process.uptime())}
+┃
+┃ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃
+┃ ⚡ *Speed:-* ${latensie.toFixed(4)} ms
+┃
+┃ 📱 *User:-* ${Config.ownername}
+┃
+┃ 👨‍💻 *Owner:-* Prabath 
+┃
+┃ 🧬 *Version:-* 3.0 V 
+┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
         let buttonMessaged = {
             image: {
-                url: await botpic(),
+                url: ,
             },
             caption: ter,
             footer: tlang().footer,
