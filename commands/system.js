@@ -17,8 +17,9 @@
  * @version 0.0.6
 
  **/
-
-const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config } = require('../lib')
+ 
+const os = require('os');
+const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime,formatp, prefix, Config,  } = require('../lib')
 
     //---------------------------------------------------------------------------
 
