@@ -107,7 +107,6 @@ cmd({
         let buttonMessaged = {
             caption: cap,
             footer: tlang().footer,
-            headerType: 4,
             }
         return await Void.sendMessage(citel.chat, buttonMessaged, {
             quoted: citel,
