@@ -86,6 +86,7 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
+        const os = require('os');
         const uptime = process.uptime();
         timestampe = speed();
         citel.reply("*Checking System Status.*");
