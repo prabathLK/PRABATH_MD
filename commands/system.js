@@ -471,17 +471,34 @@ cmd({
 
 
             const alivtxt = `
-*Hello* ${citel.pushName}
-*I am ${tlang().title} 👨‍💻
+*Hello* ${citel.pushName} 🙋‍♂️
+
+*I am* ${tlang().title} 👨‍💻
 
 
 ┏━━━━━━━━━━━━━━━━━
-┃ ● *Uptime:-* ${runtime(process.uptime())}
-┃ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃.● *User:-* ${Config.ownername}
-┃ ● *Owner:-* Prabath 
-┃ ● *Version:-* 3.0 V 
+┃
+┃ ●. *Uptime:-* ${runtime(process.uptime())}
+┃
+┃ ●. *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃
+┃ ●. *User:-* ${Config.ownername}
+┃
+┃ ●. *Owner:-* Prabath 
+┃
+┃ ●. *Version:-* 3.0 V 
+┃
 ┗━━━━━━━━━━━━━━━━━━
+
+
+● *Type ${prefix}menu and get all commands*✅
+
+*problems* ⚠️
+
+බටන් මැසේජ් හා ලිස්ට් මැසේජ් නොපෙන්වීමේ ගැටලුවක් පවතී.
+
+
+● *MADE BY PRABATH* ✅
 `;
 
             let aliveMessage = {
