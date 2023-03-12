@@ -558,3 +558,92 @@ cmd({
     }
 
 )
+
+   //---------------------------------------------------------------------------
+
+
+cmd({
+
+            pattern: "system",
+
+            alias: ["සිස්ටම්"],
+
+            category: "general",
+
+            react: "📟",
+
+            filename: __filename,
+
+            desc: "is bot alive??"
+
+        },
+
+        async(Void, citel, text, isAdmins) => {
+
+            const alivtxt = `
+
+*Hello* ${citel.pushName} 🙋‍♂️
+
+*I am* ${tlang().title} 👨‍💻
+
+┏━━━━━━━━━━━━━━━━━━━━━
+
+┃
+
+┃ ● *Uptime:-* ${runtime(process.uptime())}
+
+┃
+
+┃ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+
+┃
+
+┃ ● *User:-* ${Config.ownername}
+
+┃
+
+┃ ● *Owner:-* Prabath 
+
+┃
+
+┃ ● *Version:-* 3.0 V 
+
+┃
+
+┗━━━━━━━━━━━━━━━━━━━━━━
+
+● *Type ${prefix}menu and get all commands*✅
+
+*PROBLEMS* ⚠️
+
+බටන් මැසේජ් හා ලිස්ට් මැසේජ් නොපෙන්වීමේ ගැටලුවක් පවතී.
+
+● *MADE BY PRABATH* ✅
+
+`;
+
+            let aliveMessage = {
+
+                image: {
+
+                    url: await botpic(),
+
+                },
+
+                caption: alivtxt,
+
+                footer: tlang().footer,
+
+                headerType: 4,
+
+            };
+
+             return Void.sendMessage(citel.chat, aliveMessage, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
