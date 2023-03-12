@@ -108,9 +108,6 @@ cmd({
 ┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
         let buttonMessaged = {
-            image: {
-                url: ,
-            },
             caption: ter,
             footer: tlang().footer,
             headerType: 4,
