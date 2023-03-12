@@ -86,12 +86,8 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
-        const os = require('os');
-        const uptime = process.uptime();
-        timestampe = speed();
-        citel.reply("*Checking System Status.*");
-        latensie = speed() - timestampe;
-        let ter = `
+        let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
+        let cap = ` 
 ┏━━━━━━━━━━━━━━━━━━━━━━━
 ┃
 ┃ ⏱️ *Uptime:-* ${runtime(process.uptime())}
@@ -109,7 +105,7 @@ cmd({
 ┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
         let buttonMessaged = {
-            caption: ter,
+            caption: cap,
             footer: tlang().footer,
             headerType: 4,
             }
