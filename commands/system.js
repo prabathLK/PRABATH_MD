@@ -581,9 +581,6 @@ cmd({
         async(Void, citel, text, isAdmins) => {
 
             const alivtxt = `
-*PRABATH-MD SYSTEM-STATUS*
-
-
 ┏━━━━━━━━━━━━━━━━━━━━━━━
 ┃
 ┃  *Uptime:-* ${runtime(process.uptime())}
@@ -594,18 +591,12 @@ cmd({
 ┃
 ┃  *Owner:-* Prabath 
 ┃
-┃  *Version:-* 3${prefix}V 
+┃  *Version:-* 3${prefix}0 V 
 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
 
             let aliveMessage = {
-
-                image: {
-
-                    url: await botpic(),
-
-                },
 
                 caption: alivtxt,
 
