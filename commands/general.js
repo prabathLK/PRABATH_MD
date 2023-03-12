@@ -78,8 +78,8 @@ cmd({
 )
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "system",
-        alias: ["සිස්ටම්"],
+        pattern: "gskagskagajahsjg",
+        alias: ["hskagsskwgskshs"],
         desc: "To check bot status",
         category: "general",
         react: "📟",
