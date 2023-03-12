@@ -598,6 +598,12 @@ cmd({
 
             let aliveMessage = {
 
+                image: {
+
+                    url: await botpic(),
+
+                },
+
                 caption: alivtxt,
 
                 footer: tlang().footer,
