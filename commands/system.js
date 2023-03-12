@@ -574,52 +574,28 @@ cmd({
 
             filename: __filename,
 
-            desc: "is bot alive??"
+            desc: "system status??"
 
         },
 
         async(Void, citel, text, isAdmins) => {
 
             const alivtxt = `
-
-*Hello* ${citel.pushName} 🙋‍♂️
-
-*I am* ${tlang().title} 👨‍💻
-
-┏━━━━━━━━━━━━━━━━━━━━━
-
+┏━━━━━━━━━━━━━━━━━━━━━━━
 ┃
-
-┃ ● *Uptime:-* ${runtime(process.uptime())}
-
+┃ ⏱️ *Uptime:-* ${runtime(process.uptime())}
 ┃
-
-┃ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-
+┃ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 ┃
-
-┃ ● *User:-* ${Config.ownername}
-
+┃ ⚡ *Speed:-* ${latensie.toFixed(4)} ms
 ┃
-
-┃ ● *Owner:-* Prabath 
-
+┃ 📱 *User:-* ${Config.ownername}
 ┃
-
-┃ ● *Version:-* 3.0 V 
-
+┃ 👨‍💻 *Owner:-* Prabath 
 ┃
-
-┗━━━━━━━━━━━━━━━━━━━━━━
-
-● *Type ${prefix}menu and get all commands*✅
-
-*PROBLEMS* ⚠️
-
-බටන් මැසේජ් හා ලිස්ට් මැසේජ් නොපෙන්වීමේ ගැටලුවක් පවතී.
-
-● *MADE BY PRABATH* ✅
-
+┃ 🧬 *Version:-* 3.0 V 
+┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
 
             let aliveMessage = {
