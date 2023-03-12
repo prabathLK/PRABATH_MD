@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 const os = require('os');
-const { tlang, botpic,cmd, prefix, runtime,Config } = require('../lib')
+const { tlang, botpic,cmd, prefix, runtime,Config,formatp } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
 //---------------------------------------------------------------------------
