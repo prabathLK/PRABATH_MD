@@ -40,7 +40,7 @@
 
 
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH-MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH-MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=PRABATH&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)
 
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/NM7qyM?referralCode=tiXzWI)
