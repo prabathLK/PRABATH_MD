@@ -34,7 +34,7 @@
 ---
 ●. ***[SCAN QR CODE](https://prabath-md-qr.onrender.com/)***
 
-●.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI).***
+●.  ***Get a Mongodb uri from [Mongodb](https://api.clever-cloud.com/v2/session/login).***
 
 ●.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
 
