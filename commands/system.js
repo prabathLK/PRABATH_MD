@@ -491,15 +491,37 @@ cmd({
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
 
-● *Type ${prefix}menu and get all commands*✅
-
-*PROBLEMS* ⚠️
-
-බටන් මැසේජ් හා ලිස්ට් මැසේජ් නොපෙන්වීමේ ගැටලුවක් පවතී.
-
-
 ● *MADE BY PRABATH* ✅
-`;
+`;           let buttons = [{
+
+                    buttonId: `${prefix}menu`,
+
+                    buttonText: {
+
+                        displayText: "Commands",
+
+                    },
+
+                    type: 1,
+
+                },
+
+
+                  {
+
+                    buttonId: `${prefix}owner`,
+
+                    buttonText: {
+
+                        displayText: "Owner",
+
+                    },
+
+                    type: 1,
+
+                },
+
+            ];
 
             let aliveMessage = {
 
@@ -510,6 +532,8 @@ cmd({
                 },
 
                 caption: alivtxt,
+                
+                buttons: buttons,
 
                 footer: tlang().footer,
 
