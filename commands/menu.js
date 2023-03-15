@@ -10,37 +10,37 @@ cmd({
         async(Void, citel, text) => {
            let list = [{
 title: 'DOWNLOAD COMMAND LIST',
-rowId: `${prefix}downloadcmd`,
+rowId: `${prefix}downcmdnew`,
 description: ' '
 },
 {
 title: 'GROUP COMMAND LIST',
-rowId: `${prefix}groupcmd`,
+rowId: `${prefix}groupcmdnew`,
 description: ' '
 },
 {
 title: 'GENERAL COMMAND LIST',
-rowId: `${prefix}genaralcmd`,
+rowId: `${prefix}gcmdnew`,
 description: ' '
 },
 {
 title: 'GAME COMMAND LIST',
-rowId: `${prefix}gamecmd`,
+rowId: `${prefix}gamecmdnew`,
 description: ' '
 },
 {
 title: 'OWNER COMMAND LIST',
-rowId: `${prefix}ownercmd`,
+rowId: `${prefix}ownercmdnew`,
 description: ' '
 },
 {
 title: 'CONVERTER COMMAND LIST',
-rowId: `${prefix}concmd`,
+rowId: `${prefix}concmdnew`,
 description: ' '
 },
 {
 title: 'OTHER COMMAND LIST',
-rowId: `${prefix}othercmd`,
+rowId: `${prefix}othercmdnew`,
 description: ' '
 }
             ]
