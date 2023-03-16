@@ -19,7 +19,7 @@ cmd({
             category: "fun",
             filename: __filename,
         },
-        async(Void, citel, text) => {
+        async(Void, text) => {
             return await citel.reply(`${random_question()}`);
         }
     )
