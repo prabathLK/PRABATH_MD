@@ -79,15 +79,15 @@ cmd({
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-● *YOU ENTER THE WORD:*  ${text}
+   ● *YOU ENTER THE WORD:*  ${text}
 
-● *TOTAL REQUEST:* ${search.all.length}
+   ● *TOTAL REQUEST:* ${search.all.length}
 
-● *BASED WEBSITE:* Youtube
+   ● *BASED WEBSITE:* Youtube
 
 
 
-● *MADE BY PRABATH* ✅
+   ● *MADE BY PRABATH* ✅
 
 ⦿. *REQUEST BY:* ${citel.pushName}
 
