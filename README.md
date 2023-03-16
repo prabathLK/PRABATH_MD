@@ -81,7 +81,7 @@
 
 ***OWNER_NUMBER***  = Enter your number 
 
-***PACK_INFO***  = Enter sticker pack name
+***PACK_INFO***  = prabath;prabath-md ✅
 
 ***READ_MESSAGE***  = Enter "true" or "false"
 
