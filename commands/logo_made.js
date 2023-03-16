@@ -41,7 +41,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply(`owner prabath 👨‍💻🎊❗ `)
+            if (!text) return reply(`owner prabath 👨‍💻🎊❗ `)
 
             let buttonMessage = {
 
