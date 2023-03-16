@@ -41,7 +41,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return reply(`owner prabath 👨‍💻🎊❗ `)
+            if (!text) return citel.reply(`owner prabath 👨‍💻🎊❗ `)
 
             let buttonMessage = {
 
@@ -53,7 +53,7 @@ cmd({
 
                 caption: `
 
-  ${prefix}promote 94762280384
+94762280384
 
 `,
 
