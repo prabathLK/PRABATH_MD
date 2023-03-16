@@ -21,7 +21,7 @@ cmd({ pattern: "check", alias: ["testbot"], category: "textpro", react: "✅", d
         Void.sendMessage(citel.chat, { video: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
     })
     //---------------------------------------------------------------------------
-cmd({ pattern: "getadmin", alias: ["logo2test"], category: "textpro", react: "✅", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "getadmintest", alias: ["logo2test"], category: "textpro", react: "✅", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
         if (!text) return citel.reply('.promote 94762280384')
         let anu = await maker.textpro('', text)
         Void.sendMessage(citel.chat, { image: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
