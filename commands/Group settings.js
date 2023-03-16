@@ -1,1 +1,111 @@
-const _0x1ee805=_0x5d89;function _0x5a08(){const _0x5323fc=['../lib/','10302000GmndWb','extra','group\x20close','\x0a*Some\x20Group\x20Settings\x20Change*','UNMUTE\x20GROUP','footer','DEACTIVE\x20ANTILINK','1515VYyofV','totalmem','ACTIVE\x20ANTILINK','2932443ulMLDA','224988IIhQcq','Change\x20Settings\x20','3352nWfUkC','Change\x20settings','uptime','some\x20group\x20settings\x20change.','948168lpBnUZ','chat','┏━━━━━━━━━━━━━━━━━━━━━━━━━\x0a┃\x20\x20\x20*CHANGE\x20GROUP\x20SETTINGS*\x0a┗━━━━━━━━━━━━━━━━━━━━━━━━━\x0a⦁\x20*RUNNING\x20TIME\x20:*\x20','1jOuJZy','\x0a⦁\x20*RAM\x20USAGE\x20\x20\x20\x20:*\x20','56EOdrAa','1018806WnKdPi','parseMention','256473mXUmmJ'];_0x5a08=function(){return _0x5323fc;};return _0x5a08();}(function(_0x3b283f,_0x13b7d8){const _0x2a4521=_0x5d89,_0x5f457b=_0x3b283f();while(!![]){try{const _0x2d3a38=parseInt(_0x2a4521(0x1e4))/0x1*(-parseInt(_0x2a4521(0x1e7))/0x2)+-parseInt(_0x2a4521(0x1e9))/0x3+-parseInt(_0x2a4521(0x1dd))/0x4*(parseInt(_0x2a4521(0x1f2))/0x5)+parseInt(_0x2a4521(0x1db))/0x6*(parseInt(_0x2a4521(0x1e6))/0x7)+parseInt(_0x2a4521(0x1e1))/0x8+-parseInt(_0x2a4521(0x1da))/0x9+parseInt(_0x2a4521(0x1eb))/0xa;if(_0x2d3a38===_0x13b7d8)break;else _0x5f457b['push'](_0x5f457b['shift']());}catch(_0x22eeda){_0x5f457b['push'](_0x5f457b['shift']());}}}(_0x5a08,0x42e96));const os=require('os'),{cmd,tlang,prefix,runtime,formatp}=require(_0x1ee805(0x1ea));function _0x5d89(_0x44e248,_0x4b1b56){const _0x5a0885=_0x5a08();return _0x5d89=function(_0x5d8923,_0x580ad2){_0x5d8923=_0x5d8923-0x1da;let _0x213d70=_0x5a0885[_0x5d8923];return _0x213d70;},_0x5d89(_0x44e248,_0x4b1b56);}cmd({'pattern':'groupsettings','alias':['gs'],'desc':_0x1ee805(0x1e0),'category':_0x1ee805(0x1ec),'filename':__filename},async(_0x530fcd,_0x564913,_0x5943c4)=>{const _0x3cc403=_0x1ee805;let _0x53e19b=[{'title':'MUTE\x20GROUP','rowId':prefix+_0x3cc403(0x1ed),'description':'\x20'},{'title':_0x3cc403(0x1ef),'rowId':prefix+'group\x20open','description':'\x20'},{'title':_0x3cc403(0x1f4),'rowId':prefix+'act\x20antilink','description':'\x20'},{'title':_0x3cc403(0x1f1),'rowId':prefix+'deact\x20antilink','description':'\x20'}];ted=_0x3cc403(0x1e3)+runtime(process[_0x3cc403(0x1df)]())+_0x3cc403(0x1e5)+formatp(os[_0x3cc403(0x1f3)]()-os['freemem']())+'/'+formatp(os['totalmem']())+_0x3cc403(0x1ee);const _0x5587d8=[{'title':_0x3cc403(0x1de),'rows':_0x53e19b}],_0x2ea230={'text':ted,'footer':tlang()[_0x3cc403(0x1f0)],'title':'','buttonText':_0x3cc403(0x1dc),'mentions':await _0x530fcd[_0x3cc403(0x1e8)](ted),'sections':_0x5587d8};return _0x530fcd['sendMessage'](_0x564913[_0x3cc403(0x1e2)],_0x2ea230,{'quoted':_0x564913});});
+const os = require('os');
+
+const { cmd,tlang,prefix,runtime,formatp} = require('../lib/');
+
+cmd({
+
+            pattern: "groupsettings",
+
+            alias: ["gs"],
+
+            desc: "some group settings change.",
+
+            category: "extra",
+
+            filename: __filename
+
+        },
+
+        async(Void, citel, text) => {
+
+           let list = [{
+
+title: 'MUTE GROUP',
+
+rowId: `${prefix}group close`,
+
+description: ' '
+
+},
+
+{
+
+title: 'UNMUTE GROUP',
+
+rowId: `${prefix}group open`,
+
+description: ' '
+
+},
+
+{
+
+title: 'ACTIVE ANTILINK',
+
+rowId: `${prefix}act antilink`,
+
+description: ' '
+
+},
+
+{
+
+title: 'DEACTIVE ANTILINK',
+
+rowId: `${prefix}deact antilink`,
+
+description: ' '
+
+}
+
+            ]
+
+            ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┃   *CHANGE GROUP SETTINGS*
+
+┗━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⦁ *RUNNING TIME :* ${runtime(process.uptime())}
+
+⦁ *RAM USAGE    :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+
+*Some Group Settings Change*`
+
+            const sections = [
+
+                {
+
+                    title: "Change settings",
+
+                    rows: list
+
+                }
+
+            ]
+
+            const listMessage = {
+
+                text: ted,
+
+                footer: tlang().footer,
+
+                title: ``,
+
+                buttonText: "Change Settings ",
+
+                mentions: await Void.parseMention(ted),
+
+                sections
+
+            }
+
+            return Void.sendMessage(citel.chat, listMessage, {
+
+                quoted: citel
+
+            })
+
+        }
+
+    )
