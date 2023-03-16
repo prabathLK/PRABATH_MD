@@ -21,7 +21,24 @@ cmd({ pattern: "check", alias: ["testbot"], category: "textpro", react: "✅", d
     })
     //---------------------------------------------------------------------------
 cmd({ pattern: "getadmintest", alias: ["logo2test"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
-        if (!text) return citel.reply(`${prefix}promote 94762280384`)
-        let anu = await maker.textpro('', text)
-        Void.sendMessage(citel.chat, { image: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` })
-    })
+    const msg = `${prefix}promote 94762280384`
+    let buttonMessage = {
+
+        image: {
+
+            url: 'https://i.ibb.co/VQcXsdc/20230305-133828.jpg',
+
+        },
+
+        caption: msg,
+
+        footer: tlang().footer,
+	    
+
+        headerType: 4,
+
+    };
+
+    return Void.sendMessage(citel.chat, buttonMessage);
+
+    }
