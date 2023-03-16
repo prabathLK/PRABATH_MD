@@ -20,7 +20,7 @@ cmd({
 
            let list = [{
 
-title: 'MUTE GROUP',
+title: 'MUTE GROUP 🔇',
 
 rowId: `${prefix}group close`,
 
@@ -30,7 +30,7 @@ description: ' '
 
 {
 
-title: 'UNMUTE GROUP',
+title: 'UNMUTE GROUP 🔊',
 
 rowId: `${prefix}group open`,
 
@@ -40,7 +40,7 @@ description: ' '
 
 {
 
-title: 'ACTIVE ANTILINK',
+title: 'ACTIVE ANTILINK ✅',
 
 rowId: `${prefix}act antilink`,
 
@@ -50,9 +50,9 @@ description: ' '
 
 {
 
-title: 'DEACTIVE ANTILINK',
+title: 'DEACTIVE ANTILINK ❌',
 
-rowId: `${prefix}act antilink`,
+rowId: `${prefix}deact antilink`,
 
 description: ' '
 
@@ -60,7 +60,7 @@ description: ' '
 
 {
 
-title: 'ACTIVE BOT THIS GROUP',
+title: 'ACTIVE BOT THIS GROUP ✅',
 
 rowId: `${prefix}bot on`,
 
@@ -70,9 +70,29 @@ description: ''
 
 {
 
-title: 'DEACTIVE BOT THIS GROUP',
+title: 'DEACTIVE BOT THIS GROUP ❌',
 
 rowId: `${prefix}bot off`,
+
+description: ''
+
+}
+
+{
+
+title: 'ACTIVE ADD MESSAGE AND LEFT MESSAGE ✅',
+
+rowId: `${prefix}act events`,
+
+description: ''
+
+},
+
+{
+
+title: 'DEACTIVE ADD MESSAGE AND LEFT MESSAGE ❌',
+
+rowId: `${prefix}deact events`,
 
 description: ''
 
