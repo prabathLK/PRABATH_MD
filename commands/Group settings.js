@@ -101,9 +101,8 @@ description: ''
             ]
 
             ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-┃   GROUP SETTINGS CHANGE
+┃   *GROUP SETTINGS CHANGE*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
-
 
 
 *THINGS THAT CAN BE CHANGED FROM THIS,*
