@@ -75,12 +75,14 @@ cmd({
             listSerch = []
 
             teskd = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-┃ 📽️ *YOUTUBE VIDEO DOWNLOADER* 📽️
+┃  *YOUTUBE VIDEO DOWNLOADER* 
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 ● *YOU ENTER THE WORD:*  ${text}
+
 ● *TOTAL REQUEST:* ${search.all.length}
+
 ● *BASED WEBSITE:* Youtube
 
 
@@ -122,8 +124,6 @@ cmd({
                 text: teskd,
 
                 footer: tlang().footer,
-
-                title: `${tlang().title}.`,
 
                 buttonText: "Select Video",
 
