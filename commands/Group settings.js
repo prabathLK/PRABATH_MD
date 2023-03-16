@@ -76,7 +76,7 @@ rowId: `${prefix}bot off`,
 
 description: ''
 
-}
+},
 
 {
 
