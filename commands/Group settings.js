@@ -101,16 +101,29 @@ description: ''
             ]
 
             ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-
-┃   *CHANGE GROUP SETTINGS*
-
+┃   GROUP SETTINGS CHANGE
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
-⦁ *RUNNING TIME :* ${runtime(process.uptime())}
 
-⦁ *RAM USAGE    :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 
-*Some Group Settings Change*`
+*THINGS THAT CAN BE CHANGED FROM THIS,*
+
+● MUTE GROUP
+● UNMUTE GROUP
+
+● ACTIVE ANTILINK
+● DEACTIVE ANTILINK
+
+● ACTIVE BOT THIS GROUP
+● DEACTIVE BOT THIS GROUP
+
+● ACTIVE ADD MESSAGE AND LEFT MESSAGE
+● DEACTIVE ADD MESSAGE AND LEFT MESSAGE 
+
+
+⦿. *REQUEST BY:* ${citel.pushName}
+
+`
 
             const sections = [
 
