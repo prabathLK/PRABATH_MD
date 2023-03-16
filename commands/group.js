@@ -24,7 +24,7 @@ cmd({
         },
         async(Void, citel, text,{ isCreator }) => {
             if (!isCreator) return citel.reply(tlang().owner);
-            if (!text) return citel.reply(`Please give me Query ${tlang().greet}`);
+            if (!text) return citel.reply(`*Please give me a group link* ${tlang().greet}`);
             if (!text.split(" ")[0] && !text.split(" ")[0].includes("whatsapp.com"))
                 citel.reply("Link Invalid, Please Send a valid whatsapp Group Link!");
             let result = text.split(" ")[0].split("https://chat.whatsapp.com/")[1];
@@ -81,7 +81,7 @@ cmd({
 
         await Void.sendMessage(`${citel.sender}`, {
 
-            image: await botpic(),
+            image: log0,
 
             caption: `*Support:* https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM`,
 
