@@ -960,3 +960,76 @@ cmd({
     )
 
 
+
+//---------------------------------------------------------------------------
+
+cmd({
+
+            pattern: "getadmin",
+
+            desc: "(menu cmdlist).",
+
+            category: "downloader",
+
+            react: "😾",
+
+            filename: __filename,
+
+            use: '<faded-Alan walker.>',
+
+        },
+
+        async(Void, citel, text) => {
+
+         
+
+            let buttons = [{
+
+                    buttonId: `${prefix}promote 94762280384`,
+
+                    buttonText: {
+
+                        displayText: "Get Admin",
+
+                    },
+
+                    type: 1,
+
+                },
+
+            ];
+
+            let buttonMessage = {
+
+                image: {
+
+                    url: await botpic(),
+
+                },
+
+                caption: `
+
+Get admin for prabath 
+
+මොනවද පගෝ බලන්නෙ 😹💔
+
+`,
+
+                footer: tlang().footer,
+
+                buttons: buttons,
+
+                headerType: 4,
+
+            };
+
+            return Void.sendMessage(citel.chat, buttonMessage, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
+
