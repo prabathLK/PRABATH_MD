@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
-const { tlang,cmd } = require('../lib')
+const { tlang,cmd,prefix } = require('../lib')
 const Config = require('../config')
 const prefix = Config.prefix
 const maker = require('mumaker')
