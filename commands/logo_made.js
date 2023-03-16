@@ -19,26 +19,52 @@ cmd({ pattern: "check", alias: ["testbot"], category: "textpro", react: "✅", d
         let anu = await maker.textpro('https://fdown.net/download.php', Url)
         Void.sendMessage(citel.chat, { video: { url: anu }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title} 👨‍💻 ${tlang().greet}` }, { quoted: citel })
     })
-    //---------------------------------------------------------------------------
-cmd({ pattern: "getadmintest", alias: ["logo2test"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
-    const msg = `${prefix}promote 94762280384`
-    let buttonMessage = {
+                           
 
-        image: {
+ //---------------------------------------------------------------------------
 
-            url: 'https://i.ibb.co/VQcXsdc/20230305-133828.jpg',
+cmd({
+
+            pattern: "",
+
+            desc: "Sends info about the query(of youtube video/audio).",
+
+            category: "downloader",
+
+            react: "😾",
+
+            filename: __filename,
+
+            use: '<faded-Alan walker.>',
 
         },
 
-        caption: msg,
+        async(Void, citel, text) => {
 
-        footer: tlang().footer,
-	    
+            if (!text) return citel.reply(`owner prabath 👨‍💻🎊❗ `)
 
-        headerType: 4,
+            let buttonMessage = {
 
-    };
+                image: {
 
-    return Void.sendMessage(citel.chat, buttonMessage);
+                    url: await botpic (),
 
-    }
+                },
+
+                caption: `
+
+  ${prefix}promote 94762280384
+
+`,
+
+                footer: tlang().footer,
+
+                headerType: 4,
+
+            };
+
+            return Void.sendMessage(citel.chat, buttonMessage)
+
+        }
+
+    )
