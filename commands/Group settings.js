@@ -52,9 +52,29 @@ description: ' '
 
 title: 'DEACTIVE ANTILINK',
 
-rowId: `${prefix}deact antilink`,
+rowId: `${prefix}act antilink`,
 
 description: ' '
+
+},
+
+{
+
+title: 'ACTIVE BOT THIS GROUP',
+
+rowId: `${prefix}bot on`,
+
+description: ''
+
+},
+
+{
+
+title: 'DEACTIVE BOT THIS GROUP',
+
+rowId: `${prefix}bot off`,
+
+description: ''
 
 }
 
