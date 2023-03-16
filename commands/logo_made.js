@@ -22,3 +22,9 @@ cmd({ pattern: "check", alias: ["testbot"], category: "textpro", react: "✅", d
                            
 
  //----------------------------------------------------------------------------
+
+cmd({ pattern: "test1promote", alias: ["testbot"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+
+        Void.sendMessage(citel.chat, { text: promote }, { quoted: citel })
+
+    })
