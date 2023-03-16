@@ -159,13 +159,6 @@ cmd({
             let search = await yts(text);
             let anu = search.videos[0];
             let buttons = [{
-                    buttonId: `${prefix}ytmp4 ${anu.url}`,
-                    buttonText: {
-                        displayText: "VIDEO",
-                    },
-                    type: 1,
-                },
-                {
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
                     buttonText: {
                         displayText: "AUDIO",
@@ -186,7 +179,6 @@ cmd({
                 },
                 caption: `
 
-        ${tlang().title} 
 ╭────────────────❖
 │ ℹ️ *INFORMATION* 
 │
@@ -305,6 +297,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "audio",
+            alias: ["mp3"],
             desc: "Downloads audio from youtube.",
             category: "downloader",
             react: "🎵",
@@ -316,7 +309,25 @@ cmd({
             let yts = require("secktor-pack")
             let search = await yts(text)
             listSerch = []
-            teskd = `*AUDIO DOWNLOADER* \n\n\n *Searched for* ${text}.\n\n *MADE BY PRABATH* ✅`
+            teskd = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
+┃   *YOUTUBE AUDIO DOWNLOADER* 
+┗━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ 
+
+    ● *YOU ENTER THE WORD:*  ${text}
+
+    ● *TOTAL REQUEST:* ${search.all.length}
+
+    ● *BASED WEBSITE:* Youtube
+
+
+
+    ● *MADE BY PRABATH* ✅
+
+⦿. *REQUEST BY:* ${citel.pushName}
+
+`
             for (let i of search.all) {
                 listSerch.push({
                     title: i.title,
