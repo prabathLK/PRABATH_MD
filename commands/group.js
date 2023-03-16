@@ -76,14 +76,19 @@ cmd({
         filename: __filename,
     },
     async(Void, citel, text) => {
-        citel.reply(`*Check your Inbox*`);
+
+        citel.reply(`*Check your inbox*`);
+
         await Void.sendMessage(`${citel.sender}`, {
-	
-            caption: `*Group Name: main bot group*\n*Group Link:* https://chat.whatsapp.com/EGGqct6UAD66iE4K9ywaLY`,
-	    image: ``
+
+            image: await botpic(),
+
+            caption: `*Support:* https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM`,
+
         });
 
     }
+
 )
 
 //---------------------------------------------------------------------------
