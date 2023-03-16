@@ -74,7 +74,22 @@ cmd({
             let search = await yts(text)
             listSerch = []
 
-            teskd = `\n *Searched For* ${text}. *Select & Send*\n`
+            teskd = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ 📽️ *YOUTUBE VIDEO DOWNLOADER* 📽️
+┗━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+● *YOU ENTER THE WORD:*  ${text}
+● *TOTAL REQUEST:* ${search.all.length}
+● *BASED WEBSITE:* Youtube
+
+
+
+● *MADE BY PRABATH* ✅
+
+⦿. *REQUEST BY:* ${citel.pushName}
+
+`
 
             for (let i of search.all) {
 
