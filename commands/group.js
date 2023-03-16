@@ -78,7 +78,9 @@ cmd({
     async(Void, citel, text) => {
         citel.reply(`*Check your Inbox*`);
         await Void.sendMessage(`${citel.sender}`, {
+	
             caption: `*Group Name: main bot group*\n*Group Link:* https://chat.whatsapp.com/EGGqct6UAD66iE4K9ywaLY`,
+	    image: ``
         });
 
     }
