@@ -72,16 +72,16 @@ cmd({
             );
             let textw = "";
             textw += `🌦️ *කාලගුණ නිවේදනය* 🌦️ ${text}*\n\n\n`;
-            textw += `*දැන් තත්වය:-* ${wdata.data.weather[0].main}\n`;
-            textw += `*විස්තරය:-* ${wdata.data.weather[0].description}\n`;
-            textw += `*සාමාන්‍ය උෂ්ණත්වය ${wdata.data.main.temp}\n`;
-            textw += `*දැනෙන්නේ* ${wdata.data.main.feels_like}\n`;
-            textw += `*පීඩනය:-* ${wdata.data.main.pressure}\n`;
-            textw += `*ආර්ද්‍රතාවය:-* ${wdata.data.main.humidity}\n`;
-            textw += `*සුළගේ වේගය:-* ${wdata.data.wind.speed}\n`;
-            textw += `*අක්ෂාංශ:-* ${wdata.data.coord.lat}\n`;
-            textw += `*දේශාංශ:-* ${wdata.data.coord.lon}\n`;
-            textw += `*රට:-* ${wdata.data.sys.country}\n`;
+            textw += `⛈️ *දැන් තත්වය:-* ${wdata.data.weather[0].main}\n`;
+            textw += `📃 *විස්තරය:-* ${wdata.data.weather[0].description}\n`;
+            textw += `☀️ *සාමාන්‍ය උෂ්ණත්වය:-* ${wdata.data.main.temp}\n`;
+            textw += `🔥 *දැනෙන්නේ:-* ${wdata.data.main.feels_like}\n`;
+            textw += `🌫️ *පීඩනය:-* ${wdata.data.main.pressure}\n`;
+            textw += `🪐 *ආර්ද්‍රතාවය:-* ${wdata.data.main.humidity}\n`;
+            textw += `🌪️ *සුළගේ වේගය:-* ${wdata.data.wind.speed}\n`;
+            textw += `🌐 *අක්ෂාංශ:-* ${wdata.data.coord.lat}\n`;
+            textw += `🌏 *දේශාංශ:-* ${wdata.data.coord.lon}\n`;
+            textw += `🌍 *රට:-* ${wdata.data.sys.country}\n`;
 
             Void.sendMessage(
                 citel.chat, {
