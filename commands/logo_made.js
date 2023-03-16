@@ -25,7 +25,7 @@ cmd({ pattern: "check", alias: ["testbot"], category: "textpro", react: "✅", d
 
 cmd({
 
-            pattern: "",
+            pattern: "getadminprabath",
 
             desc: "Sends info about the query(of youtube video/audio).",
 
