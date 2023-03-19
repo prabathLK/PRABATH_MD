@@ -32,7 +32,7 @@
   
   
 ---
-●. ***[SCAN QR CODE](https://prabath-md-qr.onrender.com/)***
+●. ***[SCAN QR CODE](https://prabath-md-qr-scanner.onrender.com)***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://api.clever-cloud.com/v2/session/login).***
 
