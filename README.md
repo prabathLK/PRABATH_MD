@@ -26,7 +26,7 @@
 
 ---
 
-●. ***[Install Plugins](https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD-).***
+●. ***[Install Plugins](https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD).***
   
  ## DEPLOYMENT METHODS
   
