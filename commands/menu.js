@@ -1,5 +1,5 @@
 const os = require('os');
-const { cmd,tlang,prefix,runtime,formatp} = require('../lib/');
+const { cmd,tlang,prefix,runtime,formatp,Config } = require('../lib/');
 cmd({
             pattern: "menu",
             alias: ["list","මෙනු","මෙනූ","cmd"],
@@ -44,17 +44,16 @@ rowId: `${prefix}othercmdnew`,
 description: ' '
 }
             ]
-            ted = `👨‍💻 *PRABATH-MD-WHATSAPP-BOT* 👨‍💻
+            ted = `${Config.ownername}
             
 *Hello .* ${citel.pushName}
-*I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
+*I Am ${Config.ownername}*
 
 ⦁ *CREATED DATE :* 2023/01/2.
 ⦁ *CREATED TIME :* 8:30 PM.
 ⦁ *RUNNING TIME :* ${runtime(process.uptime())}
 ⦁ *RAM USAGE    :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-
-MADE BY PRABATH ✅`
+`
             const sections = [
 
                 {
