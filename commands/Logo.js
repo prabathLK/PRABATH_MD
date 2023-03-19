@@ -1,4 +1,4 @@
-const { cmd,tlang,prefix,runtime} = require('../lib/');
+const { cmd,tlang,prefix,runtime,Config } = require('../lib/');
 
 cmd({
 
@@ -317,21 +317,16 @@ description: ' '
             ]
 
             ted = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-
 ┃  🔖 *LOGO MENU* 🔖
-
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
 *Hello .*
 
-*I Am 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗*
+*I Am ${Config.ownername}*
 
 ⦁ *CREATED DATE :* 2023/01/2.
-
 ⦁ *CREATED TIME :* 8:30 PM.
-
 ⦁ *TOTAL LOGO:-*  *30*
-
 ⦁ *BOT RUNNING TIME:* ${runtime(process.uptime())}
 
 👨‍💻 *𝗟𝗢𝗚𝗢 𝗟𝗜𝗦𝗧* 👨‍💻`
