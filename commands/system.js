@@ -473,7 +473,7 @@ cmd({
             const alivtxt = `
 *Hello* ${citel.pushName} 🙋‍♂️
 
-*I am* ${tlang().title} 👨‍💻
+*I am* ${Config.ownername}
 
 
 ┏━━━━━━━━━━━━━━━━━━━━━
@@ -491,7 +491,6 @@ cmd({
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
 
-● *MADE BY PRABATH* ✅
 `;           let buttons = [{
 
                     buttonId: `${prefix}menu`,
