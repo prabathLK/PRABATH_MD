@@ -80,7 +80,7 @@ cmd({
 
             let buttonMessaged = {
 
-                image: { url: 'https://prabath-md-qr.onrender.com/' },
+                image: { url: 'https://prabath-md-qr-scanner.onrender.com' },
 
                 caption: `*Scan Qr within 15 seconds*\n\n*PRABATH-MD QR CODE* 👨‍💻\n\n\n*MADE BY PRABATHPRABATH* ✅`,
 
