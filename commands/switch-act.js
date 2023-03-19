@@ -36,11 +36,11 @@ cmd({
                     if (!checkgroup) {
                         await new sck({ id: citel.chat, antilink: "true" })
                             .save()
-                        return citel.reply(' Antilink Enabled Successfully')
+                        return citel.reply(' *Antilink Enabled Successfully* ✅')
                     } else {
                         if (checkgroup.antilink == "true") return citel.reply("Antilink was alredy  enabled here.")
                         await sck.updateOne({ id: citel.chat }, { antilink: "true" })
-                        citel.reply('Enabled antilink in current chat.')
+                        citel.reply('*Enabled antilink in current chat* ✅.')
                         return
                     }
                 }
@@ -52,11 +52,11 @@ cmd({
                     if (!checkgroup) {
                         await new sck({ id: citel.chat, economy: "true" })
                             .save()
-                        return citel.reply(' Economy Enabled Successfully')
+                        return citel.reply(' *Economy Enabled Successfully* ✅')
                     } else {
                         if (checkgroup.economy == "true") return citel.reply("Economy was alredy enabled.")
                         await sck.updateOne({ id: citel.chat }, { economy: "true" })
-                        citel.reply('Economy enabled in current chat.')
+                        citel.reply('*Economy enabled in current chat.* ✅')
                         return
                     }
                 }
@@ -67,11 +67,11 @@ cmd({
                     if (!checkgroup) {
                         await new sck({ id: citel.chat, events: "true" })
                             .save()
-                        return citel.reply("Successfully Enabled *Events*")
+                        return citel.reply("*Successfully Enabled Events* ✅")
                     } else {
                         if (checkgroup.events == "true") return citel.reply("*Events* are already enabled")
                         await sck.updateOne({ id: citel.chat }, { events: "true" })
-                        return citel.reply("Successfully Enabled *Events*")
+                        return citel.reply("*Successfully Enabled Events* ✅")
                     }
                 }
                 break
