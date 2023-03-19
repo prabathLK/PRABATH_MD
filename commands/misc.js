@@ -155,12 +155,11 @@ async(Void, citel, text,{ isCreator }) => {
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
              category: "misc",
-             react: "🆙",
              filename: __filename,
          },
          async(Void, citel, text) => {
              const upt = runtime(process.uptime())
-             citel.reply(`BOT-UPTIME OF ${tlang().title}: ${upt}`)
+             citel.reply(`*BOT-UPTIME:* ${upt}`)
          }
      )
      //---------------------------------------------------------------------------
@@ -456,11 +455,11 @@ switch (text.split(" ")[0]) {
          let checkgroup = await sck.findOne({ id: citel.chat })
          if (!checkgroup) {
              await new sck({ id: citel.chat, botenable: "true" }).save()
-             return citel.reply(`Successfully Enabled ✅ *${tlang().title}*`)
+             return citel.reply(`*Successfully Enabled* ✅`)
          } else {
              if (checkgroup.botenable == "true") return citel.reply("*Bot* was already enabled")
              await sck.updateOne({ id: citel.chat }, { botenable: "true" })
-             return citel.reply(`Successfully Enabled ✅ *${tlang().title}*`)
+             return citel.reply(`*Successfully Enabled* ✅`)
          }
      }
   
@@ -471,11 +470,11 @@ case 'off':{
              if (!checkgroup) {
                  await new sck({ id: citel.chat, botenable: "false" })
                      .save()
-                 return citel.reply(`Successfully disabled ✅ *${tlang().title}*`)
+                 return citel.reply(`*Successfully disabled* ✅`)
              } else {
                  if (checkgroup.botenable == "false") return citel.reply("*Bot* was already disabled")
                  await sck.updateOne({ id: citel.chat }, { botenable: "false" })
-                 return citel.reply(`Successfully disabled ✅ *${tlang().title}*`)
+                 return citel.reply(`*Successfully disabled* ✅`)
              }
          }
 }
