@@ -89,6 +89,8 @@
 
 ***WORKTYPE***  = Enter "public" or "private"
 
+***THUMB_IMAGE*** = https://i.ibb.co/7YGn5qS/20230305-135924.jpg
+
 ---
 
 
