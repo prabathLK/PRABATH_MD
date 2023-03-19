@@ -473,7 +473,7 @@ cmd({
             const alivtxt = `
 *Hello* ${citel.pushName} 🙋‍♂️
 
-*I am* ${Config.ownername}
+*I am ${Config.ownername}*
 
 
 ┏━━━━━━━━━━━━━━━━━━━━━
