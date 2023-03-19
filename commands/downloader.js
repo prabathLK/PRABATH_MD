@@ -177,8 +177,6 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-👨‍💻 ${Config.ownername} 👨‍💻
-
 ╭────────────────❖
 │ ℹ️ *INFORMATION* 
 │
