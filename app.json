@@ -40,7 +40,7 @@
 
    "ANTILINK_VALUES": {
 
-    "description": "antilink ඔන් කලවිට මෙම ලින්ක් දැමූ විට පරිශීලකයා remove වේ,
+    "description": "antilink ඔන් කලවිට මෙම ලින්ක් දැමූ විට පරිශීලකයා remove වේ",
 
      "value": "chat.whatsapp.com",
 
@@ -124,7 +124,7 @@
 
     "WORKTYPE": {
 
-  "description": "බොට් ඔබට පමණක් භාවිතා කිරීමට නම් private දෙන්න බොට් අන් අයටත් භාවිතා කිරීමට නම් public දෙන්න,
+  "description": "බොට් ඔබට පමණක් භාවිතා කිරීමට නම් private දෙන්න බොට් අන් අයටත් භාවිතා කිරීමට නම් public දෙන්න",
 
          "value": "public" 
 
