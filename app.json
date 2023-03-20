@@ -22,7 +22,7 @@
 
   },
 
-  "ALIVE_MESSAGE": {
+  "ALIVE_IMG": {
 
     "description": "Alive message for bot",
 
@@ -30,19 +30,11 @@
 
     },
 
-   "THUMB_IMAGE": {
+   "ALIVE_MSJ": {
 
-    "description": "THUMBNAIL for bot.",
+    "description": "alive msj",
 
-     "value": "https://i.imgur.com/XjNoQ6n.jpeg"
-
-    },
-
-    "ANTI_BAD_WORD": {
-
-    "description": "Put words here. If you want it enabled in your bot otherwise leave it blank",
-
-     "required" :false
+     "value": "i am alive now"
 
     },
 
@@ -53,26 +45,6 @@
      "value": "chat.whatsapp.com",
 
      "required" :false
-
-    },
-
-     "ANTILINK_ACTION": {
-
-    "description": "Put action for antilink",
-
-     "value": "remove",
-
-     "required" :false
-
-    },
-
-  "LEVEL_UP_MESSAGE": {
-
-    "description": "Fill the value true if you want bot send Level up message in chat.",
-
-     "required" :false,
-
-     "value": "true"
 
     },
 
@@ -154,17 +126,7 @@
 
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
 
-         "value": "public"
-
-  },
-
-      "AUTO_REACTION": {
-
-    "description": "Reacts emoji to all commands.",
-
-     "value": "false",
-
-     "required": false 
+         "value": "public" 
 
   },
 
