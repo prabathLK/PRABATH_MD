@@ -55,47 +55,6 @@
  ---
 
 
-## DEPLOY ON HEROKU 
-
-
-1. Create app and give app name
-
-2. Connect your GitHub account and connect the forked repository 
-
-3. Enable automatic deploys
-
-4. Now deploy branch
-
-5. Now go to app settings
-
-6. Now create config vars
-
----
-
-● ***Copy and paste the following config vars*** 👇
-
----
-
-***SESSION_ID***  = Scan the QR code and enter the code here 
-
-***MONGODB_URI***  = Enter mongoDB url
-
-***OWNER_NAME***  = Enter your name
-
-***OWNER_NUMBER***  = Enter your number 
-
-***PACK_INFO***  = prabath;prabath-md ✅
-
-***READ_MESSAGE***  = Enter "true" or "false"
-
-***DISABLE_PM***  = Enter "true" or "false"
-
-***WORKTYPE***  = Enter "public" or "private"
-
-***THUMB_IMAGE*** = https://i.ibb.co/7YGn5qS/20230305-135924.jpg
-
----
-
 
 
 
