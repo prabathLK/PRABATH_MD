@@ -25,7 +25,7 @@ const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime
 
 cmd({
 
-            pattern: "addnote",
+            pattern: "save",
 
             category: "owner",
 
@@ -39,11 +39,11 @@ cmd({
 
             if (!isCreator) return citel.reply(tlang().owner)
 
-            if (!text) return citel.reply("🔍 Please provide me a valid gist url.")
+            if (!text) return citel.reply("*Please give me the word to save* ❗")
 
             await addnote(text)
 
-            return citel.reply(`New note ${text} added in mongodb.`)
+            return citel.reply(`*Successfully saved to notepad* ✅`)
 
         }
 
