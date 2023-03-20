@@ -46,7 +46,7 @@
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/NM7qyM?referralCode=tiXzWI)
 
 
-![Deploy on Heroku](https://heroku.com/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/PrabathLK/PRABATH-MD&template=https://github.com/PrabathLK/PRABATH-MD.git)
+![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/PrabathLK/PRABATH-MD&template=https://github.com/PrabathLK/PRABATH-MD.git)
   
 
  ## [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
