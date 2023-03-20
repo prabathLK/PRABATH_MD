@@ -44,7 +44,7 @@ rowId: `${prefix}othercmdnew`,
 description: ' '
 }
             ]
-            ted = `👨‍💻 *${Config.ownername}* 👨‍💻
+            ted = ` *${Config.ownername}* 
             
 *Hello .* ${citel.pushName}
 *I Am ${Config.ownername}*
