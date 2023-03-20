@@ -68,7 +68,7 @@
 
       "PREFIX": {
 
-  "description": "මෙය වෙනස් නොකරන්න ❌",
+  "description": "මෙය වෙනස් නොකරන්න ",
 
       "value": "."
 
@@ -90,7 +90,7 @@
 
     "OPENAI_API_KEY": {
 
-    "description": "මෙය වෙනස් නොකරන්න ❌",
+    "description": "මෙය වෙනස් නොකරන්න ",
 
        "value": "Replace Me(optional)",
 
@@ -100,7 +100,7 @@
 
   "WELCOME_MESSAGE": {
 
-    "description": "මෙය වෙනස් නොකරන්න ❌ බොට් Deploy කිරීමෙන් පසුව මෙය වෙනස් කරගතහැක ✅ ",
+    "description": "මෙය වෙනස් නොකරන්න  බොට් Deploy කිරීමෙන් පසුව මෙය වෙනස් කරගතහැක ",
 
        "value": "  *Hi,* @user \n*Welcome in* @gname \n*Member count* : @count th",
 
@@ -116,7 +116,7 @@
 
     "THEME": {
 
-    "description": "මෙය වෙනස් නොකරන්න ❌",
+    "description": "මෙය වෙනස් නොකරන්න ",
 
      "value": "PRABATH-MD"
 
