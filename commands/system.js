@@ -490,6 +490,7 @@ cmd({
 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
+${Config.alivemsj}
 
 `;           let buttons = [{
 
@@ -521,13 +522,12 @@ cmd({
                 },
 
             ];
-            let thumbimage = Config.THUMB_IMAGE || `https://i.ibb.co/7YGn5qS/20230305-135924.jpg`
             
             let aliveMessage = {
 
                 image: {
 
-                    url: `${thumbimage}`,
+                    url: `${Config.alivepic}`,
 
                 },
 
