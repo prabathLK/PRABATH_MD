@@ -16,15 +16,15 @@
 
   "OWNER_NAME": {
 
-  "description": "බොට් ට නමක් දෙන්න ",
+  "description": "බොට් ට නමක් ඇතුලත් කරන්න ",
 
-      "value": "prabath"
+      "value": "👨‍💻 PRABATH-MD-WHATSAPP-BOT 👨‍💻"
 
   },
 
   "ALIVE_IMG": {
 
-    "description": "Alive message for bot",
+    "description": "alive එකට එන්න ඕන image එකක url එකක් දාන්න",
 
      "required" :false
 
