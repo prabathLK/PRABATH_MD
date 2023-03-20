@@ -24,7 +24,7 @@
 
   "ALIVE_IMG": {
 
-    "description": "බොට් ගෙ alive එකට එන්න ඕන image එක යොදන්න මෙයට url එකක් අවශ්‍ය වේ url එකක් නැතිනම් මෙලෙසම  තබන්න,"
+    "description": "බොට් ගෙ alive එකට එන්න ඕන image එක යොදන්න මෙයට url එකක් අවශ්‍ය වේ url එකක් නැතිනම් මෙලෙසම  තබන්න",
 
      "required" :false
 
