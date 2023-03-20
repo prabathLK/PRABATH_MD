@@ -16,7 +16,7 @@ global.website = 'https://github.com/prabathLK/PRABATH-MD' //wa.me/+94762280384
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://i.imgur.com/H062oEI.jpeg'
 module.exports = {
   botname: process.env.BOT_NAME || '𝐒𝐞𝐜𝐤𝐭𝐨𝐫 𝐁𝐨𝐭𝐭𝐨',
-  alivepic: process.env.ALIVE_IMG || 'https://telegra.ph/file/f48f4aff2580f4a4e51ea.jpg',
+  alivepic: process.env.ALIVE_IMG || 'https://telegra.ph/file/5ae65303ccd7305881451.jpg',
   alivemsj: process.env.ALIVE_MSJ || '*The bot developer is prabath* 🎊',
   ownername:process.env.OWNER_NAME || 'PRABATH',
   sessionName: process.env.SESSION_ID || 'PUT-HERE',
