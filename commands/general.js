@@ -62,8 +62,7 @@ cmd({
 ●. *Github:* https://github.com/PrabathLK/PRABATH-MD
 
 ●. *Developer:* https://github.com/PrabathLK
-
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ-ᴏꜰᴄ-ᴛᴇᴀᴍ*`
+`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -730,9 +729,24 @@ cmd({
 🔥 *Help:-* .restart
 
 
-📟 *Command:-* .updatenow
-ℹ️ *Description:-* update bot 
-🔥 *Help:-* .updatenow
+📟 *Command:-* .save
+ℹ️ *Description:-* Save notes from mongodb 
+🔥 *Help:-* .save prabath-md
+
+
+📟 *Command:-* .get
+ℹ️ *Description:-* Get saved notes
+🔥 *Help:-* .get
+
+
+📟 *Command:-* .dnote
+ℹ️ *Description:-* Delete saved notes
+🔥 *Help:-* .dnote ENTER NOTE ID
+
+
+📟 *Command:-* .dallnote
+ℹ️ *Description:-* Delete all saved notes
+🔥 *Help:-* .dallnote
 
 
 ⦿. *REQUEST BY:* ${citel.pushName}
