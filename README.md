@@ -29,7 +29,8 @@
 ●. ***[Install Plugins](https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD).***
   
  ## DEPLOYMENT METHODS
-  
+ 
+ <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
   
 ---
 ●. ***[SCAN QR CODE SERVER 1](https://qr-scanner-for-prabath-md-production.up.railway.app)***
