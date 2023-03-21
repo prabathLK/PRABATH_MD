@@ -335,7 +335,7 @@ cmd({
 
 cmd({
 
-            pattern: "delnote",
+            pattern: "dnote",
 
             category: "owner",
 
@@ -353,7 +353,7 @@ cmd({
 
             await delnote(text.split(" ")[0])
 
-             return citel.reply(`Id: ${text.split(" ")[0]}\'s note has been deleted from mongodb.`)
+             return citel.reply(`*Id: ${text.split(" ")[0]}\'s note has been deleted* ✅.`)
 
         }
 
@@ -363,7 +363,7 @@ cmd({
 
 cmd({
 
-            pattern: "delallnotes",
+            pattern: "dallnote",
 
             category: "owner",
 
@@ -381,7 +381,7 @@ cmd({
 
             await delallnote()
 
-             return citel.reply(`All notes deleted from mongodb.`)
+             return citel.reply(`*All notes deleted* ✅`)
 
         }
 
@@ -486,7 +486,7 @@ cmd({
 ┃
 ┃ ● *Owner:-* Prabath 
 ┃
-┃ ● *Version:-* 3.0 V 
+┃ ● *Version:-* 4.0.0
 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━
 
@@ -573,7 +573,7 @@ cmd({
 
         const note_store = new Array()
 
-        let leadtext = `*𝗦𝗔𝗩𝗘𝗗 𝗡𝗢𝗧𝗘𝗦:-*\n\n`
+        let leadtext = `🗒️ׄ 𝗦𝗔𝗩𝗘𝗗 𝗡𝗢𝗧𝗘𝗦:-\n\n`
 
         leadtext += await allnotes()
 
@@ -615,7 +615,7 @@ cmd({
 ┃
 ┃ 👨‍💻 *Owner:-* Prabath 
 ┃
-┃ 🧬 *Version:-* 3${prefix}0 V 
+┃ 🧬 *Version:-* 4${prefix}0${prefix}0
 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━
 `;
