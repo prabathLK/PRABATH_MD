@@ -555,7 +555,7 @@ ${Config.alivemsj}
 
 cmd({
 
-        pattern: "allnotes",
+        pattern: "get",
 
         category: "owner",
 
@@ -573,7 +573,7 @@ cmd({
 
         const note_store = new Array()
 
-        let leadtext = `All Available Notes are:-\n\n`
+        let leadtext = `*𝗦𝗔𝗩𝗘𝗗 𝗡𝗢𝗧𝗘𝗦:-*\n\n`
 
         leadtext += await allnotes()
 
