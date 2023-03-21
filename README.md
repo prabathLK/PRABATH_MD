@@ -32,7 +32,9 @@
   
   
 ---
-●. ***[SCAN QR CODE](https://qr-scanner-for-prabath-md-production.up.railway.app)***
+●. ***[SCAN QR CODE SERVER 1](https://qr-scanner-for-prabath-md-production.up.railway.app)***
+
+●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-rgbm.onrender.com/)***
 
 ●.  ***Get a Mongodb uri from [Mongodb](https://api.clever-cloud.com/v2/session/login).***
 
