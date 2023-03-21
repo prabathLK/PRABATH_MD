@@ -37,12 +37,6 @@
 
 ●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-rgbm.onrender.com/)***
 
-
-<br>
-
-<a href='https://qr-scanner-for-prabath-md-production.up.railway.app/' target="_blank"><img alt='SCAN QR SERVER 1' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
-
-
 ●.  ***Get a Mongodb uri from [Mongodb](https://api.clever-cloud.com/v2/session/login).***
 
 ●.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
@@ -52,11 +46,14 @@
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH-MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=PRABATH&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)
 
 
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/NM7qyM?referralCode=tiXzWI)
+
 
 
 [![Deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/PrabathLK/PRABATH-MD&template=https://github.com/PrabathLK/PRABATH-MD.git)
   
+
 
  ## [Deploy on VPS or PC.](https://github.com/SamPandey001/Secktor-Md/blob/main/deploy-on-vps.md)
  
