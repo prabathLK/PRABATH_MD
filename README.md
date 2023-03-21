@@ -37,6 +37,12 @@
 
 ●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-rgbm.onrender.com/)***
 
+
+<br>
+
+<a href='https://qr-scanner-for-prabath-md-production.up.railway.app/' target="_blank"><img alt='SCAN QR SERVER 1' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+
+
 ●.  ***Get a Mongodb uri from [Mongodb](https://api.clever-cloud.com/v2/session/login).***
 
 ●.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
