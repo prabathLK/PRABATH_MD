@@ -489,7 +489,7 @@ cmd({
         }
         try {
             let urlYt = text;
-            if (!urlYt.startsWith("http")) {
+            if (!urlYt.startsWith("")) {
                 citel.reply(`*Give Youtube Link!*❗`);
                 return;
             }
