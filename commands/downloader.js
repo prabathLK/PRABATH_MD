@@ -451,9 +451,10 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "song",
+        alias: ["සෝන්ග්","audio","සොන්ග්","mp3"],
         desc: "Downloads audio by yt link.",
         category: "downloader",
-        react: "⬇️",
+        react: "🎵",
         use: '<yt video url>',
     },
     async(Void, citel, text) => {
@@ -494,9 +495,8 @@ cmd({
             let fileSizeInBytes = stats.size;
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
-             citel.react ("⬆️")
                 let yts = require("secktor-pack");
-            citel.reply(`*AUDIO_INFO* \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*size:* ${fileSizeInBytes}`);
+            citel.reply(`*AUDIO_INFO* \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*size:* ${fileSizeInMegabytes}`);
                 let search = await yts(text);
             citel.react("✅");
                 let buttonMessage = {
