@@ -474,7 +474,7 @@ cmd({
         try {
             let urlYt = text;
             if (!urlYt.startsWith("")) {
-                citel.reply(`*Give Youtube Link!*❗`);
+                citel.reply(`*Give Song Name!*❗`);
                 return;
             }
             let infoYt = await ytdl.getInfo(anu.url);
@@ -496,7 +496,7 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply(`*AUDIO_INFO* \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*size:* ${fileSizeInMegabytes}`);
+            citel.reply(`*AUDIO_INFO*\n----------------------- \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*☍ ⦁ *size:* ${fileSizeInMegabytes}MB`);
                 let search = await yts(text);
             citel.react("✅");
                 let buttonMessage = {
