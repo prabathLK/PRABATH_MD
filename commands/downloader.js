@@ -144,8 +144,7 @@ cmd({
                        
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "song",
-            alias: ["ගීතය","සෝන්ග්","සින්දුව","සිංදුව","play","mp3"],
+            pattern: "songinfo",
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             react: "🎵",
@@ -496,7 +495,7 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply(`*Hello ${citel.pushName} I Am Downloading Your Song*`);
+            citel.reply(`*Song_Info \n\n\n☍ ⦁ *Title:* ${anu.title}\n☍ ⦁ *Duration:* ${anu.timestamp}\n☍ ⦁ *Viewers:* ${anu.views}\n☍ ⦁ *Uploaded:* ${anu.ago}\n☍ ⦁ *Author:* ${anu.author.name}*`);
                 let search = await yts(text);
             citel.reply(`*Hello ${citel.pushName} I Am Uploading Your Song*`);
                 let buttonMessage = {
