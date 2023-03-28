@@ -474,6 +474,11 @@ cmd({
         use: '<yt video url>',
     },
     async(Void, citel, text) => {
+        let yts = require("secktor-pack");
+
+            let search = await yts(text);
+
+            let anu = search.videos[0];
         const getRandom = (ext) => {
             return `${Math.floor(Math.random() * 10000)}${ext}`;
         };
@@ -488,12 +493,12 @@ cmd({
                 citel.reply(`*Give Youtube Link!*❗`);
                 return;
             }
-            let infoYt = await ytdl.getInfo(urlYt);
+            let infoYt = await ytdl.getInfo(anu.url);
             //30 MIN
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            const stream = ytdl(urlYt, {
+            const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
                 .pipe(fs.createWriteStream(`./${randomName}`));
