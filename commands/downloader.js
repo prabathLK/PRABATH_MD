@@ -160,28 +160,13 @@ cmd({
             return `${Math.floor(Math.random() * 10000)}${ext}`;
         };
             let anu = search.videos[0];
-            let buttons = [{
-                    buttonId: `${prefix}ytmp3 ${anu.url}`,
-                    buttonText: {
-                        displayText: "AUDIO",
-                    },
-                    type: 1,
-                },
-                  {
-                    buttonId: `${prefix}ytdoc ${anu.url}`,
-                    buttonText: {
-                        displayText: "DOCUMENT",
-                    },
-                    type: 1,
-                },
-            ];
             let buttonMessage = {
                 image: {
                     url: anu.thumbnail,
                 },
                 caption: `
 ╭────────────────❖
-│ ℹ️ *INFORMATION* 
+│ ℹ️ *AUDIO_INFO* 
 │
 │☍ ⦁ *Title:* ${anu.title}
 │☍ ⦁ *Duration:* ${anu.timestamp}
@@ -194,7 +179,6 @@ cmd({
 ⦿. *REQUEST BY:* ${citel.pushName}
 `,
                 footer: tlang().footer,
-                buttons: buttons,
                 headerType: 4,
             };
             return Void.sendMessage(citel.chat, buttonMessage, {
@@ -467,7 +451,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "ytmp3",
+        pattern: "song",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         react: "🎵",
