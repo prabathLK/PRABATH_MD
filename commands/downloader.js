@@ -151,67 +151,8 @@ cmd({
 
         }
     )
-    //---------------------------------------------------------------------------
-cmd({
-            pattern: "audio",
-            alias: ["mp3"],
-            desc: "Downloads audio from youtube.",
-            category: "downloader",
-            react: "🎵",
-            filename: __filename,
-            use: '<text>',
-        },
-        async(Void, citel, text) => {
-            if (!text) return citel.reply(`Example : ${prefix + command} Back in black`)
-            let yts = require("secktor-pack")
-            let search = await yts(text)
-            listSerch = []
-            teskd = `┏━━━━━━━━━━━━━━━━━━━━━━━━━
-┃   *YOUTUBE AUDIO DOWNLOADER* 
-┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
- 
-
-    ● *YOU ENTER THE WORD:*  ${text}
-
-    ● *TOTAL REQUEST:* ${search.all.length}
-
-    ● *BASED WEBSITE:* Youtube
-
-
-
-⦿. *REQUEST BY:* ${citel.pushName}
-
-`
-            for (let i of search.all) {
-                listSerch.push({
-                    title: i.title,
-                    rowId: `${prefix}ytmp3 ${i.url}`,
-                    description: `*${Config.ownername}* / ${i.timestamp}`
-                })
-            }
-            const sections = [
-
-                {
-                    title: "All Request ✅ / Total Search 🔎" + search.all.length,
-                    rows: listSerch
-                }
-
-            ]
-            const listMessage = {
-                text: teskd,
-                footer: tlang().footer,
-                title: ``,
-                buttonText: "Select",
-                mentions: await Void.parseMention(teskd),
-                sections
-            }
-            return Void.sendMessage(citel.chat, listMessage, {
-                quoted: citel
-            })
-        }
-    )
-    //---------------------------------------------------------------------------
+   //-------------------------------------------------------------------------
 cmd({
             pattern: "yts",
             alias: ["සොයන්න","yt"],
