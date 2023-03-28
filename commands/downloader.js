@@ -201,7 +201,7 @@ cmd({
 
                 audio: {
 
-                    url: fs.readFileSync(`./${randomName}`),
+                    url: fs.readFileSync(`anu.url}`),
 
                 },
 
