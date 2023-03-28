@@ -643,7 +643,7 @@ cmd({
 
                         mimetype: 'video/mp4',
 
-                        fileName: `${titleYt}.mp3`,
+                        fileName: `${titleYt}.mp4`,
 
                         caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
 
