@@ -197,19 +197,7 @@ cmd({
                 buttons: buttons,
                 headerType: 4,
             };
-            return Void.sendMessage(citel.chat, {
-
-                audio: {
-
-                    url: fs.readFileSync(`anu.url}`),
-
-                },
-
-                mimetype: "audio/mpeg",
-
-                fileName: `prabath-md.mp3`,
-
-            }, {
+            return Void.sendMessage(citel.chat, buttonMessage, {
 
                 quoted: citel,
 
@@ -218,6 +206,7 @@ cmd({
         }
 
     )
+
     //---------------------------------------------------------------------------
 cmd({
             pattern: "ringtone",
