@@ -369,7 +369,7 @@ cmd({
 
                 let yts = require("secktor-pack");
 
-            citel.reply(`*VIDEO_INFO*\n----------------------- \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*☍ ⦁ *size:* ${fileSizeInMegabytes}MB`);
+            citel.reply(`📽️ ━━━━━━━━━━ *𝗩𝗜𝗗𝗘𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
 
                 let search = await yts(text);
 
@@ -499,7 +499,7 @@ cmd({
 
                 let yts = require("secktor-pack");
 
-            citel.reply(`*DOCUMENT_INFO*\n----------------------- \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*☍ ⦁ *size:* ${fileSizeInMegabytes}MB`);
+            citel.reply(`📂 ━━━━━━━━━━ *𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 🎵\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
 
                 let search = await yts(text);
 
@@ -629,7 +629,7 @@ cmd({
 
                 let yts = require("secktor-pack");
 
-            citel.reply(`*DOCUMENT_INFO*\n----------------------- \n\n\n☍ ⦁ *Title:* ${anu.title}\n\n☍ ⦁ *Duration:* ${anu.timestamp}\n\n☍ ⦁ *Viewers:* ${anu.views}\n\n☍ ⦁ *Uploaded:* ${anu.ago}\n\n☍ ⦁ *Author:* ${anu.author.name}\n\n*☍ ⦁ *size:* ${fileSizeInMegabytes}MB`);
+            citel.reply(`📂 ━━━━━━━━━━ *𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
 
                 let search = await yts(text);
 
