@@ -641,7 +641,7 @@ cmd({
 
                         jpegThumbnail: log0,
 
-                        mimetype: 'videk/mp4',
+                        mimetype: 'video/mp4',
 
                         fileName: `${titleYt}.mp3`,
 
