@@ -156,6 +156,9 @@ cmd({
             if (!text) return citel.reply(`*Please Give Me A Song Name*❗ `)
             let yts = require("secktor-pack");
             let search = await yts(text);
+            const getRandom = (ext) => {
+            return `${Math.floor(Math.random() * 10000)}${ext}`;
+        };
             let anu = search.videos[0];
             let buttons = [{
                     buttonId: `${prefix}ytmp3 ${anu.url}`,
