@@ -120,13 +120,13 @@ cmd({
 
 cmd({
 
-            pattern: "downcmdnew",
+            pattern: "logo",
 
             desc: "(menu cmdlist).",
 
             category: "downloader",
 
-            react: "⬇️",
+            react: "🎲",
 
             filename: __filename,
 
@@ -208,6 +208,7 @@ cmd({
 .logo29 text
 .logo30 text
 
+tlang().footer
 `,
 
                 footer: tlang().footer,
