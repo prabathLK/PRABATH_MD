@@ -1,19 +1,12 @@
   <p align="center">  
-
   <a href="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
-
     <img alt="secktor docs" height="300" src="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
-
     <h1 align="center"> PRABATH-MD </h1>
-
   </a>
+</p>  
 
-</p>
-
-   
 
 <p align="center">
-
   <a aria-label="Join our chats" href="https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM" target="_blank">
 
     <img alt="whatsapp" src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
