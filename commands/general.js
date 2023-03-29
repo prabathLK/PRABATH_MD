@@ -566,7 +566,7 @@ cmd({
 
 cmd({
 
-            pattern: "gamecmdnew",
+            pattern: "gs",
 
             desc: "(menu cmdlist).",
 
@@ -584,36 +584,6 @@ cmd({
 
          
 
-            let buttons = [{
-
-                    buttonId: `${prefix}Xo`,
-
-                    buttonText: {
-
-                        displayText: "Play Xo game",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}owner`,
-
-                    buttonText: {
-
-                        displayText: "Owner",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
             let buttonMessage = {
 
                 image: {
@@ -624,11 +594,26 @@ cmd({
 
                 caption: `
 
-📟 *Command:-* .xo
-ℹ️ *Description:-* This Game.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━
+┃  *GROUP SETTINGS CHANGE*
+┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-⦿. *REQUEST BY:* ${citel.pushName}
+
+🔇 *MUTE GROUP -* .group close
+🔊 *UNMUTE GROUP -* .group open
+
+
+✅ *ACTIVE ANTILINK -* .act antilink
+❌ *DEACTIVE ANTILINK -* .deact antilink
+
+
+✅ *ACTIVE BOT THIS GROUP -* .bot on
+❌ *DEACTIVE BOT THIS GROUP -* .bot off
+
+
+✅ *ACTIVE ADD AND LEFT MSJ -* .act events
+❌ *DEACTIVE ADD AND LEFT MSJ -* .deact events
 
 `,
 
