@@ -177,69 +177,41 @@ cmd({
                 },
 
                 caption: `
-
-📟 *Command:-* .song
-ℹ️ *Description:-* Song Download From Youtube
-🔥 *Help:-* .song ලෙලෙනා
-
-
-📟 *Command:-* .video
-ℹ️ *Description:-* Video Download From Youtube
-🔥 *Help:-* .video නේනා
-
-
-📟 *Command:-* .tgs
-ℹ️ *Description:-* Download Telegram Stickers
-🔥 *help:-* .tga Enter Telegram Sticker Url 
-
-
-📟 *Command:-* .ytmp4
-ℹ️ *Description:-* Download Video Youtube Link
-🔥 *Help:-* .ytmp4 Enter Youtube Video Url
-
-
-📟 *Command:-* .ytmp3
-ℹ️ *Description:-* Download Songs Youtube Link
-🔥 *Help:-* .ytmp3 Enter Youtube Video Url
-
-
-📟 *Command:-* .ytdoc
-ℹ️ *Description:-* Song Download Form Youtube Document
-🔥 *Help:-* ytdoc Enter Youtube Video Url
-
-
-📟 *Command:-* .mediafire
-ℹ️ *Description:-* Download Content From Mediafire Link
-🔥 *Help:-* .mediafire Enter Mediafire Url
-
-
-📟 *Command:-* .yts
-ℹ️ *Description:-* Search Youtube Videos
-🔥 *Help:-* .yts ලෙලෙනා
-
-
-📟 *Command:-* .findvideo
-ℹ️ *Description:-* short video mention and get information
-🔥*Help:-* .findvideo Mention a short video
-
-
-📟 *Command:-* .findsong
-ℹ️ *Description:-* find song from short song chip
-🔥 *Help:-* .findsong tag short song chip
-
-
-📟 *Command:-* .mp4down
-ℹ️ *Description:-* download mp4
-🔥 *Help:-* .mp4down give me a video link
-
-
-⦿. *REQUEST BY:* ${citel.pushName}
+.logo1 text
+.logo2 text
+.logo3 text
+.logo4 text
+.logo5 text
+.logo6 text
+.logo7 text
+.logo8 text
+.logo9 text
+.logo10 text
+.logo11 text
+.logo12 text
+.logo13 text
+.logo14 text
+.logo15 text
+.logo16 text
+.logo17 text
+.logo18 text
+.logo19 text
+.logo20 text
+.logo21 text
+.logo22 text
+.logo23 text
+.logo24 text
+.logo25 text
+.logo26 text
+.logo27 text
+.logo28 text
+.logo29 text
+.logo30 text
 
 `,
 
                 footer: tlang().footer,
 
-                buttons: buttons,
 
                 headerType: 4,
 
