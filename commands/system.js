@@ -473,56 +473,27 @@ cmd({
             const alivtxt = `
 *Hello* ${citel.pushName} 🙋‍♂️
 
+
 *I am ${Config.ownername}*
 
 
-┏━━━━━━━━━━━━━━━━━━━━━
-┃
-┃ ● *Uptime:-* ${runtime(process.uptime())}
-┃
-┃ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃
-┃ ● *User:-* ${Config.ownername}
-┃
-┃ ● *Owner:-* Prabath 
-┃
-┃ ● *Version:-* 4.0.0
-┃
-┗━━━━━━━━━━━━━━━━━━━━━━
+┌─────────────────────────
+│
+│ ● *Uptime:-* ${runtime(process.uptime())}
+│
+│ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│
+│ ● *User:-* ${Config.ownername}
+│
+│ ● *Owner:-* Prabath 
+│
+│ ● *Version:-* 4.1.0
+│
+└──────────────────────────
 
 ${Config.alivemsj}
 
-`;           let buttons = [{
-
-                    buttonId: `${prefix}menu`,
-
-                    buttonText: {
-
-                        displayText: "Commands",
-
-                    },
-
-                    type: 1,
-
-                },
-
-
-                  {
-
-                    buttonId: `${prefix}owner`,
-
-                    buttonText: {
-
-                        displayText: "Owner",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-            
+`;     
             let aliveMessage = {
 
                 image: {
@@ -532,8 +503,6 @@ ${Config.alivemsj}
                 },
 
                 caption: alivtxt,
-                
-                buttons: buttons,
 
                 footer: tlang().footer,
 
@@ -605,19 +574,20 @@ cmd({
         async(Void, citel, text, isAdmins) => {
 
             const alivtxt = `
-┏━━━━━━━━━━━━━━━━━━━━━━━
-┃
-┃ ⏱️ *Uptime:-* ${runtime(process.uptime())}
-┃
-┃ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃
-┃ 📱 *User:-* ${Config.ownername}
-┃
-┃ 👨‍💻 *Owner:-* Prabath 
-┃
-┃ 🧬 *Version:-* 4${prefix}0${prefix}0
-┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━
+┌────────────────────────
+│
+│ ⏱️ *Uptime:-* ${runtime(process.uptime())}
+│
+│ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│
+│ 📱 *User:-* ${Config.ownername}
+│
+│ 👨‍💻 *Owner:-* Prabath 
+│
+│ 🧬 *Version:-* 4${prefix}1${prefix}0
+│
+│
+└─────────────────────────
 `;
             let thumbimage = Config.THUMB_IMAGE || `https://i.ibb.co/7YGn5qS/20230305-135924.jpg`
   
