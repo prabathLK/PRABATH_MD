@@ -4,13 +4,9 @@
     <h1 align="center"> PRABATH-MD </h1>
   </a>
 </p>  
-
-
 <p align="center">
   <a aria-label="Join our chats" href="https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM" target="_blank">
-
     <img alt="whatsapp" src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-
   </a>
 
  
