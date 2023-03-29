@@ -1,6 +1,6 @@
 const os = require('os');
 
-const { cmd,tlang,prefix,runtime,formatp} = require('../lib/');
+const { cmd,tlang,prefix,runtime,formatp,citel} = require('../lib/');
 
 cmd({
 
@@ -40,7 +40,7 @@ cmd({
 
 
 ✅ *ACTIVE ANTILINK -* .act antilink
-❌ *DEACTIVE ANTILINK -* deact antilink
+❌ *DEACTIVE ANTILINK -* .deact antilink
 
 
 ✅ *ACTIVE BOT THIS GROUP -* .bot on
