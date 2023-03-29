@@ -478,7 +478,6 @@ cmd({
 
 
 ┌─────────────────────────
-│
 │ ● *Uptime:-* ${runtime(process.uptime())}
 │
 │ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
@@ -488,7 +487,6 @@ cmd({
 │ ● *Owner:-* Prabath 
 │
 │ ● *Version:-* 4.1.0
-│
 └──────────────────────────
 
 ${Config.alivemsj}
@@ -575,7 +573,6 @@ cmd({
 
             const alivtxt = `
 ┌────────────────────────
-│
 │ ⏱️ *Uptime:-* ${runtime(process.uptime())}
 │
 │ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
@@ -585,8 +582,6 @@ cmd({
 │ 👨‍💻 *Owner:-* Prabath 
 │
 │ 🧬 *Version:-* 4${prefix}1${prefix}0
-│
-│
 └─────────────────────────
 `;
             let thumbimage = Config.THUMB_IMAGE || `https://i.ibb.co/7YGn5qS/20230305-135924.jpg`
