@@ -572,7 +572,7 @@ cmd({
 
             category: "downloader",
 
-            react: "🎮",
+            react: "⚙️",
 
             filename: __filename,
 
@@ -619,7 +619,6 @@ cmd({
 
                 footer: tlang().footer,
 
-                buttons: buttons,
 
                 headerType: 4,
 
