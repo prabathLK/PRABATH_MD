@@ -449,13 +449,15 @@ cmd({
 
 cmd({
 
-            pattern: "gcmdnew",
+            pattern: "menu",
+            
+            alias: ["මෙනු","cmd","help"],
 
             desc: "(menu cmdlist).",
 
             category: "downloader",
 
-            react: "🙋‍♂️",
+            react: "🔖",
 
             filename: __filename,
 
@@ -465,37 +467,6 @@ cmd({
 
         async(Void, citel, text) => {
 
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}Owner`,
-
-                    buttonText: {
-
-                        displayText: "Owner",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
 
             let buttonMessage = {
 
@@ -507,28 +478,75 @@ cmd({
 
                 caption: `
 
-📟 *Command:-* .alive
-ℹ️ *Description:-* Test bot online or offline
-🔥 *Help:-* .alive 
+┌────────────────────────────
+│  👨‍💻 *PRABATH-MD* 👨‍💻  *COMMANDS* 🎗️
+└────────────────────────────
 
 
-📟 *Command:-* .ping
-ℹ️ *Description:-* Testing Ping
-🔥 *Help:-* .ping 
-
-
-📟 *Command:-* .owner
-ℹ️ *Description:-* Bot owner
-🔥 *Help:-* .owner
-
-
-⦿. *REQUEST BY:* ${citel.pushName}
+┌─(📥 ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.song
+│.video
+│.docsong
+│.docvideo
+│.fb
+│.tiktok
+│.img
+│.mp4down
+└─────────◉
+┌─(🔍 ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.findvideo
+│.findsong
+│.yts
+│.google
+│.weather
+│.movie
+└─────────◉
+┌─(🧰 ᴄᴏɴᴠᴇʀᴛ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.sticker
+│.logo
+│.ss
+│.trt
+└─────────◉
+┌─(👥 ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.kick
+│.promote
+│.demote
+│.htg
+│.setwelcome
+│.setgoodbye
+│.gs
+│.ban
+│.unban
+│.ping
+│.del
+│.gdp
+└─────────◉
+┌─(🧑‍💻 ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.update
+│.ujid
+│.block
+│.unblock
+│.install
+│.remove
+│.restart
+│.join
+│.plugins
+└─────────◉
+┌─( 🎮 ɢᴀᴍᴇ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.xᴏ
+└─────────◉
+┌─(💬 ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ)
+│.alive
+│.rank
+│.profile
+│.system
+│.eval
+└─────────◉
 
 `,
 
                 footer: tlang().footer,
 
-                buttons: buttons,
 
                 headerType: 4,
 
