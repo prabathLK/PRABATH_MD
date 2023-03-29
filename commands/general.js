@@ -207,8 +207,6 @@ cmd({
 .logo28 text
 .logo29 text
 .logo30 text
-
-tlang().footer
 `,
 
                 footer: tlang().footer,
