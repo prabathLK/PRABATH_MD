@@ -577,6 +577,8 @@ cmd({
 │
 │ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │
+│ ⚙️ *Run Os:-* ${os.hostname()}
+│
 │ 📱 *User:-* ${Config.ownername}
 │
 │ 👨‍💻 *Owner:-* Prabath 
