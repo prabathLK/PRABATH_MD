@@ -45,9 +45,7 @@ let search = await yts(data.title);
 let anu = search.videos[0];
 let buttonMessaged = {
 
-				image: {                                      url: anu.thumbnail,
-
-                                       },
+			
 
 				caption: h,
 
