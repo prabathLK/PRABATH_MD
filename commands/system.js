@@ -481,19 +481,17 @@ Hello ${citel.pushName} 🙋‍♂️
 
 I am ${Config.ownername}
 
-┏━━━━━━━━━━━━━━━━━━━━━
-┃ ● Uptime:- ${runtime(process.uptime())}
-┃
-┃ ● Ram usage:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃
-┃ ● Uptime:- ${runtime(process.uptime())}
-┃
-┃ ● Platform:-${hostname}
-┃
-┃ ● Owner:- Prabath 
-┃
-┃ ● Version:- 4.1.0
-┗━━━━━━━━━━━━━━━━━━━━━━
+┌───────────────────────
+│ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│
+│ ⏱️ *Uptime:-* ${runtime(process.uptime())}
+│
+│ ⚙️ *Platform:-* ${hostname}
+│
+│ 👨‍💻 *Owner:-* Prabath 
+│
+│ 🧬 *Version:-* 4.1.0
+└────────────────────────
 
 ${Config.alivemsj}
 
