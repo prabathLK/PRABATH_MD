@@ -43,3 +43,28 @@ cmd({
 let search = await yts(data.title);
 
 let anu = search.videos[0];
+let buttonMessaged = {
+
+				image: {                                      url: anu.thumbnail,
+
+                                       },
+
+				caption: h,
+
+				footer: tlang().footer,
+
+				buttons: generatebutton,
+
+				headerType: 4,
+
+				}
+
+			await Void.sendMessage(citel.chat, buttonMessaged, {
+
+				quoted: citel,
+
+			});
+
+    }
+
+ )
