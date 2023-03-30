@@ -36,97 +36,10 @@ cmd({
 
 *Album :* ${data.album}                   
 
-*Release :* ${data.release_date}`
+*Release :* ${data.release_date}
+          
+*Download Url* ${data.url}`
 
 let search = await yts(data.title);
 
 let anu = search.videos[0];
-
-const getRandom = (ext) => {
-
-            return `${Math.floor(Math.random() * 10000)}${ext}`;
-
-        };
-
-        if (text.length === 0) {
-
-            reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
-
-
-            let infoYt = await ytdl.getInfo(data.url);
-
-            //30 MIN
-
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
-
-            let titleYt = infoYt.videoDetails.title;
-
-            let randomName = getRandom(".mp3");
-
-            const stream = ytdl(data.url, {
-
-                    filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-
-                })
-
-                .pipe(fs.createWriteStream(`./${randomName}`));
-
-            await new Promise((resolve, reject) => {
-
-                stream.on("error", reject);
-
-                stream.on("finish", resolve);
-
-            });
-
-            let stats = fs.statSync(`./${randomName}`);
-
-            let fileSizeInBytes = stats.size;
-
-            let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
-
-            if (fileSizeInMegabytes <= dlsize) {
-
-                let yts = require("secktor-pack");
-
-            citel.reply(`🎵 ━━━━━━━━━━ *𝗔𝗨𝗗𝗜𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 🎵\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
-
-                let search = await yts(text);
-
-            citel.react("✅");
-
-                let buttonMessage = {
-
-                        audio: fs.readFileSync(`./${randomName}`),
-
-                        jpegThumbnail: log0,
-
-                        mimetype: 'audio/mp4',
-
-                        fileName: `${titleYt}.mp4`,
-
-                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
-
-                        headerType: 4,
-
-                    }
-
-                    return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
-
-                } else {
-
-                    citel.reply(`*The limit has been exceeded.*❗`);
-
-                }
-
-                fs.unlinkSync(`./${randomName}`);
-
-            } catch (e) {
-
-                console.log(e)
-
-            }
-
-        }
-
-    )
