@@ -53,8 +53,6 @@ let buttonMessaged = {
 
 				footer: tlang().footer,
 
-				buttons: generatebutton,
-
 				headerType: 4,
 
 				}
