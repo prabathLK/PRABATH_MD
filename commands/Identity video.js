@@ -1,1 +1,147 @@
-const _0x5f1e65=_0x1f2c;function _0x1f2c(_0x247992,_0x40128a){const _0x395d91=_0x395d();return _0x1f2c=function(_0x1f2c0a,_0x22671c){_0x1f2c0a=_0x1f2c0a-0x11c;let _0x2f68e8=_0x395d91[_0x1f2c0a];return _0x2f68e8;},_0x1f2c(_0x247992,_0x40128a);}(function(_0x5a5686,_0x3194b4){const _0x2909c1=_0x1f2c,_0x31fc03=_0x5a5686();while(!![]){try{const _0x247c59=-parseInt(_0x2909c1(0x11f))/0x1+parseInt(_0x2909c1(0x138))/0x2+parseInt(_0x2909c1(0x133))/0x3+-parseInt(_0x2909c1(0x12c))/0x4*(-parseInt(_0x2909c1(0x12e))/0x5)+-parseInt(_0x2909c1(0x13b))/0x6+-parseInt(_0x2909c1(0x135))/0x7*(-parseInt(_0x2909c1(0x123))/0x8)+-parseInt(_0x2909c1(0x13c))/0x9;if(_0x247c59===_0x3194b4)break;else _0x31fc03['push'](_0x31fc03['shift']());}catch(_0x40d492){_0x31fc03['push'](_0x31fc03['shift']());}}}(_0x395d,0xc27af));const {tlang,shazam,prefix,cmd}=require('../lib');let yts=require(_0x5f1e65(0x122));function _0x395d(){const _0x57e3ee=['videos','4024842tNGNAQ','artists','10125857hGQDFv','status','Download\x20Song','1505552ZerQHd','thumbnail','find\x20mp4','5101164FfHure','27560520fWdEhU','misc','reply','වීඩියෝව\x20සොයන්න','chat','316907RaBUdJ','Download\x20Video','ytmp4\x20','secktor-pack','8KIhJpo','sendMessage','ytmp3\x20','footer','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x0a*Album\x20:*\x20','download','*Mention\x20a\x20part\x20of\x20the\x20video*\x20❗','shaxam','quoted','5940124LpvPxY','release_date','5VfXPvO','Send/Reply\x20Image\x20','test','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x0a*Artist\x20:*\x20'];_0x395d=function(){return _0x57e3ee;};return _0x395d();}cmd({'pattern':'findvideo','alias':[_0x5f1e65(0x13a),'find\x20video','fv',_0x5f1e65(0x11d)],'category':_0x5f1e65(0x13d),'desc':'Finds\x20info\x20about\x20song'},async(_0x57689e,_0x51aad1,_0x3b4ea5)=>{const _0x2f5b83=_0x5f1e65;let _0x2220b7=_0x51aad1[_0x2f5b83(0x12b)]['mtype'];if(!_0x51aad1[_0x2f5b83(0x12b)])return _0x51aad1['reply'](_0x2f5b83(0x12f)+prefix+_0x2f5b83(0x12a));if(!/video/[_0x2f5b83(0x130)](_0x2220b7))return _0x51aad1[_0x2f5b83(0x11c)](_0x2f5b83(0x129));let _0x3f7665=await _0x51aad1[_0x2f5b83(0x12b)][_0x2f5b83(0x128)]();_0x51aad1['reply']('*Identifying\x20And\x20Loading\x20Information*\x20🌎');let _0x286cf6=await shazam(_0x3f7665);if(!_0x286cf6[_0x2f5b83(0x136)])return _0x51aad1[_0x2f5b83(0x11c)](_0x286cf6);let _0x273f87='*Title\x20:*\x20'+_0x286cf6['title']+_0x2f5b83(0x131)+_0x286cf6[_0x2f5b83(0x134)]+_0x2f5b83(0x127)+_0x286cf6['album']+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x0a*Release\x20:*\x20'+_0x286cf6[_0x2f5b83(0x12d)],_0x1617c3=await yts(_0x286cf6['title']),_0x5b5b66=_0x1617c3[_0x2f5b83(0x132)][0x0],_0x2ef492=[{'buttonId':prefix+_0x2f5b83(0x121)+_0x5b5b66['url'],'buttonText':{'displayText':_0x2f5b83(0x120)},'type':0x1},{'buttonId':prefix+_0x2f5b83(0x125)+_0x5b5b66['url'],'buttonText':{'displayText':_0x2f5b83(0x137)},'type':0x1}],_0x3befbc={'image':{'url':_0x5b5b66[_0x2f5b83(0x139)]},'caption':_0x273f87,'footer':tlang()[_0x2f5b83(0x126)],'buttons':_0x2ef492,'headerType':0x4};await _0x57689e[_0x2f5b83(0x124)](_0x51aad1[_0x2f5b83(0x11e)],_0x3befbc,{'quoted':_0x51aad1});});
+const { tlang,shazam,prefix,cmd } = require('../lib')
+
+let yts = require("secktor-pack");
+
+cmd({
+
+        pattern: "findvideo",
+
+        alias: ["find mp4","find video","fv","වීඩියෝව සොයන්න"],
+
+        category: "misc",
+
+        desc: "Finds info about song"
+
+    },
+
+    async(Void, citel, args) => {
+
+        let mime = citel.quoted.mtype
+
+        if (!citel.quoted) return citel.reply(`Send/Reply Image ${prefix}shaxam`);
+
+        if (!/video/.test(mime)) return citel.reply(`*Mention a part of the video* ❗`);
+
+        let buff = await citel.quoted.download();
+
+        citel.reply(`*Identifying And Loading Information* 🌎`);
+
+        let data = await shazam(buff);
+
+        if (!data.status) return citel.reply(data);
+
+          let h =  `*Title :* ${data.title}           
+
+*Artist :* ${data.artists}            
+
+*Album :* ${data.album}                   
+
+*Release :* ${data.release_date}`
+
+let search = await yts(data.title);
+
+let anu = search.videos[0];
+
+const getRandom = (ext) => {
+
+            return `${Math.floor(Math.random() * 10000)}${ext}`;
+
+        };
+
+        if (text.length === 0) {
+
+            reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
+
+            return;
+
+        }
+
+        try {
+
+            let urlYt = text;
+
+            if (!urlYt.startsWith("")) {
+
+                citel.reply(`*Give Song Name!*❗`);
+
+                return;
+
+            }
+
+            let infoYt = await ytdl.getInfo(anu.url);
+
+            //30 MIN
+
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
+
+            let titleYt = infoYt.videoDetails.title;
+
+            let randomName = getRandom(".mp3");
+
+            const stream = ytdl(anu.url, {
+
+                    filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
+
+                })
+
+                .pipe(fs.createWriteStream(`./${randomName}`));
+
+            await new Promise((resolve, reject) => {
+
+                stream.on("error", reject);
+
+                stream.on("finish", resolve);
+
+            });
+
+            let stats = fs.statSync(`./${randomName}`);
+
+            let fileSizeInBytes = stats.size;
+
+            let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
+
+            if (fileSizeInMegabytes <= dlsize) {
+
+                let yts = require("secktor-pack");
+
+            citel.reply(`🎵 ━━━━━━━━━━ *𝗔𝗨𝗗𝗜𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 🎵\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
+
+                let search = await yts(text);
+
+            citel.react("✅");
+
+                let buttonMessage = {
+
+                        audio: fs.readFileSync(`./${randomName}`),
+
+                        jpegThumbnail: log0,
+
+                        mimetype: 'audio/mp4',
+
+                        fileName: `${titleYt}.mp4`,
+
+                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+
+                        headerType: 4,
+
+                    }
+
+                    return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
+
+                } else {
+
+                    citel.reply(`*The limit has been exceeded.*❗`);
+
+                }
+
+                fs.unlinkSync(`./${randomName}`);
+
+            } catch (e) {
+
+                console.log(e)
+
+            }
+
+        }
+
+    )
