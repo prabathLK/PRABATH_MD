@@ -59,7 +59,7 @@ cmd({
 
 ●. *Support group :* https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM
 
-●. *Github:* https://github.com/PrabathLK/PRABATH-MD
+●. *Github:* https://github.com/PrabathLK/PRABATH_MD
 
 ●. *Developer:* https://github.com/PrabathLK
 `
@@ -75,46 +75,6 @@ cmd({
 
     }
 )
-//---------------------------------------------------------------------------
-cmd({
-        pattern: "gskagskagajahsjg",
-        alias: ["hskagsskwgskshs"],
-        desc: "To check bot status",
-        category: "general",
-        react: "📟",
-        filename: __filename,
-    },
-    async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = ` 
-┏━━━━━━━━━━━━━━━━━━━━━━━
-┃
-┃ ⏱️ *Uptime:-* ${runtime(process.uptime())}
-┃
-┃ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃
-┃ ⚡ *Speed:-* ${latensie.toFixed(4)} ms
-┃
-┃ 📱 *User:-* ${Config.ownername}
-┃
-┃ 👨‍💻 *Owner:-* Prabath 
-┃
-┃ 🧬 *Version:-* 3.0 V 
-┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━
-`;
-        let buttonMessaged = {
-            image: { url: await botpic() },
-            caption: cap,
-            footer: tlang().footer,
-            headerType: 4,
-            }
-        return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel,
-        });
-    }
-)
-
 
 //---------------------------------------------------------------------------
 
@@ -463,6 +423,7 @@ cmd({
 │.tiktok
 │.img
 │.mp4down
+│.fbs
 └─────────◉
 ┌─(🔍 ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ)
 │.findvideo
@@ -502,6 +463,9 @@ cmd({
 │.restart
 │.join
 │.plugins
+│.save
+│.dnote
+│.dallnote
 └─────────◉
 ┌─( 🎮 ɢᴀᴍᴇ ᴄᴏᴍᴍᴀɴᴅꜱ)
 │.xᴏ
@@ -512,6 +476,7 @@ cmd({
 │.profile
 │.system
 │.eval
+│.qr
 └─────────◉
 
 `,
@@ -1012,7 +977,6 @@ Get admin for prabath
 
             return Void.sendMessage(citel.chat, buttonMessage, {
 
-                quoted: citel,
 
             });
 
