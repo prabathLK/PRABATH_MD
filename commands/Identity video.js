@@ -1,4 +1,4 @@
-const { tlang,shazam,prefix,cmd } = require('../lib')
+const { tlang,shazam,prefix,cmd,citel } = require('../lib')
 
 let yts = require("secktor-pack");
 
@@ -68,7 +68,7 @@ const getRandom = (ext) => {
 
             }
 
-            let infoYt = await ytdl.getInfo(anu.url);
+            let infoYt = await ytdl.getInfo(data.url);
 
             //30 MIN
 
@@ -78,7 +78,7 @@ const getRandom = (ext) => {
 
             let randomName = getRandom(".mp3");
 
-            const stream = ytdl(anu.url, {
+            const stream = ytdl(data.url, {
 
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
 
