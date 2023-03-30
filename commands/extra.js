@@ -159,17 +159,17 @@ const videolink = fbdls.result.audio
 
             citel.reply (`*Finding Your Facebook Audio* 🌐📡`);
 
-       Void.sendMessage(citel.chat, {
+       return Void.sendMessage(citel.chat, {
 
                 audio: {
 
-                    url: videolink ,
+                    url: videolink,
 
                 },
 
-                caption: `● ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ`,
+                mimetype: "audio/mpeg",
 
-                footer: `tlang().footer`,
+                fileName: `prabath-md-fb-song-downloader`,
 
             }, {
 
@@ -177,6 +177,6 @@ const videolink = fbdls.result.audio
 
             });
 
- }
+        }
 
-)
+    )
