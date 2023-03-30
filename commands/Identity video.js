@@ -1,4 +1,4 @@
-const { tlang,shazam,prefix,cmd,citel } = require('../lib')
+const { tlang,shazam,prefix,cmd,citel,text} = require('../lib')
 
 let yts = require("secktor-pack");
 
