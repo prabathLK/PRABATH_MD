@@ -453,70 +453,107 @@ cmd({
 
 cmd({
 
-            pattern: "alive",
+    pattern: "alive",
 
-            alias: ["බෝට්","බොට්"],
+    alias: ["බෝට්","බොට්"],
 
-            category: "general",
+    category: "general",
 
-            react: "👋",
+    react: "👋",
 
-            filename: __filename,
+    filename: __filename,
 
-            desc: "is bot alive??"
+    desc: "is bot alive??"
 
-        },
+},
 
-        async(Void, citel, text, isAdmins) => {
+async(Void, citel, text, isAdmins) => {
 
+if(os.hostname().length == 12 ) hostname = 'replit'
 
-            const alivtxt = `
-*Hello* ${citel.pushName} 🙋‍♂️
+else if(os.hostname().length == 36) hostname = 'heroku'
 
+else hostname = os.hostname()
 
-*I am ${Config.ownername}*
+    const alivtxt = `
 
+Hello ${citel.pushName} 🙋‍♂️
 
-┌─────────────────────────
-│ ● *Uptime:-* ${runtime(process.uptime())}
-│
-│ ● *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│
-│ ● *User:-* ${Config.ownername}
-│
-│ ● *Owner:-* Prabath 
-│
-│ ● *Version:-* 4.1.0
-└──────────────────────────
+I am ${Config.ownername}
+
+┏━━━━━━━━━━━━━━━━━━━━━
+┃ ● Uptime:- ${runtime(process.uptime())}
+┃
+┃ ● Ram usage:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃
+┃ ● Uptime:- ${runtime(process.uptime())}
+┃
+┃ ● Platform:-${hostname}
+┃
+┃ ● Owner:- Prabath 
+┃
+┃ ● Version:- 4.1.0
+┗━━━━━━━━━━━━━━━━━━━━━━
 
 ${Config.alivemsj}
 
-`;     
-            let aliveMessage = {
+`;           let buttons = [{
 
-                image: {
+            buttonId: `${prefix}menu`,
 
-                    url: `${Config.alivepic}`,
+            buttonText: {
 
-                },
+                displayText: "Commands",
 
-                caption: alivtxt,
+            },
 
-                footer: tlang().footer,
+            type: 1,
 
-                headerType: 4,
+        },
 
-            };
+          {
 
-             return Void.sendMessage(citel.chat, aliveMessage, {
+            buttonId: `${prefix}owner`,
 
-                quoted: citel,
+            buttonText: {
 
-            });
+                displayText: "Owner",
 
-        }
+},
 
-    )
+            type: 1,
+
+        },
+
+    ]; 
+
+    let aliveMessage = {
+
+        image: {
+
+        url: `${Config.alivepic}`,
+
+        },
+
+        caption: alivtxt,
+
+        footer: tlang().footer,
+
+        headerType: 4,
+
+    };
+
+     return Void.sendMessage(citel.chat, aliveMessage, {
+
+        quoted: citel,
+
+    });
+
+}
+
+)
+
+            
 
     //---------------------------------------------------------------------------
 
@@ -570,6 +607,12 @@ cmd({
         },
 
         async(Void, citel, text, isAdmins) => {
+        
+        if(os.hostname().length == 12 ) hostname = 'replit'
+
+else if(os.hostname().length == 36) hostname = 'heroku'
+
+else hostname = os.hostname()
 
             const alivtxt = `
 ┌────────────────────────
@@ -577,9 +620,7 @@ cmd({
 │
 │ 📟 *Ram usage:-* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │
-│ ⚙️ *Run Os:-* ${os.hostname().length}
-│
-│ 📱 *User:-* ${Config.ownername}
+│ ⚙️ *Platform:-* ${hostname}
 │
 │ 👨‍💻 *Owner:-* Prabath 
 │
