@@ -52,21 +52,6 @@ const getRandom = (ext) => {
 
             reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
 
-            return;
-
-        }
-
-        try {
-
-            let urlYt = text;
-
-            if (!urlYt.startsWith("")) {
-
-                citel.reply(`*Give Song Name!*❗`);
-
-                return;
-
-            }
 
             let infoYt = await ytdl.getInfo(data.url);
 
