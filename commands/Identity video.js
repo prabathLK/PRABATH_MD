@@ -30,6 +30,18 @@ cmd({
 
         if (!data.status) return citel.reply(data);
 
+	
+
+          let search = await yts(data.title);
+
+          let anu = search.videos[0];
+
+	   
+
+          let search = await yts(data.title);
+
+          let anu = search.videos[0];
+
           let h =  `*Title :* ${data.title}           
 
 *Artist :* ${data.artists}            
@@ -37,15 +49,24 @@ cmd({
 *Album :* ${data.album}                   
 
 *Release :* ${data.release_date}
+
           
-*Download Url* ${data.url}`
+
+*Download Url* ${anu.url}`
 
 let search = await yts(data.title);
 
 let anu = search.videos[0];
+
 let buttonMessaged = {
 
 			
+
+                                image: {
+
+                                      url: anu.thumbnail,
+
+					
 
 				caption: h,
 
