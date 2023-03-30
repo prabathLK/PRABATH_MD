@@ -135,3 +135,48 @@ const videolink = ttdl.result.video2
  }
 
 )
+
+
+cmd({
+
+            pattern: "fbs",
+
+            desc: "fb down",
+
+            react: "🎶",
+
+            category: "downloader"
+
+        },
+
+        async(Void, citel, text) => {
+
+            if (!text) return
+
+const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
+
+const videolink = fbdl.result.audio
+
+            citel.reply (`*Finding Your Facebook Audio* 🌐📡`);
+
+       Void.sendMessage(citel.chat, {
+
+                audio: {
+
+                    url: audio ,
+
+                },
+
+                caption: `● ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ`,
+
+                footer: `tlang().footer`,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+ }
+
+)
