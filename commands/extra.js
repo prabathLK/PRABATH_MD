@@ -60,7 +60,7 @@ cmd({
 
             if (!text) return
 
-const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
+const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=58341c8a`)
 
 const videolink = fbdl.result.HD
 
@@ -153,7 +153,7 @@ cmd({
 
             if (!text) return
 
-const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
+const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=58341c8a`)
 
 const videolink = fbdl.result.audio
 
