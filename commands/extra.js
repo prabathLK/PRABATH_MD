@@ -153,9 +153,9 @@ cmd({
 
             if (!text) return
 
-const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=58341c8a`)
+const fbdls = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=58341c8a`)
 
-const videolink = fbdl.result.audio
+const videolink = fbdls.result.audio
 
             citel.reply (`*Finding Your Facebook Audio* 🌐📡`);
 
@@ -163,7 +163,7 @@ const videolink = fbdl.result.audio
 
                 audio: {
 
-                    url: audio ,
+                    url: videolink ,
 
                 },
 
