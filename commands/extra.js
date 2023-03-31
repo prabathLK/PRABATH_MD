@@ -106,7 +106,7 @@ cmd({
 
             if (!text) return
 
-const ttdl = await fetchJson(tlang().ttdownnima)
+const ttdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/tiktokdl?url=https://developers.tiklydown.me/api/download?url=${text}`)
 
     
 
