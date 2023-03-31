@@ -212,8 +212,6 @@ const applink = apkdl.result.icon
 
                 },
 
-                caption: `prabathmd`,
-
             }, {
 
                 quoted: citel,
