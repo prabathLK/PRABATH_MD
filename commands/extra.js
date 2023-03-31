@@ -184,11 +184,11 @@ const videolink = fbdls.result.audio
 
 cmd({
 
-            pattern: "findapk",
+            pattern: "apk",
 
             desc: "apk down",
 
-            react: "🧩",
+            react: "📦",
 
             category: "downloader"
 
@@ -200,8 +200,28 @@ cmd({
 
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
 
-const applink = apkdl.result.icon
+const applink = apkdl.result.data.dllink
 
             citel.reply (`*Finding Your Apk* 🌐📡`);
 
-       return Void.sendMessage(citel.chat, { image: { url: applink }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title}` }, { quoted: citel })
+       return Void.sendMessage(citel.chat, {
+
+                document: {
+
+                    url: applink ,
+
+                },
+
+                mimetype: "audio/mpeg",
+
+                fileName: `prabath-md`,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
