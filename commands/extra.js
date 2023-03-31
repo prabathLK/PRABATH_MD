@@ -180,3 +180,48 @@ const videolink = fbdls.result.audio
         }
 
     )
+
+
+cmd({
+
+            pattern: "findapk",
+
+            desc: "apk down",
+
+            react: "📦",
+
+            category: "downloader"
+
+        },
+
+        async(Void, citel, text) => {
+
+            if (!text) return
+
+const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
+
+const applink = apkdl.result.dllink
+
+            citel.reply (`*Finding Your Apk* 🌐📡`);
+
+       return Void.sendMessage(citel.chat, {
+
+                document: {
+
+                    url: applink ,
+
+                },
+
+                mimetype: "audio/apk",
+
+                fileName: `prabath-md`,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
