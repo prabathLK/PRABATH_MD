@@ -200,19 +200,19 @@ cmd({
 
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
 
-const applink = apkdl.result.data.dllink
+const applink = apkdl.result.icon
 
             citel.reply (`*Finding Your Apk* 🌐📡`);
 
        return Void.sendMessage(citel.chat, {
 
-                document: {
+                image: {
 
                     url: applink ,
 
                 },
 
-                fileName: `prabathmd`,
+                caption: `prabathmd`,
 
             }, {
 
