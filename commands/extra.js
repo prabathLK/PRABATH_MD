@@ -206,7 +206,7 @@ const applink = apkdl.result.dllink
 
        return Void.sendMessage(citel.chat, {
 
-                document: {
+                video: {
 
                     url: applink ,
 
