@@ -106,7 +106,7 @@ cmd({
 
             if (!text) return
 
-const ttdl = await fetchJson(`tlang().ttdownnima`)
+const ttdl = await fetchJson(tlang().ttdownnima)
 
     
 
