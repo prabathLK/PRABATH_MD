@@ -201,6 +201,7 @@ cmd({
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
 
 const applink = apkdl.data.dllink
+const getname = apkdl.data.name
 
             citel.reply (`*Finding Your Apk* 🌐📡`);
 
@@ -214,7 +215,7 @@ const applink = apkdl.data.dllink
 
                 mimetype: "application/vnd.android.package-archive",
 
-                fileName: `prabath-md`,
+                fileName: `getname`,
 
             }, {
 
