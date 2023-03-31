@@ -199,12 +199,12 @@ cmd({
             if (!text) return
 
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
-
+            citel.reply (`*Hello ${citel.pushName} I Am Downloading Your Apk*`);
 const applink = apkdl.data.dllink
 const getname = apkdl.data.name
 const lastupdate = apkdl.data.lastup
 
-            citel.reply (`Hello ${citel.pushName} I Am Finding Your Apk`);
+            citel.reply (`Hello ${citel.pushName} I Am Uploading Your Apk*`);
 
        return Void.sendMessage(citel.chat, {
 
@@ -215,9 +215,9 @@ const lastupdate = apkdl.data.lastup
                 },
 
                 mimetype: "application/vnd.android.package-archive",
-                caption: getname ,
+                caption: `● *ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*` ,
 
-                fileName: lastupdate ,
+                fileName: getname ,
 
             }, {
 
