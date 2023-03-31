@@ -203,7 +203,7 @@ const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/
 const applink = apkdl.data.dllink
 const getname = apkdl.data.name
 
-            citel.reply (`*App Name:-*` getname);
+            citel.reply (`Hello ${citel.pushName} I Am Finding Your Apk`);
 
        return Void.sendMessage(citel.chat, {
 
@@ -214,6 +214,7 @@ const getname = apkdl.data.name
                 },
 
                 mimetype: "application/vnd.android.package-archive",
+                caption: getname ,
 
                 fileName: getname ,
 
