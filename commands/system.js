@@ -223,13 +223,13 @@ cmd({
 
                 from: text[1] || "auto",
 
-                to: text.split(" ")[0] || `${text}`,
+                to: text.split(" ")[0] || "si",
 
             });
 
             if ("text" in whole) {
 
-                return await citel.reply("*Translated In to📑:* " + " ```" + (text.split(" ")[0] || "Auto") + "```\n" + " *From Language🔎:* " + " ```" + (text[1] || "Auto Detect") + "```\n" + "*Result:* " + " ```" + whole.text + "```");
+                return await citel.reply("*Translated In to 📑:* " + " ```" + (text.split(" ")[0] || "Auto To Sinhala") + "```\n" + " *From Language 🔎:* " + " ```" + (text[1] || "Auto Detect") + "```\n" + "*Result:* " + " ```" + whole.text + "```");
 
             }
 
