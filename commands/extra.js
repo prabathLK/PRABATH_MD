@@ -217,7 +217,7 @@ const lastupdate = apkdl.data.lastup
                 mimetype: "application/vnd.android.package-archive",
                 caption: getname ,
 
-                fileName: `Update` lastupdate ,
+                fileName: lastupdate ,
 
             }, {
 
