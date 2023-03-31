@@ -200,7 +200,7 @@ cmd({
 
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
 
-const applink = apkdl.result.dllink
+const applink = apkdl.result.data.dllink
 
             citel.reply (`*Finding Your Apk* 🌐📡`);
 
