@@ -215,7 +215,7 @@ const getname = apkdl.data.name
 
                 mimetype: "application/vnd.android.package-archive",
 
-                fileName: `getname`,
+                fileName: getname ,
 
             }, {
 
