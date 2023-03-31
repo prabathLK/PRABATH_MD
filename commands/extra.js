@@ -188,7 +188,7 @@ cmd({
 
             desc: "apk down",
 
-            react: "📦",
+            react: "🧩",
 
             category: "downloader"
 
@@ -200,7 +200,7 @@ cmd({
 
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
 
-const applink = apkdl.result.icon
+const applink = apkdl.result.data.icon
 
             citel.reply (`*Finding Your Apk* 🌐📡`);
 
