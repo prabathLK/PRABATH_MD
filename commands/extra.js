@@ -1,4 +1,4 @@
-const { fetchJson, cmd, citel, Config } = require('../lib')
+const { fetchJson, cmd, citel, Config, tlang } = require('../lib')
 
 cmd({
 
@@ -200,24 +200,8 @@ cmd({
 
 const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
 
-const applink = apkdl.result.data.icon
+const applink = apkdl.result.icon
 
             citel.reply (`*Finding Your Apk* 🌐📡`);
 
-       return Void.sendMessage(citel.chat, {
-
-                image: {
-
-                    url: applink ,
-
-                },
-
-            }, {
-
-                quoted: citel,
-
-            });
-
-        }
-
-    )
+       return Void.sendMessage(citel.chat, { image: { url: applink }, caption: `⦿.*𝗠𝗔𝗗𝗘 𝗕𝗬 :-* ${tlang().title}` }, { quoted: citel })
