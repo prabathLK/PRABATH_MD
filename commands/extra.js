@@ -106,7 +106,7 @@ cmd({
 
             if (!text) return
 
-const ttdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/tikok?url=${text}&apikey=${Config.botapikey}`)
+const ttdl = await fetchJson(`tlang().ttdownnima`)
 
     
 
