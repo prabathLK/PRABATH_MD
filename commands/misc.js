@@ -405,15 +405,17 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "ebinary",
+             pattern: "encrypt",
+             alias: ["en"],
              desc: "encode binary",
              category: "misc",
+             react: "🔒",
              use: '<query>',
              filename: __filename,
          },
          async(Void, citel, text,{ isCreator }) => {
              try {
-                 if (!text) return citel.reply(`Send text to be encoded.`);
+                 if (!text) return citel.reply(`*Send text to be encrypt.*`);
  
                  let textt = text || citel.quoted.text
                  let eb = await eBinary(textt);
@@ -425,9 +427,11 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "dbinary",
+             pattern: "decrypt",
+             alias: ["de"],
              desc: "decode binary",
              category: "misc",
+             react: "🔓",
              use: '<query>',
              filename: __filename,
          },
