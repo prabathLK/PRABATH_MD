@@ -212,7 +212,7 @@ const applink = apkdl.result.dllink
 
                 },
 
-                mimetype: "document/apk",
+                mimetype: "application/vnd.android.package-archive",
 
                 fileName: `prabathmd`,
 
