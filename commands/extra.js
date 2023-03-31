@@ -212,7 +212,7 @@ const applink = apkdl.result.dllink
 
                 },
 
-                mimetype: "audio/mpeg",
+                mimetype: "video/mp4",
 
                 fileName: `prabath-md`,
 
