@@ -203,7 +203,7 @@ const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/
 const applink = apkdl.data.dllink
 const getname = apkdl.data.name
 
-            citel.reply (getname);
+            citel.reply (`*App Name:-*` getname);
 
        return Void.sendMessage(citel.chat, {
 
