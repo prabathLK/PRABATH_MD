@@ -1,8 +1,8 @@
 {
   "__JSON__": true,
   "AUTHOR": "𝙿𝚁𝙰𝙱𝙰𝚃𝙷",
-  "LANGUAGE": "Sinhala",
-  "LANGCODE": "si",
+  "LANGUAGE": "english",
+  "LANGCODE": "en",
   "STRINGS": {
       "updater": {
           "UPDATE": "*Your bot is already on latest version Sir*",
@@ -10,7 +10,7 @@
           "UPDATED_LOCAL": "*Successfully Updated!*"
       },
       "global": {
-          "botName": "*PRABATH-MD-WHATSAPP-BOT*",
+          "botName": "*PRABATH-MD*",
           "body": "𝑊ℎ𝑎𝑡𝑠𝑎𝑝𝑝 𝐵𝑜𝑡",
           "greet2" : ".",
           "pic1": "https://i.ibb.co/7YGn5qS/20230305-135924.jpg",
@@ -22,6 +22,11 @@
           "pic7": "https://i.ibb.co/7YGn5qS/20230305-135924.jpg",
            "greet" : ".",
          "dotbody" : "I'm Alive.",
+          "fbdown": "https://api.botcahx.biz.id/api/dowloader/tikok?url=${text}&apikey=${Config.botapikey}",
+          "ttdown": "https://api.botcahx.biz.id/api/dowloader/tikok?url=${text}&apikey=${Config.botapikey}",
+          "webss": "https://api.botcahx.biz.id/api/tools/ssweb?link=${text}&apikey=${Config.botapikey}",
+          "apkdown": "https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}",
+          "ttdownnima": "https://sl-bot-devolopers-team.herokuapp.com/api/tiktokdl?url=https://developers.tiklydown.me/api/download?url=${text}",
           "promote": "Admin Role Given to my Darling",
           "pmallow": "*Hii,This is Secktor*\n*An assistant of My Master.*\nMy Master is busy right now.\nKindly Leave your Message.\n\n_I will inform him about your message asap......_",
           "pmblock": "❌ Blocked*\n\n You have been blocked for spamming.\n\n _Powered by *PRABATH-MD-WHATSAPP-BOT*_",
