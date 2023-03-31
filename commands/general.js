@@ -14,7 +14,7 @@ const axios = require('axios')
 const speed = require('performance-now')
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "chat",
+        pattern: "chatdectakag",
         desc: "chat with an AI",
         category: "general",
         use: '<Hii,Secktor>',
@@ -417,6 +417,7 @@ cmd({
 ┌─(📥 ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ)
 │.song
 │.video
+│.apk
 │.docsong
 │.docvideo
 │.fb
@@ -429,7 +430,6 @@ cmd({
 │.findvideo
 │.findsong
 │.yts
-│.google
 │.weather
 │.movie
 └─────────◉
@@ -454,15 +454,11 @@ cmd({
 │.gdp
 └─────────◉
 ┌─(🧑‍💻 ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ)
-│.update
 │.ujid
 │.block
 │.unblock
-│.install
-│.remove
 │.restart
 │.join
-│.plugins
 │.save
 │.dnote
 │.dallnote
