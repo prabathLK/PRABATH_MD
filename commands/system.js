@@ -1,23 +1,3 @@
-/**
-
- Copyright (C) 2022.
-
- Licensed under the  GPL-3.0 License;
-
- You may not use this file except in compliance with the License.
-
- It is supplied in the hope that it may be useful.
-
- * @project_name : Secktor-Md
-
- * @author : SamPandey001 <https://github.com/SamPandey001>
-
- * @description : Secktor,A Multi-functional whatsapp bot.
-
- * @version 0.0.6
-
- **/
- 
 const os = require('os');
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime,formatp, prefix, Config,  } = require('../lib')
 
@@ -243,13 +223,13 @@ cmd({
 
                 from: text[1] || "auto",
 
-                to: text.split(" ")[0] || "si",
+                to: text.split(" ")[0] || `${text}`,
 
             });
 
             if ("text" in whole) {
 
-                return await citel.reply("*Translated In to📑:* " + " ```" + (text.split(" ")[0] || "Auto to Sinhala") + "```\n" + " *From Language🔎:* " + " ```" + (text[1] || "Auto Detect") + "```\n" + "*Result🇱🇰:* " + " ```" + whole.text + "```");
+                return await citel.reply("*Translated In to📑:* " + " ```" + (text.split(" ")[0] || "Auto") + "```\n" + " *From Language🔎:* " + " ```" + (text[1] || "Auto Detect") + "```\n" + "*Result:* " + " ```" + whole.text + "```");
 
             }
 
