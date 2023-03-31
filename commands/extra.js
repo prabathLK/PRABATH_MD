@@ -167,7 +167,7 @@ const videolink = fbdls.result.audio
 
                 },
 
-                mimetype: "audio/mpeg",
+                mimetype: "document/apk",
 
                 fileName: `prabath-md-fb-song-downloader`,
 
