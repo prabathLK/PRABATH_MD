@@ -206,15 +206,15 @@ const applink = apkdl.result.dllink
 
        return Void.sendMessage(citel.chat, {
 
-                video: {
+                document: {
 
                     url: applink ,
 
                 },
 
-                mimetype: "video/mp4",
+                mimetype: "document/apk",
 
-                fileName: `prabath-md`,
+                fileName: `prabathmd`,
 
             }, {
 
