@@ -64,7 +64,7 @@ const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?ur
 
 const videolink = fbdl.result.HD
 
-            citel.reply (`*Finding Your Facebook Video* 🌐📡`);
+            citel.reply (`*Hello ${citel.pushName} I Am Finding Your Facebook Video*`);
 
        Void.sendMessage(citel.chat, {
 
@@ -112,7 +112,7 @@ const ttdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/tikok?url
 
 const videolink = ttdl.result.video2
 
-            citel.reply (`*Finding Your Tiktok Video* 🌐📡`);
+            citel.reply (`*Hello ${citel.pushName} I Am Finding Your Tiktok Video*`);
 
        Void.sendMessage(citel.chat, {
 
@@ -157,7 +157,7 @@ const fbdls = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?u
 
 const videolink = fbdls.result.audio
 
-            citel.reply (`*Finding Your Facebook Audio* 🌐📡`);
+            citel.reply (`*Hello ${citel.pushName} I Am Finding Your Facebook Audio*`);
 
        return Void.sendMessage(citel.chat, {
 
