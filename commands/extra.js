@@ -202,6 +202,7 @@ const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/
 
 const applink = apkdl.data.dllink
 const getname = apkdl.data.name
+const lastupdate = apkdl.data.lastup
 
             citel.reply (`Hello ${citel.pushName} I Am Finding Your Apk`);
 
@@ -216,7 +217,7 @@ const getname = apkdl.data.name
                 mimetype: "application/vnd.android.package-archive",
                 caption: getname ,
 
-                fileName: getname ,
+                fileName: `Update` lastupdate ,
 
             }, {
 
