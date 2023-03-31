@@ -110,7 +110,7 @@ const ttdl = await fetchJson(tlang().ttdownnima)
 
     
 
-const videolink = ttdl.result.video2
+const videolink = ttdl.data.dl_url
 
             citel.reply (`*Hello ${citel.pushName} I Am Finding Your Tiktok Video*`);
 
