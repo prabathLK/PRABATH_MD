@@ -2,7 +2,7 @@
 
   "name": "PRABATH-MD",
 
-  "description": "A prabath-md bot built in NodeJs to make experience better",
+  "description": "PRABATH-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
 
   "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
 
@@ -37,10 +37,26 @@
      "value": "i am alive now 🙋‍♂️"
 
     },
+  
+    "AUTO_VOICE": {
+
+    "description": "Auto Voice reply යන්න ඕන නම් true දෙන්න ඕනෙ නැත්තම් false දෙන්න",
+
+     "value": "false"
+
+    },
+  
+    "AUTO_STICKER": {
+
+    "description": "auto sticker යන්න ඕන නම් true දෙන්න ඕනෙ නැත්තම් false දෙන්න",
+
+     "value": "false"
+
+    },
     
     "BOTCAHX_API": {
 
-    "description": "BOTCAHX_API_KEY එක ඇතුලත් කරන්න   මෙම Site එකෙන් ලබා ගත හැක   https://api.botcahx.biz.id/signup "
+    "description": "BOTCAHX_API_KEY එක ඇතුලත් කරන්න   මෙම Site එකෙන් ලබා ගත හැක   https://api.botcahx.biz.id/signup ගන්න දන්නෙ නැත්නම් https://youtu.be/vv2yBauynlI මෙම වීඩියොව බලන්න"
 
   },
 
