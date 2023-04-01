@@ -13,7 +13,7 @@ const url = 'https://gist.github.com/prabathLK/fbd8017006fc4000dc82403d443ecd9b/
         },
 **/ 
 cmd({ on: "body" }, async (Void,citel,text)=> {
- if (Config.autosticker === 'false' && citel.text.startsWith(prefix));
+ if (Config.autosticker === 'false' && citel.text.startsWith(prefix))
   let { data } = await axios.get(url)
   for (vr in data){
  if((new RegExp(`\\b${vr}\\b`,'gi')).test(citel.text)) await Void.sendMessage(citel.chat,{sticker: { url : data[vr]},package: 'made by prabath'},{ quoted: citel })   
