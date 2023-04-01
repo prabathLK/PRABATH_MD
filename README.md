@@ -62,13 +62,8 @@
 
  
 
- 
 
  ---
-
-●. ***[Install Plugins](https://github.com/prabathLK/AUTO-VOICE-SENDER-PRABATH-MD).***
-
-------------
 
 ## License
 
