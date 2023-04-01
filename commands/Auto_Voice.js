@@ -24,7 +24,7 @@ const url = 'https://gist.github.com/prabathLK/f602911954a959c8730aeb00a588d15d/
 
 cmd({ on: "body" }, async (Void,citel,text)=> {
 
- if (Config.autovoice === 'true' && citel.text.startsWith(prefix));
+ if (Config.autovoice === 'false' && citel.text.startsWith(prefix));
 
   let { data } = await axios.get(url)
 
