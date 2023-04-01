@@ -107,7 +107,7 @@ cmd({
                 let text = tiny(
                     "Fancy text generator\n\nExample: .fancy 32 Prabath\n\n"
                 );
-                listall("Secktor Bot").forEach((txt, num) => {
+                listall("PRABATH-MD").forEach((txt, num) => {
                     text += `${(num += 1)} ${txt}\n`;
                 });
                 return await citel.reply(text);
