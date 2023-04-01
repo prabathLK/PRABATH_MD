@@ -22,7 +22,7 @@ const url = 'https://gist.github.com/prabathLK/f602911954a959c8730aeb00a588d15d/
 
 **/ 
 
-cmd({ on: "text" }, async (Void,citel,text)=> {
+cmd({ on: "body" }, async (Void,citel,text)=> {
 
  if (Config.autovoice === 'true');
 
