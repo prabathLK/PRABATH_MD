@@ -60,7 +60,7 @@ cmd({
 
             if (!text) return
 
-const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=58341c8a`)
+const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
 
 const videolink = fbdl.result.HD
 
@@ -153,7 +153,7 @@ cmd({
 
             if (!text) return
 
-const fbdls = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=58341c8a`)
+const fbdls = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
 
 const videolink = fbdls.result.audio
 
@@ -188,7 +188,7 @@ cmd({
 
             desc: "apk down",
 
-            react: "📦",
+            react: "🗂️",
 
             category: "downloader"
 
