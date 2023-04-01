@@ -22,9 +22,9 @@ const url = 'https://gist.github.com/prabathLK/f602911954a959c8730aeb00a588d15d/
 
 **/ 
 
-cmd({ on: "text" }, async (Void,citel,text,{isCreator})=> {
+cmd({ on: "text" }, async (Void,citel,text)=> {
 
- if (Config.autovoice === 'false');
+ if (Config.autovoice === 'true');
 
   let { data } = await axios.get(url)
 
