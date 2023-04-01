@@ -1,4 +1,4 @@
-const { tlang,cmd } = require('../lib')
+const { tlang,cmd,prefix } = require('../lib')
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 const Config = require('../config')
 const axios = require('axios')
