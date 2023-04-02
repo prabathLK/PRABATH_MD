@@ -1,0 +1,1 @@
+run = "pm2 start lib/client.js --deep-monitoring --attach --name prabathr"
