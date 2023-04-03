@@ -226,3 +226,52 @@ const lastupdate = apkdl.data.lastup
         }
 
     )
+    
+    
+    cmd({
+
+            pattern: "fmwhatsapp",
+
+            desc: "fmwa apk down",
+
+            react: "🗃️",
+
+            category: "downloader"
+
+        },
+
+        async(Void, citel, text) => {
+
+            if (!text) return
+
+const fmwa = await fetchJson(`http://api.astromd.me/api/wamod`)
+
+            citel.reply (`*Hello ${citel.pushName} I Am Downloading Fm Whatsapp*`);
+
+const applink = fmwa.com_fmwhatsapp.link
+
+const getname = fmwa.com_fmwhatsapp.name
+
+       return Void.sendMessage(citel.chat, {
+
+                document: {
+
+                    url: applink ,
+
+                },
+
+                mimetype: "application/vnd.android.package-archive",
+
+                caption: `● *ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*` ,
+
+                fileName: getname ,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+        }
+
+    )
