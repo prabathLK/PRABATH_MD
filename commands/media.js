@@ -248,9 +248,9 @@ const fmwa = await fetchJson(`http://api.astromd.me/api/wamod`)
 
             citel.reply (`*Hello ${citel.pushName} I Am Downloading Fm Whatsapp*`);
 
-const applink = fmwa.com_fmwhatsapp.link
+const applink = fmwa.link
 
-const getname = fmwa.com_fmwhatsapp.name
+const getname = fmwa.name
 
        return Void.sendMessage(citel.chat, {
 
