@@ -5,7 +5,6 @@
         pkgs.ffmpeg
         pkgs.imagemagick
         pkgs.git
-        pkgs.pino
         pkgs.neofetch
         pkgs.libwebp
         pkgs.speedtest-cli
