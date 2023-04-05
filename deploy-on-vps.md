@@ -25,8 +25,8 @@
 
    5. Clone Repo and install required packages
       ```
-      git clone https://github.com/prabathLK/PRABATH-MD
-      cd PRABATH-MD
+      git clone https://github.com/prabathLK/PRABATH_MD
+      cd PRABATH_MD
       yarn install --network-concurrency 1
       ```
 
@@ -39,22 +39,19 @@
 
       ```
       OWNER_NUMBER="94762280384"
-      MONGODB_URI="mongodb+srv://*************"
-      SESSION_ID = "https://prabath-md-qr-rgbm.onrender.com/"
-      THUMB_IMAGE = "https://raw.githubusercontent.com/Brandimages/main/logos/SocialLogo%201.png"
+      MONGODB_URI="Enter-mongodb_uri"
+      SESSION_ID = "enter session_id"
       port = 5000
-      email = "se"
-      global_url = "instagram.com"
-      OWNER_NAME = "prabath-m"
+      OWNER_NAME = "prabath-md"
       AUTO_REACTION = false
+      AUTO_VOICE = false
+      AUTO_STICKER = false
       FAKE_COUNTRY_CODE = 92
       READ_MESSAGE = false
       PREFIX = .
-      WARN_COUNT = 3
       DISABLE_PM = false
       ANTI_BAD_WORD = "fuck"
       LEVEL_UP_MESSAGE= true
-      WELCOME_MESSAGE =  "*Hi,* @user \n*Welcome in* @gname \n*Member count* : @count th"
       THEME= PRABATH-MD
       WORKTYPE = public
       PACK_INFO = "prabath ✅;prabath-md"
