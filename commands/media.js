@@ -20,8 +20,6 @@ cmd({
 
             if (!text) return
 
-const webss = await fetchJson(`https://api.botcahx.biz.id/api/tools/ssweb?link=${text}&apikey=${Config.botapikey}`)
-
             citel.reply (`*Screenshot is taking, please wait...*`)
 
        Void.sendMessage(citel.chat, {
@@ -188,7 +186,7 @@ cmd({
 
             desc: "apk down",
 
-            react: "🗂️",
+            react: "🗃️",
 
             category: "downloader"
 
@@ -226,47 +224,7 @@ const lastupdate = apkdl.data.lastup
         }
 
     )
-    
-    
-    cmd({
-
-            pattern: "fmwhatsapp",
-
-            desc: "fmwa apk down",
-
-            react: "🗃️",
-
-            category: "downloader"
-
-        },
-
-        async(Void, citel, text) => {
-
-            if (!text) return
-
-const fmwa = await fetchJson(`http://api.astromd.me/api/wamod`)
-
-            citel.reply (`*Hello ${citel.pushName} I Am Downloading Fm Whatsapp*`);
-
-const applink = fmwa.link
-
-const getname = fmwa.name
-
-       return Void.sendMessage(citel.chat, {
-
-                document: {
-
-                    url: applink ,
-
-                },
-
-                mimetype: "application/vnd.android.package-archive",
-
-                caption: `● *ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*` ,
-
-                fileName: getname ,
-
-            }, {
+ 
 
                 quoted: citel,
 
