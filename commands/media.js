@@ -36,7 +36,7 @@ cmd({
 
                 quoted: citel,
 
-            });
+            };
 
  }
 
