@@ -418,8 +418,8 @@ cmd({
 │.song
 │.video
 │.apk
-│.docsong
-│.docvideo
+│.docsong (not working fix soon)
+│.docvideo (not working fix soon)
 │.fb
 │.tiktok
 │.img
@@ -435,6 +435,8 @@ cmd({
 └─────────◉
 ┌─(🧰 ᴄᴏɴᴠᴇʀᴛ ᴄᴏᴍᴍᴀɴᴅꜱ)
 │.sticker
+│.attp
+│.ttp
 │.logo
 │.ss
 │.trt
@@ -464,7 +466,8 @@ cmd({
 │.dallnote
 └─────────◉
 ┌─( 🎮 ɢᴀᴍᴇ ᴄᴏᴍᴍᴀɴᴅꜱ)
-│.xᴏ
+│.xo
+│.dadu
 └─────────◉
 ┌─(💬 ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ)
 │.alive
