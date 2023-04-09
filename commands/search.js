@@ -178,7 +178,7 @@ cmd({
                         image: {
                             url: images,
                         },
-                        caption: `● *ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ* `,
+                        caption: tlang().footer,
                         headerType: 4,
                     };
                     Void.sendMessage(citel.chat, buttonMessage, {
@@ -204,9 +204,10 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "iswa",
+        pattern: "snumber",
+        alias: ["sn"],
         category: "search",
-        react: "ℹ️",
+        react: "🏆",
         desc: "Searches in given rage about given number.",
         use: '9112345678xx',
         filename: __filename,
