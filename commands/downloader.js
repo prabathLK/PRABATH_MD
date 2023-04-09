@@ -210,8 +210,7 @@ cmd({
 
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "song",
-        alias: ["සෝන්ග්","audio","සොන්ග්","mp3"],
+        pattern: "testsong",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         react: "🎵",
@@ -285,9 +284,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
 
-        pattern: "video",
-
-        alias: ["විඩියො","වීඩියො","mp4","වීඩියෝ"],
+        pattern: "testvideo",
 
         desc: "Downloads audio by yt link.",
 
