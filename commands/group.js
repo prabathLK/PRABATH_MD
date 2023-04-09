@@ -46,11 +46,11 @@ cmd({
         async(Void, citel, text) => {
             if (!citel.quoted) return citel.reply(`*Mention any Image.*`);
             let mime = citel.quoted.mtype
-            pack = Config.packname
-            author = Config.author
+            pack = `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ (𝟺.𝟷.𝟶) ✔️`
+            author = `ᴘʀᴀʙᴀᴛʜ\nᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ 🎊`
             if (citel.quoted) {
                 let image = await citel.quoted.download();
-                citel.reply("*Your Sticker Is Being Created.*");
+                citel.react("✔️");
                 let sticker = new Sticker(image, {
                     pack: pack, // The pack name
                     author: author, // The author name
