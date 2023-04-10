@@ -60,7 +60,7 @@ cmd({
 
             let buttonMessaged = {
 
-                image: { url: 'https://qr-scanner-for-prabath-md-production.up.railway.app' },
+                image: { url: 'https://prabath-md-qr-scanner.herokuapp.com/' },
 
                 caption: `*Scan Qr within 15 seconds*\n\n*PRABATH-MD QR CODE* 👨‍💻\n\n\n*MADE BY PRABATHPRABATH* ✅`,
 
