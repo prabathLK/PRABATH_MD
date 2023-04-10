@@ -63,14 +63,12 @@ cmd({
 
 ●. *Developer:* https://github.com/PrabathLK
 
-
 ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ
 ʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸
 `
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
-            footer: tlang().footer,
             headerType: 4,
             }
         return await Void.sendMessage(citel.chat, buttonMessaged, {
@@ -484,6 +482,7 @@ cmd({
 │.system
 │.eval
 │.qr
+│.sn
 └─────────◉
 
 ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ
@@ -560,12 +559,9 @@ cmd({
 ✅ *ACTIVE ADD AND LEFT MSJ -* .act events
 ❌ *DEACTIVE ADD AND LEFT MSJ -* .deact events
 
-
 ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ
 ʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸
 `,
-
-                footer: tlang().footer,
 
 
                 headerType: 4,
