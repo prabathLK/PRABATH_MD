@@ -475,6 +475,9 @@ I am ${Config.ownername}
 
 ${Config.alivemsj}
 
+
+ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ
+ʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸
 `;           let buttons = [{
 
             buttonId: `${prefix}menu`,
@@ -604,6 +607,9 @@ else hostname = os.hostname()
 │
 │ 🧬 *Version:-* 4${prefix}1${prefix}0
 └─────────────────────────
+
+ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ
+ʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸
 `;
             let thumbimage = Config.THUMB_IMAGE || `https://i.ibb.co/7YGn5qS/20230305-135924.jpg`
   
