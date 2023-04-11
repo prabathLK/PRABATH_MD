@@ -61,9 +61,9 @@ cmd({
 
             if (!text) return
 
-const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
+const fbdl = await fetchJson(`https://darkalphaxteam-api.cyclic.app/api/download/facebook?url=${text}&apikey=prabath`)
 
-const videolink = fbdl.result.HD
+const videolink = fbdl.result[0].url[0].url
 
             citel.reply (`*Hello ${citel.pushName} I Am Finding Your Facebook Video*`);
 
@@ -95,7 +95,7 @@ cmd({
 
             desc: "tiktok downloader",
 
-            react:"🚀",
+            react:"🎊",
 
             category: "downloader"
 
@@ -105,11 +105,11 @@ cmd({
 
             if (!text) return
 
-const ttdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/tiktokdl?url=${text}`)
+const ttdl = await fetchJson(`https://darkalphaxteam-api.cyclic.app/api/download/facebook?url=${text}&apikey=prabath`)
 
     
 
-const videolink = ttdl.data.dl_url
+const videolink = ttdl.result[0].url[0].url
 
             citel.reply (`*Hello ${citel.pushName} I Am Finding Your Tiktok Video*`);
 
