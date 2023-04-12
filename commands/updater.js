@@ -26,7 +26,7 @@ cmd({
 
             if (commits.total === 0) {
 
-                citel.reply(`*Hey ${citel.pushName}. You have latest version installed.* ✅`)
+                citel.reply(`*You have latest version installed.* ✔️`)
 
             } else {
 
