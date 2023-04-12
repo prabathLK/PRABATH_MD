@@ -197,7 +197,7 @@ cmd({
 
             if (!text) return
 
-const apkdl = await fetchJson(`https://sl-bot-devolopers-team.herokuapp.com/api/apkdownload?appid=${text}`)
+const apkdl = await fetchJson(`https://queen-elisa-api.herokuapp.com/api/download/apkdownload?appid=${text}`)
             citel.reply (`*Hello ${citel.pushName} I Am Finding Your Apk*`);
 const applink = apkdl.data.dllink
 const getname = apkdl.data.name
