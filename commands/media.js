@@ -364,7 +364,7 @@ cmd({
             let anu = search.videos[0];
             if (!text) return     
             
-const tvideo = await fetchJson(`https://darkalphaxteam-api.cyclic.app/api/download/ytmp4?url=${anu.url}&apikey=prabath`)
+const tvideo = await fetchJson(`https://saipulanuar.ga/api/download/ytmp4-v2?url=${anu.url}`)
 
 const videolink = tvideo.download
 
