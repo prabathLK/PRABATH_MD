@@ -56,7 +56,7 @@ async(Void, citel, text,{ isCreator }) => {
 )
  //---------------------------------------------------------------------------
  cmd({
-             pattern: "attp",
+             pattern: "attpnotworknewadded",
              desc: "Makes glowing sticker of text.",
              category: "sticker",
              react: "🌈",
@@ -341,7 +341,7 @@ async(Void, citel, text,{ isCreator }) => {
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "chatbot",
+             pattern: "chnonoffffatbot",
              desc: "activates and deactivates chatbot.\nuse buttons to toggle.",
              category: "misc",
              filename: __filename
