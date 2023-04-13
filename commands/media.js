@@ -366,7 +366,7 @@ cmd({
             
 const tvideo = await fetchJson(`https://saipulanuar.ga/api/download/ytmp4-v2?url=${anu.url}`)
 
-const videolink = tvideo.download
+const videolink = tvideo.result.url
 
             citel.reply (`📽️ ━━━━━━━━━━ *𝗩𝗜𝗗𝗘𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n🖇️ *Url:* ${anu.url}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}`);
             return Void.sendMessage(citel.chat, {
