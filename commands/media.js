@@ -346,7 +346,7 @@ cmd({
 
 cmd({
 
-            pattern: "video",
+            pattern: "testvideo",
 
             desc: "video dl",
 
@@ -391,7 +391,7 @@ const videolink = tvideo.result.url
     
     cmd({
 
-            pattern: "song",
+            pattern: "testsong",
 
             desc: "song dl",
 
