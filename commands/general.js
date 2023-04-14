@@ -424,8 +424,8 @@ cmd({
 │.song
 │.video
 │.apk
-│.docsong (not working fix soon)
-│.docvideo (not working fix soon)
+│.docsong 
+│.docvideo
 │.fb
 │.tiktok
 │.img
