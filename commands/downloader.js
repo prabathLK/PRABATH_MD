@@ -15,7 +15,7 @@ const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
 var videotime = 60000 // 10000min
-var dlsize = 200 // 200mb
+var dlsize = 350 // 350mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
@@ -210,10 +210,10 @@ cmd({
 
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "testsong",
+        pattern: "song",
         desc: "Downloads audio by yt link.",
         category: "downloader",
-        react: "🎵",
+        react: "🎶",
         use: '<yt video url>',
     },
     async(Void, citel, text) => {
@@ -263,7 +263,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'audio/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
                         headerType: 4,
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
@@ -284,7 +284,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
 
-        pattern: "testvideo",
+        pattern: "video",
 
         desc: "Downloads audio by yt link.",
 
@@ -382,7 +382,7 @@ cmd({
 
                         fileName: `${titleYt}.mp4`,
 
-                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
 
                         headerType: 4,
 
@@ -512,7 +512,7 @@ cmd({
 
                         fileName: `${titleYt}.mp3`,
 
-                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
 
                         headerType: 4,
 
@@ -642,7 +642,7 @@ cmd({
 
                         fileName: `${titleYt}.mp4`,
 
-                        caption: `● *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ*`,
+                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
 
                         headerType: 4,
 
