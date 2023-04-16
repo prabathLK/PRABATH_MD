@@ -386,9 +386,7 @@ cmd({
 
 cmd({
 
-            pattern: "menu",
-            
-            alias: ["මෙනු","cmd","help"],
+            pattern: "mjakageksjsgwusksgaisjsgajhshshshshehbenu",
 
             desc: "(menu cmdlist).",
 
