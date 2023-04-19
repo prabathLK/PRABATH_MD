@@ -40,7 +40,7 @@
 
   
 
-●. ***[SCAN QR CODE SERVER 1](https://prabath-md-qr-scanner.herokuapp.com/)***
+●. ***[SCAN QR CODE SERVER 1](https://prabath-md-qr.herokuapp.com/)***
 
 ●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-rgbm.onrender.com/)***
 
