@@ -44,7 +44,9 @@
 
 ●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-rgbm.onrender.com/)***
 
-●.  ***Get a Mongodb uri from [Mongodb](https://api.clever-cloud.com/v2/session/login).***
+●. ***Get a Mongodb uri from [Clever-Cloud](https://api.clever-cloud.com/v2/session/login).***
+
+●. ***Get a Mongodb uri from [railway.app](https://railway.app).***
 
 ●.  ***Click [FORK](https://github.com/prabathLK/PRABATH-MD/fork)***
 
