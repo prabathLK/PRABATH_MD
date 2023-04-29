@@ -42,7 +42,7 @@
 
 ●. ***[SCAN QR CODE SERVER 1](https://prabath-md-qr.herokuapp.com/)***
 
-●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-rgbm.onrender.com/)***
+●. ***[SCAN QR CODE SERVER 2](https://prabath-md-slstatus384.koyeb.app/)***
 
 ●. ***Get a Mongodb uri from [Clever-Cloud](https://api.clever-cloud.com/v2/session/login).***
 
