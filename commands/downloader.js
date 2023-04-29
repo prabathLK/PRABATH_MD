@@ -284,7 +284,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
 
-        pattern: "video",
+        pattern: "testvideo",
 
         desc: "Downloads audio by yt link.",
 
