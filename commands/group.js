@@ -683,6 +683,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!citel.isGroup) return citel.reply(tlang().group);
+	    if (!isCreator) return citel.reply(tlang().owner);
             const groupAdmins = await getAdmin(Void, citel)
             const botNumber = await Void.decodeJid(Void.user.id)
             const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
