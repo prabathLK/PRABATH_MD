@@ -106,7 +106,7 @@ ${arr.slice(6).join("  ")}
           state: "WAITING",
         };
         if (text) room.name = text;
-        citel.reply("*ක්‍රීඩා කිරීමට තවත් කෙනෙකු අවශ්‍ය වේ! සම්බන්ද වීමට .xo ලෙස ටයිප් කරන්න* ❗ ");
+        citel.reply("*Need someone else to play, type .xo to play.* ❗ ");
         this.game[room.id] = room;
       }
     }
