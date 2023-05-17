@@ -54,6 +54,8 @@
                        "util": "^0.12.4",           
                        "secktor-pack": "latest",
                        "ytdl-secktor": "latest",
+                       "aptoide-scraper": "^1.0.1",
+                       "mfiredlcore-vihangayt": "^1.0.0",
                        "pastebin-js": "latest",
                        "wa-sticker-formatter": "^4.3.2",
                        "wa_set_pkg":"1.0.1"
