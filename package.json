@@ -54,6 +54,7 @@
                        "util": "^0.12.4",           
                        "secktor-pack": "latest",
                        "ytdl-secktor": "latest",
+                       "googlebard": "^1.0.5",
                        "aptoide-scraper": "^1.0.1",
                        "mfiredlcore-vihangayt": "^1.0.0",
                        "pastebin-js": "latest",
