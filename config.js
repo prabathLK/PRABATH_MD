@@ -36,6 +36,7 @@ module.exports = {
   disablepm: process.env.DISABLE_PM || "flase",
   levelupmessage: process.env.LEVEL_UP_MESSAGE || 'false',
   antilink: process.env.ANTILINK_VALUES || 'chat.whatsapp.com',
+  antibot: process.env.ANTI_BOT || 'false',
   antilinkaction: process.env.ANTILINK_ACTION || 'remove',
   BRANCH: 'main',
   ALIVE_MESSAGE: process.env.ALIVE_MESSAGE || '',
