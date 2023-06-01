@@ -63,6 +63,16 @@
      "required" :false
 
     },
+  
+     "ANTI_BOT": {
+
+    "description": "Enter true or false",
+
+     "value": "false",
+
+     "required" :false
+
+    },
 
       "READ_MESSAGE": {
 
