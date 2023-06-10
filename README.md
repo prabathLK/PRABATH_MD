@@ -18,7 +18,7 @@
 
 <p align="center"><img src="https://profile-counter.glitch.me/{prabathLK}/count.svg" alt="prabathLK :: Visitor's Count" /></p>
 
-  <p align="center"> 🔴 This is a whatsapp bot created based on Secktor-md whatsapp bot.  </p
+  <p align="center"> 🔴 This is a whatsapp bot created based on Secktor-md whatsapp bot. /><p>
 
   
 
@@ -34,15 +34,9 @@
 
  ## DEPLOYMENT METHODS
 
- 
-
- <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
   
 
-●. ***[SCAN QR CODE SERVER 1](https://prabath-md-qr.herokuapp.com/)***
-
-●. ***[SCAN QR CODE SERVER 2](https://prabath-md-slstatus384.koyeb.app/)***
+●. ***[SCAN QR CODE](https://replit.com/@Amilaprabath/PRABATH-MDQR-500?output%20only=1&lite=1#index.js)***
 
 ●. ***Get a Mongodb uri from [Clever-Cloud](https://api.clever-cloud.com/v2/session/login).***
 
@@ -69,4 +63,4 @@
 
 ## License
 
-The prabath-md is made available under the [GPL-3 license](https://github.com/SamPandey001/Secktor-Md/blob/main/LICENCE). 
+The prabath-md is made available under the [GPL-3 license](https://github.com/prabathLK/PRABATH-MD/blob/main/LICENCE). 
