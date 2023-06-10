@@ -18,7 +18,7 @@
 
 <p align="center"><img src="https://profile-counter.glitch.me/{prabathLK}/count.svg" alt="prabathLK :: Visitor's Count" /></p>
 
-  <p align="center"> 🔴 This is a whatsapp bot created based on Secktor-md whatsapp bot. /><
+  <p align="center"> 🔴 This is a whatsapp bot created based on Secktor-md whatsapp bot. 
 
   
 
