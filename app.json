@@ -39,7 +39,7 @@
 
   "HEROKU_APP_NAME": {
 
-    "description": "put your heroku app name",
+    "description": "put your heroku app name"
 
   },  
 
@@ -47,7 +47,7 @@
 
   "HEROKU_API_KEY": {
 
-    "description": "put your heroku api key",
+    "description": "put your heroku api key"
 
   },  
 
