@@ -1,5 +1,5 @@
 {
-  "name": "PRABATH-MD (5.0.0)",
+  "name": "PRABATH-MD",
   "description": "PRABATH-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
   "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "multi device"],
@@ -93,7 +93,7 @@
 
   "OWNER_NUMBER": {
 
-    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma)",
+    "description": "The phone numbers of the users who you want to be admin for the bot should be in international format without + and multiple numbers must be separated by a comma",
 
        "value": "94762280384"
 
@@ -129,7 +129,7 @@
 
     "THEME": {
 
-    "description": "මෙය වෙනස් නොකරන්න(Don't Change This) ",
+    "description": "මෙය වෙනස් නොකරන්න Don't Change This ",
 
      "value": "PRABATH-MD"
 
