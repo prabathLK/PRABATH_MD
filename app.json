@@ -1,6 +1,6 @@
 {
 
-  "name": "PRABATH-MD",
+  "name": "PRABATH-MD (5.0.0)",
   "description": "PRABATH-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
   "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "multi device"],
@@ -35,8 +35,14 @@
 
     },
 
-  
+     "AUTO_RESTART": {
 
+    "description": "If you want the bot to restart every hour, give true",
+
+     "value": "true"
+
+    },
+  
   "HEROKU_APP_NAME": {
 
     "description": "put your heroku app name"
@@ -111,8 +117,8 @@
 
     "OPENAI_API_KEY": {
 
-    "description": "put your open_ai_api_key from https://platform.openai.com/account/api-keys"
-
+    "description": "put your open_ai_api_key from https://platform.openai.com/account/api-keys",
+    "required" :false
   },
 
   "WELCOME_MESSAGE": {
