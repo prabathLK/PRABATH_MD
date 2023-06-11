@@ -93,7 +93,7 @@
 
   "OWNER_NUMBER": {
 
-    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma)",
 
        "value": "94762280384"
 
