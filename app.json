@@ -1,19 +1,12 @@
 {
-
   "name": "PRABATH-MD",
-
   "description": "PRABATH-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
-
   "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
-
   "keywords": ["nodejs", "bot", "whatsapp bot", "multi device"],
-
   "success_url": "/",
-
   "stack": "container",
-
 "env": {
-
+  
   "OWNER_NAME": {
 
   "description": "BOT ට එන්න ඕන නම දෙන්න ",
@@ -42,7 +35,7 @@
 
   "HEROKU_APP_NAME": {
 
-    "description": "put your heroku_app_name",
+    "description": "put your heroku app name",
 
   },  
 
@@ -50,7 +43,7 @@
 
   "HEROKU_API_KEY": {
 
-    "description": "put your heroku_api_key",
+    "description": "put your heroku api key",
 
   },  
 
@@ -92,7 +85,7 @@
 
       "PREFIX": {
 
-  "description": "put your prefix  ex:- , . ? ) @ # ",
+  "description": "put your prefix",
 
       "value": "."
 
