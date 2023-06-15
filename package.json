@@ -9,7 +9,7 @@
                 "start": "pm2 start lib/client.js --deep-monitoring --attach --name prabath",
                 "stop": "pm2 stop prabath"
                 },
-               "author": "Prabath",
+               "author": "SamPandey001 & Prabath & Sachintha",
               "dependencies": {
                        "@whiskeysockets/baileys": "git+https://github.com/sampandey001/baileys",
                        "@adiwajshing/keyed-db": "^0.2.4",
