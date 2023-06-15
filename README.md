@@ -38,13 +38,13 @@
 
 ●. ***[SCAN QR CODE SERVER 1](https://prabath-md-qr-server1.herokuapp.com/)***
   
-●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-new.herokuapp.com/)**
+●. ***[SCAN QR CODE SERVER 2](https://prabath-md-qr-new.herokuapp.com/)***
   
 ●. ***[SCAN QR CODE SERVER 3](https://prabath-md-slstatus384.koyeb.app/)***
   
-●. ***[SCAN QR CODE SERVER 4](https://prabath-md/)***
+●. ***[SCAN QR CODE SERVER 4](https://prabath-md-scan-qr-server4-b184dd18f91f.herokuapp.com/)***
   
-
+..........................................................
 
 ●. ***Get a Mongodb uri from [Clever-Cloud](https://api.clever-cloud.com/v2/session/login).***
 
