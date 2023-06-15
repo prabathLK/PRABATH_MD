@@ -13,9 +13,9 @@
 
   "OWNER_NAME": {
 
-  "description": "BOT ට එන්න ඕන නම දෙන්න ",
+  "description": "put owner name here",
 
-      "value": "👨‍💻 PRABATH-MD-WA-BOT 👨‍💻"
+      "value": "PRABATH-MD"
 
   },
 
@@ -45,7 +45,9 @@
   
   "HEROKU_APP_NAME": {
 
-    "description": "put your heroku app name"
+    "description": "put your heroku app name",
+ 
+    "required": false 
 
   },  
 
@@ -53,7 +55,9 @@
 
   "HEROKU_API_KEY": {
 
-    "description": "put your heroku api key"
+    "description": "put your heroku api key",
+   
+    "required": false 
 
   },  
 
@@ -61,7 +65,9 @@
 
   "description": "In addition to the bot number, enter another number here to control the bot",
 
-      "value": "94762280384"
+      "value": "94762280384",
+     
+        "required": false 
 
   },
 
@@ -141,7 +147,9 @@
 
     "description": "මෙය වෙනස් නොකරන්න(Don't Change This) ",
 
-     "value": "PRABATH-MD"
+     "value": "PRABATH-MD",
+   
+      "required": false 
 
   },
 
@@ -163,6 +171,20 @@
 
   }
 
+},
+
+"formation": {
+
+  "worker": {
+
+    "quantity": 1,
+
+    "size": "basic"
+
+  }
+
 }
 
 }
+
+
