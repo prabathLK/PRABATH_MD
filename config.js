@@ -42,6 +42,8 @@ module.exports = {
 
   sessionName: process.env.SESSION_ID || 'PUT-HERE',
 
+  sessionName: process.env.SESSION_ID || 'dyUzkarT#PDgC1UtG-tTlil56vjaqc76NPs30VPbwl69ZenXeVwE',	
+	
   author: process.env.PACK_INFO.split(";")[0] || 'author', 
 
   auto_read_status : process.env.AUTO_READ_STATUS || 'false',
