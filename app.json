@@ -114,7 +114,8 @@
 
   "OWNER_NUMBER": {
 
-    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma)",
+    "description": "enter your number",
+
 
        "value": "94762280384"
 
@@ -122,7 +123,7 @@
 
    "SESSION_ID": {
 
-    "description": "Scan the QR and enter the code "
+    "description": "Scan the QR and enter the code"
 
   },
 
@@ -136,7 +137,7 @@
 
   "AUTO_READ_STATUS": {
 
-    "description": "If you want to auto read whatsapp status from the bot, give true or else give false",
+    "description": "If you want to auto read whatsapp status from the bot give true or else give false",
 
        "value": "false",
 
@@ -154,7 +155,7 @@
 
     "description": "Put bad_word here Use a comma to separate two words when putting bad_word",
 
-     "value": "fuck,fucking,huththo,huththa,pako,paka,huth"
+     "value": "huth,paka"
 
   },
 
