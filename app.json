@@ -1,96 +1,181 @@
 {
 
   "name": "PRABATH-MD (5.0.0)",
+
   "description": "PRABATH-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
+
   "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
+
   "keywords": ["nodejs", "bot", "whatsapp bot", "multi device", "prabath-md"],
+
   "success_url": "/",
+
   "stack": "container",
 
-  "env": {
+"env": {
+
   "OWNER_NAME": {
+
   "description": "Enter your name",
+
       "value": "PRABATH"
+
   },
     "DL_SIZE": {
+
   "description": "The bot cannot download files beyond the number you enter",
+
       "value": "150"
+
   },
+
   "ALIVE_IMG": {
+
     "description": "Put a url of an image that should come when you hit the .alive command",
+
      "required" :false
+
     },
+
    "ALIVE_MSJ": {
+
     "description": "enter alive message",
+
      "value": "i am alive now 🙋‍♂️"
+
     },
+  
   "HEROKU_APP_NAME": {
+
     "description": "put your heroku_app_name",
+
     "required" :false
-  },   
+
+  },  
+  
   "HEROKU_API_KEY": {
+
     "description": "put your heroku_api_key",
+
     "required" :false
+
   },  
+
     "ALWAYS_ONLINE": {
+
     "description": "enter true or false",
+
     "value": "true",
+
+
     "required" :false
+
   },  
+
       "SUDO": {
+
   "description": "In addition to the bot number, enter another number here to control the bot",
+
       "value": "94762280384"
+
   },
    "ANTILINK_VALUES": {
+
     "description": "When antilink is turned on, when this link is added, the user will be removed",
      "value": "chat.whatsapp.com",
+
      "required" :false
+
     },
+
       "READ_MESSAGE": {
+
     "description": "If you want to read the bot message, give true, otherwise give false.",
      "required" :false,
+
      "value": "true"
+
     },
+
    "DISABLE_PM": {
+
     "description": "If you want the bot inbox to work, give false, if you don't want it to work, give true.",
      "required" :false
+
     },
+
       "PREFIX": {
+
   "description": "put your prefix  ex:- , . ? ) @ # ",
+
       "value": "."
+
   },
+
   "OWNER_NUMBER": {
+
     "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+
        "value": "94762280384"
+
   },
+
    "SESSION_ID": {
+
     "description": "Scan the QR and enter the code "
+
   },
+
     "OPENAI_API_KEY": {
+
     "description": "put your open_ai_api_key from https://platform.openai.com/account/api-keys",
+
       "required" :false
+
   },
+
   "AUTO_READ_STATUS": {
+
     "description": "If you want to auto read whatsapp status from the bot, give true or else give false",
+
        "value": "false",
+
        "required" :false
+
   },
+
   "MONGODB_URI": {
+
     "description": "Put Your Mongodb_url from https://railway.app/new"
+
   },
+
     "ANTI_BAD_WORD": {
+
     "description": "Put bad_word here Use a comma to separate two words when putting bad_word",
+
      "value": "fuck,fucking,huththo,huththa,pako,paka,huth"
+
   },
+
     "WORK_TYPE": {
+
   "description": "If you want to use the bot only for yourself, set it to private or set it to public",
+
          "value": "public"
+
   },
+
   "PACK_INFO": {
+
     "description": "Put packname;authorname.",
+
      "value": "PRABATH-MD🎊;𝚙𝚛𝚊𝚋𝚊𝚝𝚑✅",
+
      "required": false 
+
   }
+
   
 },
 "formation": {
@@ -101,4 +186,4 @@
 }
 
 
-    }
+   }
