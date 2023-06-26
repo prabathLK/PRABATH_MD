@@ -1,5 +1,5 @@
 {
-               "name": "PRABATH-MD (5.0.0)",
+               "name": "PRABATH-MD",
                "version": "5.0.0",
                "description": "Multi device whatsapp bot by prabath.",
                "main": "lib/client.js",
@@ -9,9 +9,9 @@
                 "start": "pm2 start lib/client.js --deep-monitoring --attach --name prabath",
                 "stop": "pm2 stop prabath"
                 },
-               "author": "SamPandey001 & Prabath & sachintha",
+               "author": "SamPandey001 & Prabath & Sachintha",
               "dependencies": {
-                       "@whiskeysockets/baileys": "git+https://github.com/sampandey001/baileys", 
+                       "@whiskeysockets/baileys": "git+https://github.com/sampandey001/baileys",
                        "@adiwajshing/keyed-db": "^0.2.4",
                        "megajs": "^1.1.0",
                        "vm": "^0.1.0",
@@ -22,6 +22,7 @@
                        "youtubedl-core": "^4.11.4",
                        "youtube-yts": "^2.0.0",
                        "node-youtube-music": "^0.8.3",
+                       "fluent-ffmpeg": "^2.1.2",
                        "node-id3": "^0.2.3",
                        "cheerio": "^1.0.0-rc.10",
                        "crypto-js":"latest",
@@ -68,9 +69,6 @@
                        "aptoide-scraper": "^1.0.1",
                        "pastebin-js": "latest",
                        "mfiredlcore-vihangayt": "^1.0.0",
-                       "getscreenshot.js": "1.0.0",
-                       "@blackamda/telegram-image-url": "^1.0.0",
-                       "fouadwa-scraper": "2.0.0",
                        "wa-sticker-formatter": "^4.3.2",
                        "wa_set_pkg":"1.0.1"
                       },
@@ -89,4 +87,4 @@
                  "url": "https://github.com/prabathLK/PRABATH_MD/issues"
                   },
                  "homepage": "https://github.com/prabathLK/PRABATH_MD#readme"
-}
+              }
