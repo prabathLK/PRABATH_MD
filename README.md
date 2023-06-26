@@ -54,7 +54,7 @@
 
 ---
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH_MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[PREFIX]=.&env[ALIVE_IMG]=https://telegra.ph/file/0ff686352c51b20af8231.jpg&env[ALIVE_MSJ]=IAmOnline&env[AUTO_RESTART]=true&env[SUDO]=94762280384&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORKTYPE]=public&env[THEME]=PRABATH-MD&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=github.com/prabathLK/PRABATH_MD&branch=main&env[SESSION_ID]&env[OWNER_NUMBER]=94762280384&env[MONGODB_URI]&&env[OWNER_NAME]=prabath&env[KOYEB_API]&env[AUTO_READ_STATUS]=false&env[ANTI_BAD_WORD]=fuck,huththa,pakaya&env[ALWAYS_ONLINE]=true&env[PREFIX]=.&env[ALIVE_IMG]=https://telegra.ph/file/0ff686352c51b20af8231.jpg&env[ALIVE_MSJ]=IAmOnline&env[AUTO_RESTART]=true&env[SUDO]=94762280384&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[WORK_TYPE]=public&env[THEME]=PRABATH-MD&env[PACK_INFO]=prabath;madebyprabathmd&name=prabath-md&env[KOYEB_NAME]=prabath-md&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/NO4jvb?referralCode=iM43z3)
 
