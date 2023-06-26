@@ -1,6 +1,10 @@
-const prabath = require('../lib')
 
-prabath.cmd({
+
+//---------------------------------------------------------------------------
+
+const Pmd = require('../lib')
+
+Pmd.cmd({
 
         pattern: "ping",
 
@@ -16,22 +20,14 @@ prabath.cmd({
 
         var inital = new Date().getTime();
 
-   const delping = await Void.sendMessage(citel.chat, { text: '```Testing Ping...```' });
-
-       
-
-                               
+        const { key } = await Void.sendMessage(citel.chat, {text: '```Testing Ping...```'});
 
         var final = new Date().getTime();
 
-       
+        await Pmd.sleep(1000)
 
-     const dl = await citel.reply('📍 *Ping* : *' + (final - inital) + ' ms* ');
-
-       await Void.sendMessage(citel.chat, { react: { text: '✔️', key: dl.key } });
-
-       return await Void.sendMessage(citel.chat, { delete: delping.key });
-
+       const pg = await Void.sendMessage(citel.chat, {text: '📍 *Ping:' + (final - inital) + ' ms* ', edit: key});
+      return await Void.sendMessage(citel.chat, { react: { text: '✔️', key: pg.key } });
     }
 
 );
