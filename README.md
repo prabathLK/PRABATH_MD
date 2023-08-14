@@ -36,7 +36,7 @@
 
   
 
-●. ***[SCAN QR CODE](https://qr-new-update-500-production.up.railway.app/)***
+●. ***[SCAN QR CODE](https://prabath--qr-1afc11416564.herokuapp.com/)***
   
 ..........................................................
 
