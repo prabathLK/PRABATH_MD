@@ -30,6 +30,10 @@
 
 ![stars](https://img.shields.io/github/stars/prabathLK/PRABATH_MD?style=social)
 
+
+
+⚠️ ***We will not give updates to this repository. Instead, work is being done to release a new and efficient bot with a new base*** ![new reposity](https://github.com/prabathLK/PRABATH-MD/)
+
   
 
  ## DEPLOYMENT METHODS
