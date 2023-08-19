@@ -37,7 +37,7 @@
 
   
 
-●. ***[SCAN QR CODE](https://prabath--qr-1afc11416564.herokuapp.com/)***
+●. ***[SCAN QR CODE](https://prabath-md-qr-rgbm.onrender.com/)***
   
 ..........................................................
 
