@@ -18,7 +18,7 @@
 
 <p align="center"><img src="https://profile-counter.glitch.me/{prabathLK}/count.svg" alt="prabathLK :: Visitor's Count" /></p>
 
-  <p align="center">
+  
   ⚠️ ***We will not give updates to this repository. Instead, work is being done to release a new and efficient bot with a new base [new reposity](https://github.com/prabathLK/PRABATH-MD/)***
 
 
