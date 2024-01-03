@@ -1,12 +1,12 @@
   <p align="center">  
-  <a href="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
-    <img alt="secktor docs" height="300" src="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
-    <h1 align="center"> PRABATH-MD </h1>
+  <a href="https://ibb.co/18bK5ZG">
+    <img alt="secktor docs" height="300" src="https://ibb.co/7jfmSRN">
+    <h1 align="center"> Sahil-Pakistan </h1>
   </a>
 </p>  
 <p align="center">
-  <a aria-label="Join our chats" href="https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM" target="_blank">
-    <img alt="whatsapp" src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  <a aria-label="Join our chats" href="" target="_blank">
+    <img alt="whatsapp" https://whatsapp.com/channel/0029Va95gTQLCoX18KmLp70csrc="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
   <a aria-label="Secktor is free to use" href="https://github.com/SamPandey001/Secktor-Md/blob/main/LICENCE" target="_blank">
     <img alt="License: GPL-3" src="https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://opensource.org/licenses/GPL-3.0/" target="_blank" />
