@@ -1,12 +1,12 @@
 {
-               "name": "PRABATH-MD",
+               "name": "BAD_YOVI/",
                "version": "5.0.0",
                "description": "Multi device whatsapp bot by prabath.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name prabath",
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name BAD-YOVI",
                 "stop": "pm2 stop prabath"
                 },
                "author": "SamPandey001 & Prabath & Sachintha",
