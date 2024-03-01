@@ -1,7 +1,7 @@
   <p align="center">  
   <a href="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
     <img alt="secktor docs" height="300" src="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
-    <h1 align="center"> PRABATH-MD </h1>
+    <h1 align="center"> BAD_YOVI/ </h1>
   </a>
 </p>  
 <p align="center">
