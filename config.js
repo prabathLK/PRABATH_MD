@@ -11,7 +11,7 @@ global.github = 'https://github.com/prabathLK/PRABATH-MD'
 global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
 global.devs = '94762280384';
-global.website = 'https://github.com/prabathLK/PRABATH-MD' //wa.me/+94762280384
+global.website = 'https://github.com/prabathLK/PRABATH-MD' //wa.me/+94773883257
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://i.imgur.com/H062oEI.jpeg'
 module.exports = {
   OPENAI_API_KEY:process.env.OPENAI_API_KEY || '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',
@@ -22,7 +22,7 @@ module.exports = {
   alivepic: process.env.ALIVE_IMG || 'https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg',
   alivemsj: process.env.ALIVE_MSJ || '*POWERD BY PRABATH-MD* 🎊',
   ownername:process.env.OWNER_NAME || 'PRABATH',
-  sessionName: process.env.SESSION_ID || 'PUT-HERE',
+  sessionName: process.env.SESSION_ID || 'PRABATH-MD_zgmKzK7z',
   author: process.env.PACK_INFO.split(";")[0] || 'author', 
   auto_read_status : process.env.AUTO_READ_STATUS || 'false',
   packname: process.env.PACK_INFO.split(";")[1] || 'Name',
