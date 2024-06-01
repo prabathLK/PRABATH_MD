@@ -38,20 +38,20 @@
       copy paste lines below.
 
       ```
-      OWNER_NUMBER="94762280384"
+      OWNER_NUMBER="+94728024231"
       MONGODB_URI="Enter-mongodb_uri"
-      SESSION_ID = "enter session_id"
+      SESSION_ID = "PRABATH-MD~dqkD3D5T#Y9Xcl1egtxunrxNUVc__su2nEqEg1nVXsSy4q3_P1fE"
       port = 5000
-      OWNER_NAME = "prabath-md"
-      AUTO_REACTION = false
-      AUTO_VOICE = false
-      AUTO_STICKER = false
-      FAKE_COUNTRY_CODE = 92
-      READ_MESSAGE = false
+      OWNER_NAME = "kanishkaprabath-md"
+      AUTO_REACTION = true
+      AUTO_VOICE = true
+      AUTO_STICKER = true
+      FAKE_COUNTRY_CODE = 94
+      READ_MESSAGE = true
       PREFIX = .
-      DISABLE_PM = false
+      DISABLE_PM = true
       ANTI_BAD_WORD = "fuck"
-      LEVEL_UP_MESSAGE= true
+      LEVEL_UP_MESSAGE= true 
       THEME= PRABATH-MD
       WORKTYPE = public
       PACK_INFO = "prabath ✅;prabath-md"
