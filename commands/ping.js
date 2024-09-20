@@ -26,7 +26,7 @@ Pmd.cmd({
 
         await Pmd.sleep(1000)
 
-       const pg = await Void.sendMessage(citel.chat, {text: '📍 *Ping:' + (final - inital) + ' ms* ', edit: key});
+       const pg = await Void.sendMessage(citel.chat, {text: '🎆 *Ping:' + (final - inital) + ' ms* ', edit: key});
       return await Void.sendMessage(citel.chat, { react: { text: '✔️', key: pg.key } });
     }
 
